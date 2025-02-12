@@ -27,7 +27,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 5rem;
-  background-color: beige;
+  /* background-color: beige; */
 }
 
 header img {
@@ -44,6 +44,15 @@ header ul {
 header ul a {
   font-size: 1.6rem;
   color: black;
+}
+
+header ul button {
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  border: 1px solid #2f80ec;
+  border-radius: 4rem;
+  background-color: white;
+  color: #2f80ec;
 }
 
 .header-dropdown {
