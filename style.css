@@ -4,14 +4,46 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", serif;
+}
+
+ul,
+ol,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
 /*----------------------- Header-style------------------------ */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
+  padding: 1rem 6rem;
 }
 
 header img {
-  width: 10rem;
+  width: 16rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70rem;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50rem;
+}
+header nav ul a {
+  font-size: 1.6rem;
 }
