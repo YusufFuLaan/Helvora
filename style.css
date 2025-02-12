@@ -26,24 +26,57 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 6rem;
+  padding: 0.5rem 5rem;
+  background-color: beige;
 }
 
 header img {
   width: 16rem;
 }
 
-header nav {
+header ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 70rem;
+  width: 55rem;
 }
-header nav ul {
-  display: flex;
-  justify-content: space-around;
-  width: 50rem;
-}
-header nav ul a {
+
+header ul a {
   font-size: 1.6rem;
+  color: black;
+}
+
+.header-dropdown {
+  position: relative;
+  display: inline-block;
+  /* height: 6rem; */
+  border: 1px solid black;
+}
+
+.header-dropdown-content {
+  position: absolute;
+  display: none;
+  top: 5rem;
+  left: -7rem;
+  width: 20rem;
+  background-color: #ffffff;
+  z-index: 1;
+  text-align: center;
+}
+
+.header-dropdown-content a {
+  display: block;
+  padding: 1rem;
+  border: 1px solid rgb(230, 230, 230);
+  transition: 0.5s ease;
+}
+
+.header-dropdown-content a:hover {
+  color: #ffffff;
+  background-color: black;
+  border-bottom: 1.2px solid #1590ff;
+}
+
+.header-dropdown:hover .header-dropdown-content {
+  display: block;
 }
