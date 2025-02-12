@@ -69,6 +69,7 @@ header ul a:hover {
   background-color: #2f80ec;
   color: #ffffff;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 
 .Signup-btn:hover {
@@ -84,6 +85,7 @@ header ul a:hover {
   background-color: white;
   color: #2f80ec;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 
 .login-btn:hover {
