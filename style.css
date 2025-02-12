@@ -27,7 +27,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 5rem;
-  /* background-color: beige; */
 }
 
 header img {
@@ -38,35 +37,70 @@ header ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 55rem;
+  width: 70rem;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 2.5rem 1rem;
 }
 
 header ul a {
   font-size: 1.6rem;
+  font-weight: 480;
   color: black;
+  transition: 0.5s ease;
 }
 
-header ul button {
+header ul a:hover {
+  color: #2f80ec;
+  font-weight: bolder;
+}
+
+.fa-solid {
+  padding-left: 0.8rem;
+}
+
+.Signup-btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 4rem;
+  background-color: #2f80ec;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.Signup-btn:hover {
+  background-color: black;
+  color: #ffffff;
+}
+
+.login-btn {
   padding: 1rem 3rem;
   font-size: 1.6rem;
   border: 1px solid #2f80ec;
   border-radius: 4rem;
   background-color: white;
   color: #2f80ec;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #2f80ec;
+  color: white;
 }
 
 .header-dropdown {
   position: relative;
   display: inline-block;
-  /* height: 6rem; */
-  border: 1px solid black;
 }
 
 .header-dropdown-content {
   position: absolute;
   display: none;
-  top: 5rem;
-  left: -7rem;
+  top: 7rem;
+  left: -4rem;
   width: 20rem;
   background-color: #ffffff;
   z-index: 1;
@@ -88,4 +122,12 @@ header ul button {
 
 .header-dropdown:hover .header-dropdown-content {
   display: block;
+}
+
+.menuContainer {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 2.5rem;
 }
