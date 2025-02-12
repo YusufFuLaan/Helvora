@@ -9,5 +9,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 4rem;
+  padding: 1rem 4rem;
+}
+
+header img {
+  width: 10rem;
 }
