@@ -133,3 +133,95 @@ header ul a:hover {
 .fa-bars {
   font-size: 2.5rem;
 }
+
+/*----------------------- Hero-style------------------------ */
+main {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: #d5e6fa;
+  height: 55rem;
+}
+
+main article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 6rem;
+}
+
+main article .evolution-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+}
+
+.evolution-container p {
+  color: #2f80ec;
+  font-size: 1.3rem;
+}
+
+main article .hero-cta-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  width: 55rem;
+}
+
+.hero-cta-container h1 {
+  font-size: 3.2rem;
+}
+
+.hero-cta-container p {
+  font-size: 1.8rem;
+}
+
+.hero-cta-btn {
+  padding: 1rem 6rem;
+  font-size: 1.8rem;
+  border: 1px solid #2f80ec;
+  border-radius: 1rem;
+  background-color: black;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.hero-cta-btn:hover {
+  background-color: #2f80ec;
+  color: white;
+}
+
+main article .hero-user-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-user-container p {
+  font-size: 1.8rem;
+}
+
+.hero-user-container span {
+  color: #2f80ec;
+  font-weight: 500;
+}
+
+.hero-image-container {
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.hero-blue-bg {
+  width: 65rem;
+  height: inherit;
+}
+.hero-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60rem;
+  height: inherit;
+}
