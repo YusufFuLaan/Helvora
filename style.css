@@ -135,6 +135,12 @@ header ul a:hover {
 }
 
 /*----------------------- Hero-style------------------------ */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
 .hero-sec-one {
   display: flex;
   justify-content: space-between;
@@ -156,9 +162,8 @@ header ul a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: relative;
-  background-color: #d5e6fa;
   height: 55rem;
+  padding: 0 6rem;
 }
 
 .hero-sec-one article {
@@ -182,7 +187,6 @@ header ul a:hover {
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 0 6rem;
 }
 
 .evolution-container {
@@ -228,6 +232,23 @@ header ul a:hover {
   color: white;
 }
 
+.hero-sec-two .hero-cta-btn,
+.hero-sec-three .hero-cta-btn {
+  padding: 1rem 6rem;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #2f80ec;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.hero-cta-btn:hover {
+  background-color: #0a5ecd;
+  color: white;
+}
+
 .hero-user-container {
   display: flex;
   gap: 1rem;
@@ -243,7 +264,8 @@ header ul a:hover {
   font-weight: 500;
 }
 
-.hero-image-container {
+.hero-sec-one .hero-image-container,
+.hero-sec-two .hero-image-container {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
@@ -251,14 +273,34 @@ header ul a:hover {
   height: 100%;
 }
 
+.hero-sec-three .hero-image-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .hero-blue-bg {
   width: 65rem;
   height: inherit;
 }
-.hero-image {
+
+.hero-sec-one .hero-image {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 60rem;
   height: inherit;
+}
+
+.hero-sec-two .hero-image {
+  position: absolute;
+  right: 8rem;
+  bottom: 0;
+  width: 40rem;
+  height: inherit;
+}
+
+.hero-sec-three .hero-image {
+  width: 50rem;
+  height: 45rem;
 }
