@@ -171,7 +171,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 0 6rem;
+  padding: 0 6.5rem;
 }
 
 .hero-sec-two article {
@@ -294,10 +294,51 @@ main {
 
 .hero-sec-two .hero-image {
   position: absolute;
-  right: 8rem;
+  right: 12rem;
   bottom: 0;
-  width: 40rem;
-  height: inherit;
+  width: 32rem;
+  height: 43rem;
+}
+
+.hero-sec-two .eclipse {
+  position: absolute;
+  right: 8rem;
+  top: 0;
+  width: 5rem;
+}
+
+.hero-sec-two .ellipse-man1 {
+  position: absolute;
+  right: 26rem;
+  top: 5rem;
+}
+
+.hero-sec-two .ellipse-man2 {
+  position: absolute;
+  left: 22rem;
+  top: 26rem;
+}
+
+.hero-sec-two .ellipse-1 {
+  position: absolute;
+  right: 14rem;
+  top: 23rem;
+}
+.hero-sec-two .ellipse-2 {
+  position: absolute;
+  left: 18rem;
+  top: 8rem;
+}
+.hero-sec-two .ellipse-3 {
+  position: absolute;
+  left: 15rem;
+  top: 18rem;
+}
+
+.hero-sec-two .ellipse-4 {
+  position: absolute;
+  right: 12rem;
+  top: 12rem;
 }
 
 .hero-sec-three .hero-image {
