@@ -1,0 +1,381 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", serif;
+}
+
+ul,
+ol,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+/*----------------------- Header-style------------------------ */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5rem;
+}
+
+header img {
+  width: 16rem;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70rem;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 2.5rem 1rem;
+}
+
+header ul a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: black;
+  transition: 0.5s ease;
+}
+
+header ul a:hover {
+  color: #2f80ec;
+  font-weight: bolder;
+}
+
+.fa-solid {
+  padding-left: 0.8rem;
+}
+
+.Signup-btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 4rem;
+  background-color: #2f80ec;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.Signup-btn:hover {
+  background-color: black;
+  color: #ffffff;
+}
+
+.login-btn {
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  border: 1px solid #2f80ec;
+  border-radius: 4rem;
+  background-color: white;
+  color: #2f80ec;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.login-btn:hover {
+  background-color: #2f80ec;
+  color: white;
+}
+
+.header-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.header-dropdown-content {
+  position: absolute;
+  display: none;
+  top: 7rem;
+  left: -4rem;
+  width: 20rem;
+  background-color: #ffffff;
+  z-index: 5;
+  text-align: center;
+}
+
+.header-dropdown-content a {
+  display: block;
+  padding: 1rem;
+  border: 1px solid rgb(230, 230, 230);
+  transition: 0.5s ease;
+}
+
+.header-dropdown-content a:hover {
+  color: #ffffff;
+  background-color: black;
+  border-bottom: 1.2px solid #1590ff;
+}
+
+.header-dropdown:hover .header-dropdown-content {
+  display: block;
+}
+
+.menuContainer {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 2.5rem;
+}
+
+/*----------------------- Hero-style------------------------ */
+main {
+  position: relative;
+}
+
+main .hero-slide {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+main .hero-slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+.hero-sec-one {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: #d5e6fa;
+  height: 55rem;
+}
+.hero-sec-two {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  color: #ffffff;
+  background-color: #000000;
+  height: 55rem;
+}
+.hero-sec-three {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 55rem;
+  padding: 0 6rem;
+}
+
+.hero-sec-one article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 6.5rem;
+}
+
+.hero-sec-two article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 6rem;
+}
+
+.hero-sec-three article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.evolution-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+}
+
+.evolution-container p {
+  color: #2f80ec;
+  font-size: 1.3rem;
+}
+
+.hero-cta-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  width: 55rem;
+}
+
+.hero-cta-container h1 {
+  font-size: 3.2rem;
+}
+
+.hero-cta-container p {
+  font-size: 1.8rem;
+}
+
+.hero-cta-btn {
+  padding: 1rem 6rem;
+  font-size: 1.8rem;
+  border: 1px solid #2f80ec;
+  border-radius: 1rem;
+  background-color: black;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.hero-cta-btn:hover {
+  background-color: #2f80ec;
+  color: white;
+}
+
+.hero-sec-two .hero-cta-btn,
+.hero-sec-three .hero-cta-btn {
+  padding: 1rem 6rem;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #2f80ec;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.hero-cta-btn:hover {
+  background-color: #0a5ecd;
+  color: white;
+}
+
+.hero-user-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-user-container p {
+  font-size: 1.8rem;
+}
+
+.hero-user-container span {
+  color: #2f80ec;
+  font-weight: 500;
+}
+
+.hero-sec-one .hero-image-container,
+.hero-sec-two .hero-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.hero-sec-three .hero-image-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-blue-bg {
+  width: 65rem;
+  height: inherit;
+}
+
+.hero-sec-one .hero-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60rem;
+  height: inherit;
+}
+
+.hero-sec-two .hero-image {
+  position: absolute;
+  right: 12rem;
+  bottom: 0;
+  width: 32rem;
+  height: 43rem;
+}
+
+.hero-sec-two .eclipse {
+  position: absolute;
+  right: 8rem;
+  top: 0;
+  width: 5rem;
+}
+
+.hero-sec-two .ellipse-man1 {
+  position: absolute;
+  right: 26rem;
+  top: 5rem;
+}
+
+.hero-sec-two .ellipse-man2 {
+  position: absolute;
+  left: 22rem;
+  top: 26rem;
+}
+
+.hero-sec-two .ellipse-1 {
+  position: absolute;
+  right: 14rem;
+  top: 23rem;
+}
+.hero-sec-two .ellipse-2 {
+  position: absolute;
+  left: 18rem;
+  top: 8rem;
+}
+.hero-sec-two .ellipse-3 {
+  position: absolute;
+  left: 15rem;
+  top: 18rem;
+}
+
+.hero-sec-two .ellipse-4 {
+  position: absolute;
+  right: 12rem;
+  top: 12rem;
+}
+
+.hero-sec-three .hero-image {
+  width: 50rem;
+  height: 45rem;
+}
+
+main .heroslide-nav-container {
+  z-index: 5;
+  position: absolute;
+  display: flex;
+  top: 50rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main .heroslide-nav-container .heroslide-nav-btn {
+  background-color: rgba(98, 103, 134, 0.79);
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+main .heroslide-nav-container .heroslide-nav-btn.active {
+  background-color: navy;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
