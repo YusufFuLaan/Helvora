@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+input {
+  font-size: 1.3rem !important;
+
+  font-family: "Manrope", serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue: #2f80ec;
+
+  --font-size-14: 1.4rem;
+  --font-size-16: 1.6rem;
+  --font-size-18: 1.8rem;
+  --font-size-12: 1.2rem;
+  --font-size-36: 3.6rem;
+
+  --font-weight-500: 500;
+  --font-weigh-400: 400;
+}
+.text {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-500);
+}
+
+label {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weigh-400);
+}
+body {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+
+  background-color: grey;
+  margin: auto;
+}
+.whole-page {
+  width: 80vw;
+  margin: auto;
+  padding: 0.6rem 2.4rem;
+  background-color: #fff;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  color: var(--blue);
+  font-size: var(--font-size-36);
+}
+.form {
+  border: 1px solid grey;
+  padding: 1.5rem 2.4rem;
+  width: 100%;
+}
+.basic-information {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+.basic-information-main {
+  display: flex;
+  width: 100%;
+  gap: 5.3rem;
+}
+.first-input {
+  display: flex;
+  flex-direction: column;
+}
+.basic-information1 {
+  width: 50vw;
+}
+.first-input input {
+  width: 30vw;
+  padding: 0.8rem 3rem;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+  font-weight: var(--font-weigh-400);
+}
+.email input {
+  width: 34vw;
+  padding: 0.8rem 3rem;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+  font-weight: var(--font-weigh-400);
+}
+.email-section {
+  display: flex;
+  flex-direction: column;
+}
+.country-state {
+  display: flex;
+  margin-bottom: 3rem;
+  gap: 2.7rem;
+}
+.country {
+  display: flex;
+  flex-direction: column;
+}
+select {
+  width: 16vw;
+  border-radius: 0.8rem;
+  margin-top: 0.4rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid #ccc;
+}
+.drag-drop-area {
+  border: 1px solid #ccc;
+  border-radius: 0.8rem;
+
+  padding: 1rem 1.2rem;
+  margin-top: 0.9rem;
+  width: 34vw;
+}
+.file-upload {
+  border: 1px solid #ccc;
+  padding: 6rem 0;
+  border-radius: 0.8rem;
+
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.clinic-information-main {
+  margin-top: 3rem;
+}
+.clinic-information {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+}
+.first-row {
+  display: flex;
+  gap: 2rem;
+}
+.first-row input {
+  width: 35.7vw;
+  padding: 0.8rem 3rem;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+  font-weight: var(--font-weigh-400);
+}
+.second-row {
+  display: flex;
+  gap: 2rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.second-row input {
+  width: 17.1vw;
+  padding: 0.8rem 3rem;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+  font-weight: var(--font-weigh-400);
+}
+
+.form-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.form-section {
+  display: flex;
+  gap: 2rem;
+}
+.form-section input {
+  width: 17.1vw;
+  padding: 0.8rem 3rem;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+  font-weight: var(--font-weigh-400);
+}
+.button-container {
+  display: flex;
+  justify-content: end;
+  margin-top: 0.8rem;
+}
+.button {
+  padding: 0.8rem;
+  background-color: var(--blue);
+  border-radius: 0.8rem;
+  border: 1px solid transparent;
+  color: white;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  border-color: transparent;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input::placeholder {
+  font-size: 1.4rem;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}

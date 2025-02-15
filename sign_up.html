@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="for-image">
+        <img
+          src="Public/images/doctor.jpg"
+          alt="a doctor lady"
+          loading="lazy"
+        />
+      </section>
+
+      <section class="main-section">
+        <p class="going-to-previous-page">← Back</p>
+
+        <article class="create-account">Create an Account</article>
+        <article class="have-account">
+          Already have an account ? <a href="loginPage.html"> Log in</a>
+        </article>
+
+        <form id="form">
+          <article class="first-last-name">
+            <div class="first-name">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Enter first name"
+                required
+              />
+            </div>
+            <div class="last-name">
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Enter last name"
+              />
+            </div>
+          </article>
+
+          <div class="email">
+            <label for="email ">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter email"
+              required
+            />
+          </div>
+
+          <div class="password">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="Password"
+              name="Password"
+              placeholder="Enter password"
+              required
+            />
+          </div>
+
+          <div class="password">
+            <label for="confirm- password">Password</label>
+            <input
+              type="password"
+              id=" confirm-password"
+              name="confirm-password"
+              placeholder="Enter confirmed password"
+              required
+            />
+          </div>
+
+          <button id="button" type="submit">Create Amount</button>
+          <label for="agree">
+            <input type="checkbox" id="agree" name="agree" /> I agree to the
+            terms and conditions
+          </label>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
