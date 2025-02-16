@@ -154,6 +154,10 @@ input:focus::placeholder {
   border: 1px solid transparent;
   font-size: var(--font-size-14);
 }
+.continue-button a {
+  color: white;
+  text-decoration: none;
+}
 @media (max-width: 40rem) {
   .major-content {
     width: 100vw;
@@ -215,7 +219,8 @@ input:focus::placeholder {
   width: 64.4rem;
   margin: auto;
   display: flex;
-  height: 47rem;
+  gap: 1rem;
+  flex-direction: column;
 
   padding: 2rem;
 }
@@ -224,4 +229,8 @@ img {
 }
 .reduce-width {
   width: 57rem;
+}
+.padding-extra {
+  padding: 2rem 3rem !important;
+  height: 98vh;
 }

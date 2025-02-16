@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 html {
   font-size: 62.5%;
@@ -129,6 +130,9 @@ label {
   font-size: var(--font-size-14);
   font-weight: var(--font-weight-500);
 }
+.going-to-previous-page a {
+  color: white;
+}
 button {
   display: flex;
   justify-content: center;
@@ -137,7 +141,7 @@ button {
   background-color: var(--black);
   color: var(--white);
   padding: 1.6rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 2.45rem;
   border-radius: 0.7rem;
   font-size: var(--font-size-18);
   font-weight: var(--font-weigh-500);
@@ -145,13 +149,18 @@ button {
 input[type="checkbox"] {
   margin-bottom: 1rem;
 }
+.create a {
+  color: #000;
+}
+#button a {
+  color: white;
+}
 .checkbox-forgotpassword {
   display: flex;
   justify-content: space-between;
 }
 .black-link {
   color: black;
-  text-decoration: none;
   font-weight: 700;
 }
 .create-account-section {
@@ -174,6 +183,14 @@ input[type="checkbox"] {
 }
 .button-img {
   width: 3.7rem;
+}
+/* Prevent autofill styling */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #000;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 @media (max-width: 40rem) {
   main {

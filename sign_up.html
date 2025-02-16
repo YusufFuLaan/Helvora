@@ -27,8 +27,9 @@
         <p class="going-to-previous-page">← Back</p>
 
         <article class="create-account">Create an Account</article>
+        <article id="error-message"></article>
         <article class="have-account">
-          Already have an account ? <a href="loginPage.html"> Log in</a>
+          Already have an account ? <a href="login.html"> Log in</a>
         </article>
 
         <form id="form">
@@ -69,7 +70,7 @@
             <label for="password">Password</label>
             <input
               type="password"
-              id="Password"
+              id="password"
               name="Password"
               placeholder="Enter password"
               required
@@ -77,17 +78,17 @@
           </div>
 
           <div class="password">
-            <label for="confirm- password">Password</label>
+            <label for="confirm-password">Password</label>
             <input
               type="password"
-              id=" confirm-password"
+              id="confirm-password"
               name="confirm-password"
               placeholder="Enter confirmed password"
               required
             />
           </div>
 
-          <button id="button" type="submit">Create Amount</button>
+          <button id="button" type="submit">Create account</button>
           <label for="agree">
             <input type="checkbox" id="agree" name="agree" /> I agree to the
             terms and conditions
@@ -95,5 +96,6 @@
         </form>
       </section>
     </main>
+    <script src="signup_login.js"></script>
   </body>
 </html>

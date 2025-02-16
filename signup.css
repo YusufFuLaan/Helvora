@@ -33,22 +33,24 @@ main {
   display: flex;
   width: 80vw;
   margin: auto;
-  padding: 8rem 0;
+  height: 90vh;
+  padding: 6rem 0;
   color: var(--white);
 }
 img {
-  width: 56.15rem;
+  width: 53.15rem;
 }
 .for-image {
-  height: 20rem;
+  height: 125%;
 }
 .main-section {
-  width: 60vw;
+  width: 68vw;
   background-color: var(--blue);
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 3.4rem 5.5rem;
+  height: 115%;
+  padding: 1.45rem 5.5rem;
 }
 .going-to-previous-page {
   font-size: 1.6rem;
@@ -99,6 +101,16 @@ input[type="password"]:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
+#button a {
+  color: white;
+}
+.incorrect input {
+  color: red;
+  background-color: red;
+}
+form div.inc input::placeholder {
+  font-size: 1.4rem;
+}
 
 input::placeholder {
   font-size: 1.4rem;
@@ -119,7 +131,7 @@ label {
 button {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
   align-items: center;
   background-color: var(--black);
   color: var(--white);

@@ -26,7 +26,11 @@
         <div class="for-all-boxes">
           <article class="as-a">
             <article class="for-text">
-              <input type="radio" name="role" value="patient" />
+              <input
+                type="radio"
+                name="role"
+                value="patient_onboarding_screen"
+              />
 
               <p class="as-a-patient">As a patient</p>
             </article>
@@ -37,8 +41,13 @@
 
           <article class="as-a">
             <article class="for-text">
-              <input type="radio" name="role" value="doctor" />
-
+                <input
+                  type="radio"
+                  name="role"
+                  value="doctors_form"
+                  data-redirect-url="doctors_form"
+                />
+              </a>
               <article class="aligning-self">
                 <p class="as-a-patient">As a Doctor</p>
               </article>
@@ -51,7 +60,7 @@
 
           <article class="as-a">
             <article class="for-text">
-              <input type="radio" name="role" value="hospital admin" />
+              <input type="radio" name="role" value="" />
               <p class="as-a-patient">As a hospital admin</p>
             </article>
             <article class="for-image">
@@ -65,5 +74,6 @@
         </div>
       </section>
     </main>
+    <script src="register_as.js"></script>
   </body>
 </html>
