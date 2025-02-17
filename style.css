@@ -29,7 +29,7 @@ header {
   align-items: center;
   padding: 0.5rem 5rem;
   width: 100%;
-  z-index: 5;
+  z-index: 6;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
 }
@@ -149,10 +149,11 @@ header #menu {
   font-size: 3.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: #0a5ecd;
 }
 
 .fa-bars:hover {
-  color: #0a5ecd;
+  color: #000000;
 }
 
 /*----------------------- Hero-style------------------------ */
@@ -163,29 +164,25 @@ main {
 
 main .hero-slide {
   z-index: 2;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
-  clip-path: circle(0% at 0 50%);
+  /* clip-path: circle(0% at 0 50%); */
 }
 
-main .hero-slide.active {
+/* main .hero-slide.active {
   clip-path: circle(150% at 0 50%);
   transition: 2s;
   transition-property: clip-path;
-}
+} */
 
 .hero-sec-one {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   position: relative;
   background-color: #d5e6fa;
   height: 55rem;
 }
 .hero-sec-two {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   position: relative;
   color: #ffffff;
   background-color: #000000;
@@ -194,7 +191,6 @@ main .hero-slide.active {
 .hero-sec-three {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   height: 55rem;
   padding: 0 6rem;
 }
@@ -205,6 +201,7 @@ main .hero-slide.active {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 0 6.5rem;
+  width: 50vw;
 }
 
 .hero-sec-two article {
@@ -238,7 +235,7 @@ main .hero-slide.active {
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
-  width: 55rem;
+  width: 40vw;
 }
 
 .hero-cta-container h1 {
@@ -299,8 +296,6 @@ main .hero-slide.active {
 
 .hero-sec-one .hero-image-container,
 .hero-sec-two .hero-image-container {
-  display: flex;
-  flex-wrap: wrap;
   position: absolute;
   right: 0;
   height: 100%;
@@ -309,11 +304,12 @@ main .hero-slide.active {
 .hero-sec-three .hero-image-container {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .hero-blue-bg {
-  width: 65rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
   height: inherit;
 }
 
@@ -321,7 +317,7 @@ main .hero-slide.active {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 60rem;
+  width: 47vw;
   height: inherit;
 }
 
@@ -329,8 +325,13 @@ main .hero-slide.active {
   position: absolute;
   right: 12rem;
   bottom: 0;
-  width: 32rem;
+  width: 25vw;
   height: 43rem;
+}
+
+.hero-sec-three .hero-image {
+  width: 40vw;
+  height: 45rem;
 }
 
 .hero-sec-two .eclipse {
@@ -374,11 +375,6 @@ main .hero-slide.active {
   top: 12rem;
 }
 
-.hero-sec-three .hero-image {
-  width: 50rem;
-  height: 45rem;
-}
-
 main .heroslide-nav-container {
   z-index: 5;
   position: absolute;
@@ -407,7 +403,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
     position: absolute;
     top: 8rem;
     left: 0;
-    z-index: 6;
+    z-index: 8;
     display: flex;
     flex-direction: column;
     padding: 2rem 6rem;
