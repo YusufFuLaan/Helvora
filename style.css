@@ -64,7 +64,7 @@ header nav ul a {
   font-size: 1.8rem;
   font-weight: 500;
   color: black;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 header nav ul a:hover {
@@ -84,7 +84,7 @@ header nav ul a:hover {
   background-color: #2f80ec;
   color: #ffffff;
   cursor: pointer;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .Signup-btn:hover {
@@ -100,7 +100,7 @@ header nav ul a:hover {
   background-color: white;
   color: #2f80ec;
   cursor: pointer;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .login-btn:hover {
@@ -128,7 +128,7 @@ header nav ul a:hover {
   display: block;
   padding: 1rem;
   border: 1px solid rgb(230, 230, 230);
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .header-dropdown-content a:hover {
@@ -142,9 +142,10 @@ header nav ul a:hover {
 }
 
 .fa-bars {
-  display: none;
-  font-size: 3.5rem !important;
+  display: none !important;
+  font-size: 3.5rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .fa-bars:hover {
@@ -442,7 +443,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
     position: absolute;
     top: 8rem;
     left: 0;
-    z-index: 6;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     padding: 2rem 5.5rem;
