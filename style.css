@@ -23,41 +23,56 @@ a {
 
 /*----------------------- Header-style------------------------ */
 header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 5rem;
+  width: 100%;
+  z-index: 6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
 }
 
 header img {
   width: 16rem;
 }
 
-header ul {
+header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 70rem;
+  gap: 3rem;
 }
 
-header ul li {
+header nav ul {
+  display: flex;
+}
+
+header nav .header-btn-ctn {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header nav ul li {
   display: inline-block;
   padding: 2.5rem 1rem;
 }
 
-header ul a {
-  font-size: 1.6rem;
+header nav ul a {
+  font-size: 1.8rem;
   font-weight: 500;
   color: black;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-header ul a:hover {
+header nav ul a:hover {
   color: #2f80ec;
   font-weight: bolder;
 }
 
-.fa-solid {
+.fa-angle-down {
   padding-left: 0.8rem;
 }
 
@@ -69,7 +84,7 @@ header ul a:hover {
   background-color: #2f80ec;
   color: #ffffff;
   cursor: pointer;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .Signup-btn:hover {
@@ -85,7 +100,7 @@ header ul a:hover {
   background-color: white;
   color: #2f80ec;
   cursor: pointer;
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .login-btn:hover {
@@ -102,8 +117,8 @@ header ul a:hover {
   position: absolute;
   display: none;
   top: 7rem;
-  left: -4rem;
-  width: 20rem;
+  left: -6rem;
+  width: 22rem;
   background-color: #ffffff;
   z-index: 5;
   text-align: center;
@@ -113,7 +128,7 @@ header ul a:hover {
   display: block;
   padding: 1rem;
   border: 1px solid rgb(230, 230, 230);
-  transition: 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .header-dropdown-content a:hover {
@@ -126,17 +141,25 @@ header ul a:hover {
   display: block;
 }
 
-.menuContainer {
+header #menu {
   display: none;
 }
 
 .fa-bars {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #0a5ecd;
+}
+
+.fa-bars:hover {
+  color: #000000;
 }
 
 /*----------------------- Hero-style------------------------ */
 main {
   position: relative;
+  top: 8.2rem;
 }
 
 main .hero-slide {
@@ -154,16 +177,12 @@ main .hero-slide.active {
 
 .hero-sec-one {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   position: relative;
   background-color: #d5e6fa;
   height: 55rem;
 }
 .hero-sec-two {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   position: relative;
   color: #ffffff;
   background-color: #000000;
@@ -172,7 +191,6 @@ main .hero-slide.active {
 .hero-sec-three {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   height: 55rem;
   padding: 0 6rem;
 }
@@ -183,6 +201,7 @@ main .hero-slide.active {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 0 6.5rem;
+  width: 50vw;
 }
 
 .hero-sec-two article {
@@ -216,7 +235,7 @@ main .hero-slide.active {
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
-  width: 55rem;
+  width: 40vw;
 }
 
 .hero-cta-container h1 {
@@ -277,8 +296,6 @@ main .hero-slide.active {
 
 .hero-sec-one .hero-image-container,
 .hero-sec-two .hero-image-container {
-  display: flex;
-  flex-wrap: wrap;
   position: absolute;
   right: 0;
   height: 100%;
@@ -287,11 +304,12 @@ main .hero-slide.active {
 .hero-sec-three .hero-image-container {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .hero-blue-bg {
-  width: 65rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
   height: inherit;
 }
 
@@ -299,7 +317,7 @@ main .hero-slide.active {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 60rem;
+  width: 47vw;
   height: inherit;
 }
 
@@ -307,8 +325,13 @@ main .hero-slide.active {
   position: absolute;
   right: 12rem;
   bottom: 0;
-  width: 32rem;
+  width: 25vw;
   height: 43rem;
+}
+
+.hero-sec-three .hero-image {
+  width: 40vw;
+  height: 45rem;
 }
 
 .hero-sec-two .eclipse {
@@ -352,11 +375,6 @@ main .hero-slide.active {
   top: 12rem;
 }
 
-.hero-sec-three .hero-image {
-  width: 50rem;
-  height: 45rem;
-}
-
 main .heroslide-nav-container {
   z-index: 5;
   position: absolute;
@@ -378,4 +396,79 @@ main .heroslide-nav-container .heroslide-nav-btn {
 main .heroslide-nav-container .heroslide-nav-btn.active {
   background-color: navy;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 850px) {
+  header nav ul {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6rem;
+    width: 100%;
+    background-color: #2f80ec;
+    display: none;
+  }
+
+  header nav ul li {
+    padding: 1.5rem 0rem;
+  }
+
+  header nav ul a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+
+  header nav ul a:hover {
+    color: #000000;
+  }
+
+  header nav .header-btn-ctn {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  header #menu {
+    display: flex;
+  }
+
+  .header-links.show {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* clip-path: circle(60% at 0 50%); */
+  }
+
+  .header-dropdown {
+    order: 1;
+    width: 13rem;
+  }
+
+  .header-dropdown-content {
+    background-color: #2f80ec;
+    text-align: left;
+    top: 5rem;
+    left: 0rem;
+  }
+
+  .header-dropdown-content a {
+    padding: 1.5rem 1rem;
+    font-weight: 400;
+  }
+
+  .header-dropdown-content a:hover {
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 450px) {
+  button.Signup-btn,
+  button.login-btn {
+    display: none;
+  }
 }
