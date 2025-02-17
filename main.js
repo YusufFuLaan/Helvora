@@ -1,5 +1,4 @@
-document.querySelector(".fa-bars");
-addEventListener("click", function () {
+document.querySelector("#menu").addEventListener("click", function () {
   const menuLinks = document.querySelector(".header-links");
   const icon = document.querySelector(".fa-bars");
   menuLinks.classList.toggle("show");
@@ -10,7 +9,7 @@ let heroSlide = document.querySelectorAll(".hero-slide");
 let heroSlideBtns = document.querySelectorAll(".heroslide-nav-btn");
 let currentSlide = 1;
 
-//js for manual nav
+//hero manual slide
 let manualNav = function (manual) {
   heroSlide.forEach((slide) => {
     slide.classList.remove("active");
@@ -31,7 +30,7 @@ heroSlideBtns.forEach((btn, i) => {
   });
 });
 
-//Js for autoplay nav
+//hero autoplay slide
 let repeat = function (activeClass) {
   let active = document.getElementsByClassName("active");
   let i = 1;
