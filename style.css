@@ -23,41 +23,53 @@ a {
 
 /*----------------------- Header-style------------------------ */
 header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 5rem;
+  width: 100%;
 }
 
 header img {
   width: 16rem;
 }
 
-header ul {
+header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 70rem;
+  gap: 3rem;
 }
 
-header ul li {
+header nav ul {
+  display: flex;
+}
+
+header nav .header-btn-ctn {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header nav ul li {
   display: inline-block;
   padding: 2.5rem 1rem;
 }
 
-header ul a {
-  font-size: 1.6rem;
+header nav ul a {
+  font-size: 1.8rem;
   font-weight: 500;
   color: black;
   transition: 0.5s ease;
 }
 
-header ul a:hover {
+header nav ul a:hover {
   color: #2f80ec;
   font-weight: bolder;
 }
 
-.fa-solid {
+.fa-angle-down {
   padding-left: 0.8rem;
 }
 
@@ -102,8 +114,8 @@ header ul a:hover {
   position: absolute;
   display: none;
   top: 7rem;
-  left: -4rem;
-  width: 20rem;
+  left: -6rem;
+  width: 22rem;
   background-color: #ffffff;
   z-index: 5;
   text-align: center;
@@ -126,12 +138,14 @@ header ul a:hover {
   display: block;
 }
 
-.menuContainer {
+.fa-bars {
   display: none;
+  font-size: 3.5rem !important;
+  cursor: pointer;
 }
 
-.fa-bars {
-  font-size: 2.5rem;
+.fa-bars:hover {
+  color: #0a5ecd;
 }
 
 /*----------------------- Hero-style------------------------ */
@@ -378,4 +392,44 @@ main .heroslide-nav-container .heroslide-nav-btn {
 main .heroslide-nav-container .heroslide-nav-btn.active {
   background-color: navy;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 850px) {
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header nav .header-btn-ctn {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header nav .header-btn-ctn button {
+    display: none;
+  }
 }
