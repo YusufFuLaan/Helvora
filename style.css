@@ -29,6 +29,9 @@ header {
   align-items: center;
   padding: 0.5rem 5rem;
   width: 100%;
+  z-index: 5;
+  box-shadow: 2px 5px 10px;
+  background-color: #ffffff;
 }
 
 header img {
@@ -151,6 +154,7 @@ header nav ul a:hover {
 /*----------------------- Hero-style------------------------ */
 main {
   position: relative;
+  top: 8.2rem;
 }
 
 main .hero-slide {
@@ -395,15 +399,24 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 }
 
 @media (max-width: 850px) {
-  header nav {
+  header nav ul {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    z-index: 6;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 3rem;
+    flex-direction: column;
+    padding: 2rem 5.5rem;
+    width: 100%;
+    background-color: #2f80ec;
+    display: none;
   }
 
-  header nav ul {
-    display: none;
+  header nav ul a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ffffff;
+    transition: 0.5s ease;
   }
 
   header nav .header-btn-ctn {
@@ -426,6 +439,15 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   }
 
   header nav ul {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5.5rem;
+    width: 100%;
+    background-color: #2f80ec;
     display: none;
   }
 
