@@ -164,16 +164,16 @@ main {
 
 main .hero-slide {
   z-index: 2;
-  /* position: absolute; */
+  position: absolute;
   width: 100%;
-  /* clip-path: circle(0% at 0 50%); */
+  clip-path: circle(0% at 0 50%);
 }
 
-/* main .hero-slide.active {
+main .hero-slide.active {
   clip-path: circle(150% at 0 50%);
   transition: 2s;
   transition-property: clip-path;
-} */
+}
 
 .hero-sec-one {
   display: flex;
@@ -424,7 +424,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   }
 
   header nav ul a:hover {
-    color: navy;
+    color: #000000;
   }
 
   header nav .header-btn-ctn {
