@@ -406,7 +406,9 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5rem 0;
+  padding: 5rem 2rem;
+  overflow: scroll;
+  overflow-y: hidden;
 }
 
 .services-sec-container .services-container {
@@ -417,8 +419,9 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   text-align: center;
   gap: 3rem;
   height: 29rem;
-  width: 26.5rem;
+  min-width: 26.5rem;
   padding: 0 2rem;
+  margin: 0 2rem;
   border-radius: 2rem;
   background-color: #f1f1f1;
 }
