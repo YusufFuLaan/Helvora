@@ -27,7 +27,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 5rem;
+  padding: 0.5rem 4rem;
   width: 100%;
   z-index: 6;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -192,31 +192,28 @@ main .hero-slide.active {
   display: flex;
   justify-content: space-between;
   height: 55rem;
-  padding: 0 6rem;
+  padding: 0 5rem;
 }
 
 .hero-sec-one article {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 0 6.5rem;
-  width: 50vw;
+  padding: 0 5rem;
 }
 
 .hero-sec-two article {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 0 6rem;
+  padding: 0 5rem;
 }
 
 .hero-sec-three article {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  flex-wrap: wrap;
+  width: 22rem;
 }
 
 .evolution-container {
@@ -224,6 +221,7 @@ main .hero-slide.active {
   align-items: center;
   gap: 1rem;
   font-weight: 500;
+  z-index: 1;
 }
 
 .evolution-container p {
@@ -285,6 +283,10 @@ main .hero-slide.active {
   align-items: center;
 }
 
+.hero-users {
+  width: 15rem;
+}
+
 .hero-user-container p {
   font-size: 1.8rem;
 }
@@ -318,7 +320,7 @@ main .hero-slide.active {
   right: 0;
   bottom: 0;
   width: 47vw;
-  height: inherit;
+  height: 45vw;
 }
 
 .hero-sec-two .hero-image {
@@ -326,12 +328,12 @@ main .hero-slide.active {
   right: 12rem;
   bottom: 0;
   width: 25vw;
-  height: 43rem;
+  height: 34vw;
 }
 
 .hero-sec-three .hero-image {
-  width: 40vw;
-  height: 45rem;
+  width: 38vw;
+  height: 35vw;
 }
 
 .hero-sec-two .eclipse {
@@ -399,6 +401,10 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 }
 
 @media (max-width: 850px) {
+  html {
+    font-size: 52%;
+  }
+
   header nav ul {
     position: absolute;
     top: 8rem;
@@ -464,9 +470,32 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   .header-dropdown-content a:hover {
     font-weight: 400;
   }
+
+  .hero-sec-one .hero-image {
+    height: 47rem;
+  }
+
+  .hero-sec-two .hero-image {
+    right: 0;
+    width: 40vw;
+    height: 43rem;
+  }
+
+  .hero-sec-three .hero-image {
+    width: 40vw;
+    height: 45vw;
+  }
+
+  .eclipse {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+
   button.Signup-btn,
   button.login-btn {
     display: none;
