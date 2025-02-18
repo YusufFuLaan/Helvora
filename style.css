@@ -493,7 +493,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 
 @media (max-width: 450px) {
   html {
-    font-size: 30%;
+    font-size: 45%;
   }
 
   .evolution-container img {
@@ -502,6 +502,14 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   .evolution-container p {
     color: #2f80ec;
     font-size: 1rem;
+  }
+
+  .hero-cta-container h1 {
+    font-size: 2rem;
+  }
+
+  .hero-cta-container p {
+    font-size: 1.5rem;
   }
 
   button.Signup-btn,
@@ -514,11 +522,11 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   }
 
   .hero-sec-one .hero-image {
-    height: 40rem;
+    height: 35rem;
   }
 
   .hero-sec-two .hero-image {
-    height: 42rem;
+    height: 35rem;
   }
 
   .hero-sec-three .hero-image {
@@ -528,15 +536,19 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 
 @media (max-width: 390px) {
   html {
-    font-size: 28%;
+    font-size: 40%;
+  }
+
+  .hero-cta-container h1 {
+    font-size: 2rem;
   }
 
   .hero-sec-one .hero-image {
-    height: 45rem;
+    height: 40rem;
   }
 
   .hero-sec-two .hero-image {
-    height: 45rem;
+    height: 35rem;
   }
 
   .hero-sec-three .hero-image {
@@ -546,7 +558,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 
 @media (max-width: 326px) {
   html {
-    font-size: 25%;
+    font-size: 35%;
   }
 
   .hero-sec-one .hero-image {
@@ -554,7 +566,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   }
 
   .hero-sec-two .hero-image {
-    height: 45rem;
+    height: 35rem;
   }
 
   .hero-sec-three .hero-image {
