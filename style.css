@@ -493,11 +493,71 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 
 @media (max-width: 450px) {
   html {
-    font-size: 45%;
+    font-size: 34%;
+  }
+
+  .evolution-container img {
+    width: 5rem;
+  }
+  .evolution-container p {
+    color: #2f80ec;
+    font-size: 1rem;
   }
 
   button.Signup-btn,
   button.login-btn {
     display: none;
+  }
+
+  .hero-users {
+    width: 12rem;
+  }
+
+  .hero-sec-one .hero-image {
+    height: 40rem;
+  }
+
+  .hero-sec-two .hero-image {
+    height: 42rem;
+  }
+
+  .hero-sec-three .hero-image {
+    height: 35vw;
+  }
+}
+
+@media (max-width: 390px) {
+  html {
+    font-size: 29%;
+  }
+
+  .hero-sec-one .hero-image {
+    height: 45rem;
+  }
+
+  .hero-sec-two .hero-image {
+    height: 45rem;
+  }
+
+  .hero-sec-three .hero-image {
+    height: 35vw;
+  }
+}
+
+@media (max-width: 326px) {
+  html {
+    font-size: 25%;
+  }
+
+  .hero-sec-one .hero-image {
+    height: 40rem;
+  }
+
+  .hero-sec-two .hero-image {
+    height: 45rem;
+  }
+
+  .hero-sec-three .hero-image {
+    height: 35vw;
   }
 }
