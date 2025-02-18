@@ -449,9 +449,10 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 
 .specialist-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  gap: 6rem;
   padding: 8rem;
 }
 
@@ -473,23 +474,26 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   line-height: 1.8;
 }
 
-.specialist-section > article > p > a {
+.specialist-section .specialist-cta-btn {
+  padding: 1.2rem 8rem;
   font-size: 1.8rem;
-  padding: 1.6rem 2.4rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 1rem;
   background-color: #2f80ec;
   color: #ffffff;
-  border-radius: 0.8rem;
+  cursor: pointer;
   transition: 0.5s ease;
 }
 
-.specialist-section > article > p > a:hover {
-  background-color: #3b4e68;
-  cursor: pointer;
+.specialist-cta-btn:hover {
+  background-color: #0a5ecd;
+  color: white;
 }
 
 .specialist-section > div {
-  height: 42rem;
-  width: 45rem;
+  height: 41.5rem;
+  width: 55rem;
 }
 
 .specialist-section > div > img {
