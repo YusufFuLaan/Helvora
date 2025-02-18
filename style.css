@@ -408,7 +408,12 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   align-items: center;
   padding: 5rem 2rem;
   overflow: scroll;
-  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.services-sec-container::-webkit-scrollbar {
+  display: none;
 }
 
 .services-sec-container .services-container {
@@ -440,6 +445,57 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 .services-sec-container .services-container p {
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+.specialist-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8rem;
+  background-color: #dbf6ff;
+}
+
+.specialist-section > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30rem;
+  width: 45rem;
+  line-height: 1.5;
+}
+
+.specialist-section > article > h1 {
+  font-size: 4.5rem;
+}
+
+.specialist-section > article > p {
+  font-size: 1.6rem;
+}
+
+.specialist-section > article > p > a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 1rem;
+  width: 20rem;
+  background-color: #1590ff;
+  color: #ffffff;
+  transition: 0.5s ease;
+}
+
+.specialist-section > article > p > a:hover {
+  background-color: #3b4e68;
+  cursor: pointer;
+}
+
+.specialist-section > div {
+  height: 42rem;
+  width: 45rem;
+}
+
+.specialist-section > div > img {
+  height: 100%;
+  width: 100%;
 }
 
 @media (max-width: 850px) {
