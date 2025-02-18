@@ -493,7 +493,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 
 @media (max-width: 450px) {
   html {
-    font-size: 33%;
+    font-size: 30%;
   }
 
   .evolution-container img {
