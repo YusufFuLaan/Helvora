@@ -447,15 +447,24 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   font-weight: 300;
 }
 
-.specialist-section {
+/*----------------------- services-sec-style------------------------ */
+
+.specialist-section,
+.consultation-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+  gap: 6rem;
   padding: 8rem;
 }
 
-.specialist-section > article {
+.consultation-section {
+  flex-wrap: wrap;
+}
+
+.specialist-section > article,
+.consultation-section > article {
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -463,36 +472,45 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   line-height: 1.5;
 }
 
-.specialist-section > article > h1 {
+.specialist-section > article > h1,
+.consultation-section > article > h1 {
   font-size: 2.5rem;
 }
 
-.specialist-section > article > p {
+.specialist-section > article > p,
+.consultation-section > article > p {
   font-size: 1.8rem;
   text-align: justify;
   line-height: 1.8;
 }
 
-.specialist-section > article > p > a {
+.specialist-section .specialist-cta-btn,
+.consultation-section .consultation-cta-btn {
+  padding: 1.2rem 8rem;
   font-size: 1.8rem;
-  padding: 1.6rem 2.4rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 1rem;
   background-color: #2f80ec;
   color: #ffffff;
-  border-radius: 0.8rem;
+  cursor: pointer;
   transition: 0.5s ease;
 }
 
-.specialist-section > article > p > a:hover {
-  background-color: #3b4e68;
-  cursor: pointer;
+.specialist-cta-btn:hover,
+.consultation-cta-btn:hover {
+  background-color: #0a5ecd;
+  color: white;
 }
 
-.specialist-section > div {
-  height: 42rem;
-  width: 45rem;
+.specialist-section > div,
+.consultation-section > div {
+  height: 41.5rem;
+  width: 55rem;
 }
 
-.specialist-section > div > img {
+.specialist-section > div > img,
+.consultation-section > div > img {
   height: 100%;
   width: 100%;
 }
