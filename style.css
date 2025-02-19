@@ -407,7 +407,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   flex-direction: column;
   align-items: center;
   gap: 5rem;
-  padding: 5rem 2rem;
+  padding: 8rem 2rem;
 }
 
 .services-sec-container h1 {
@@ -421,7 +421,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  width: 90%;
+  width: 100%;
 }
 
 .services-container::-webkit-scrollbar {
@@ -610,6 +610,58 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   font-weight: 400;
   text-align: center;
   line-height: 1.5;
+}
+
+/*----------------------- News-sec-style------------------------ */
+.news-sec-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+  padding: 8rem 2rem;
+}
+
+.news-sec-container h1 {
+  font-size: 3.2rem;
+}
+
+.news-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.news-container::-webkit-scrollbar {
+  display: none;
+}
+
+.news-container .news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  height: 48rem;
+  min-width: 33rem;
+  margin: 0 2rem;
+  border-radius: 2rem;
+}
+
+.news-container .news img {
+  width: 33rem;
+  height: 26rem;
+}
+
+.news-container .news h1 {
+  font-size: 2rem;
+}
+
+.news-container .news p {
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 /*-----------------------Responsiveness-style------------------------ */
 
