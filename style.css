@@ -771,6 +771,57 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   width: 100%;
 }
 
+/*----------------------- Testimonial-sec-style------------------------ */
+
+.Testimonials-sec-ctn {
+  padding-top: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.Testimonials-sec-ctn > h1 {
+  font-size: 3.2rem;
+}
+
+.Testimonials-sec-ctn .user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  padding-bottom: 3rem;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.Testimonials-sec-ctn .user-container .user {
+  line-height: 2;
+}
+
+.user .user-name {
+  font-size: 2rem;
+}
+
+.user .user-service {
+  font-size: 1.6rem;
+}
+
+.user .rating {
+  font-size: 1.6rem;
+}
+
+.Testimonials-sec-ctn .testimony {
+  width: 70rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.fa-star {
+  color: #fccf18;
+}
+
 /*-----------------------Responsiveness-style------------------------ */
 
 @media (max-width: 850px) {
