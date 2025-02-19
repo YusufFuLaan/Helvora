@@ -447,7 +447,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   font-weight: 300;
 }
 
-/*----------------------- services-sec-style------------------------ */
+/*----------------------- specialist & consultation-sec-style------------------------ */
 
 .specialist-section,
 .consultation-section {
@@ -514,6 +514,10 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   height: 100%;
   width: 100%;
 }
+
+/*----------------------- map-sec-style------------------------ */
+
+/*-----------------------Responsiveness-style------------------------ */
 
 @media (max-width: 850px) {
   html {
