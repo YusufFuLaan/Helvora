@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="main_dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="grid-container">
+      <section class="header">
+        <section class="small-screen-display">
+          <article class="small-logo">
+            <p class="helvora">Helvora</p>
+          </article>
+          <nav class="small-screen-type">
+            <ul id="side-menu">
+              <p>
+                Helvora
+                <img src="assets/close_menu.svg" alt="" id="drop_down" />
+              </p>
+              <li><img src="assets/dashboard.svg" alt="" /> Dashboard</li>
+              <li>
+                <img src="assets/find_a_doctor.svg" alt="" />Find A Doctor
+              </li>
+              <li><img src="assets/appointments.svg" alt="" /> Appointments</li>
+              <li>
+                <img src="assets/medical_records.svg" alt="" /> Medical Records
+              </li>
+              <li>
+                <img src="assets/messages.svg" class="" alt="" /> Messages
+              </li>
+              <li class="last"></li>
+              <li id="extra-work">
+                <img src="assets/help_center.svg" alt="" />Help Centre
+              </li>
+              <li><img src="assets/settings.svg" alt="" />Settings</li>
+            </ul>
+
+            <i class="fa-solid fa-bars" id="fa-bars"></i>
+            <img src="assets/drop_down_menu.svg" id="image" alt="" />
+          </nav>
+        </section>
+
+        <article class="top-logos">
+          <form action="/search" method="GET">
+            <div class="search-container">
+              <input
+                type="search"
+                class="search-input"
+                placeholder="Search for doctors "
+                aria-label="Search for doctors"
+                name="query"
+              />
+              <svg
+                class="search-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+          </form>
+
+          <article class="filter">
+            <li><img src="assets/filter.svg" alt="" /> Filter</li>
+          </article>
+          <article class="for-filter-user-value-notification">
+            <article class="rounded-bordeer">
+              <img src="assets/notification.svg" alt="" />
+            </article>
+
+            <article class="user-profile">
+              <li><img src="assets/user_dp.svg" alt="" /> Annabel</li>
+            </article>
+          </article>
+        </article>
+        <section class="go-to-Homepage">
+          <p><a href="">Go to Homepage</a></p>
+        </section>
+      </section>
+      <section class="side-bar">
+        <article class="logo">
+          <p>Helvora</p>
+        </article>
+        <nav class="otherpages">
+          <ul class="links">
+            <li><img src="assets/dashboard.svg" alt="" /> Dashboard</li>
+            <li>
+              <img
+                src="assets/find_a_doctor.svg"
+                alt=""
+                class="find-doctor"
+              />Find A Doctor
+            </li>
+            <li><img src="assets/appointments.svg" alt="" /> Appointments</li>
+            <li>
+              <img src="assets/medical_records.svg" alt="" /> Medical Records
+            </li>
+            <li><img src="assets/messages.svg" alt="" /> Messages</li>
+          </ul>
+        </nav>
+
+        <ul class="help-settings">
+          <li><img src="assets/help_center.svg" alt="" />Help Centre</li>
+          <li><img src="assets/settings.svg" alt="" />Settings</li>
+        </ul>
+      </section>
+      <section class="main-content">
+        <!-- Add this inside the <section class="main-content"> -->
+        <section class="main-content">
+          <article id="dashboard-content" class="content-section">
+            <!-- Dashboard Content -->
+            <h2>Dashboard</h2>
+            <p>Welcome to your dashboard!</p>
+          </article>
+          <article id="find-a-doctor-content" class="content-section">
+            <h2>Find A Doctor</h2>
+            <p>Search for doctors here...</p>
+          </article>
+
+          <article id="appointments-content" class="content-section">
+            <!-- Appointments Content -->
+            <h2>Appointments</h2>
+            <p>Your appointments will appear here...</p>
+          </article>
+
+          <article id="medical-records-content" class="content-section">
+            <!-- Medical Records Content -->
+            <h2>Medical Records</h2>
+            <p>Your medical records will appear here...</p>
+          </article>
+
+          <article id="messages-content" class="content-section">
+            <!-- Messages Content -->
+            <h2>Messages</h2>
+            <p>Your messages will appear here...</p>
+          </article>
+        </section>
+      </section>
+    </main>
+    <script src="patient_dashboard1.js"></script>
+    <script src="patient_dashboard2.js"></script>
+  </body>
+</html>
