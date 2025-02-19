@@ -158,7 +158,52 @@ header #menu {
 
 /*----------------------- main-style------------------------ */
 main {
-  padding-top: 8.5rem;
+  padding-top: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+main > h1 {
+  font-size: 3.2rem;
+}
+
+main > p {
+  font-size: 1.8rem;
+}
+
+main .user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  padding-bottom: 3rem;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+main .user-container .user {
+  line-height: 2;
+}
+
+.user .user-name {
+  font-size: 2rem;
+}
+
+.user .user-service {
+  font-size: 1.6rem;
+}
+
+.user .rating {
+  font-size: 1.6rem;
+}
+
+main .testimony {
+  width: 70rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2;
 }
 
 .fa-star {
