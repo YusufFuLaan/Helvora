@@ -515,8 +515,90 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   width: 100%;
 }
 
-/*----------------------- map-sec-style------------------------ */
+/*----------------------- step-sec-style------------------------ */
+.step-section-ctn {
+  display: flex;
+  gap: 8rem;
+  background-color: #000000;
+  margin: 0 10rem;
+  padding: 3rem 4rem;
+  height: 60rem;
+  border-radius: 2rem;
+}
 
+.step-section-ctn article {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  word-spacing: 1rem;
+  gap: 1.5rem;
+}
+
+.step-section-ctn article h2 {
+  font-size: 1.8rem;
+  color: #2f80ec;
+}
+
+.step-section-ctn article h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.step-section-ctn article p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2;
+  color: #ffffff;
+}
+
+.step-section-ctn article .step-section-btn {
+  padding: 1rem 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 1rem;
+  background-color: #2f80ec;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.step-section-ctn article .step-section-btn:hover {
+  background-color: #0a5ecd;
+  color: white;
+}
+
+.step-section-ctn .steps-container {
+  display: flex;
+  align-items: center;
+  /* gap: 1rem; */
+  flex-wrap: wrap;
+  width: 70rem;
+}
+
+.step-section-ctn .steps {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 23rem;
+  padding: 1.5rem;
+  margin-right: 8rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+.step-section-ctn .steps img {
+  width: 6rem;
+  padding: 2rem;
+  background-color: #f1f1f1;
+  border-radius: 1rem;
+}
+.step-section-ctn .steps p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+}
 /*-----------------------Responsiveness-style------------------------ */
 
 @media (max-width: 850px) {
