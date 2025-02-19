@@ -381,7 +381,7 @@ main .heroslide-nav-container {
   z-index: 5;
   position: absolute;
   display: flex;
-  top: 50rem;
+  top: 60rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -665,6 +665,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   font-weight: 300;
   text-align: justify;
 }
+
 .news-container .news .news-section-btn {
   background-color: #d4edda;
   border: none;
@@ -673,6 +674,101 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   font-size: 1.4rem;
   font-weight: 500;
 }
+
+/*----------------------- Donate-sec-style------------------------ */
+
+.donate-sec-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 4rem;
+}
+
+.donate-sec-container > h1 {
+  font-size: 3.2rem;
+}
+
+.donate-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 6rem;
+}
+
+.donate-section > article {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 57rem;
+  line-height: 1.5;
+}
+
+.donate-section > article > p {
+  font-size: 1.8rem;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.why-container {
+  line-height: 3;
+}
+
+.why-container > h3 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.why-container ul > li {
+  font-size: 1.6rem;
+}
+
+.why-container ul > li:before {
+  content: "\2022";
+  font-size: 60px;
+  vertical-align: middle;
+  padding-right: 1rem;
+  line-height: 20px;
+  color: green;
+}
+
+.why-container p {
+  font-size: 1.6rem;
+}
+
+.fa-droplet {
+  padding-right: 1rem;
+}
+
+.donate-section .donate-cta-btn {
+  padding: 1.2rem 8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 1rem;
+  background-color: #2f80ec;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.donate-cta-btn:hover {
+  background-color: #0a5ecd;
+  color: white;
+}
+
+.donate-section > div {
+  height: 46rem;
+  width: 44rem;
+}
+
+.donate-section > div > img {
+  height: 100%;
+  width: 100%;
+}
+
 /*-----------------------Responsiveness-style------------------------ */
 
 @media (max-width: 850px) {
