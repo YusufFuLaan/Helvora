@@ -530,6 +530,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 /*----------------------- step-sec-style------------------------ */
 .step-section-ctn {
   display: flex;
+  flex-wrap: wrap;
   gap: 8rem;
   background-color: #000000;
   margin: 0 10rem;
@@ -586,7 +587,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   align-items: center;
   /* gap: 1rem; */
   flex-wrap: wrap;
-  width: 70rem;
+  width: 60rem;
 }
 
 .step-section-ctn .steps {
@@ -595,7 +596,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   gap: 1rem;
   width: 23rem;
   padding: 1.5rem;
-  margin-right: 8rem;
+  margin-right: 7rem;
   background-color: #ffffff;
   border-radius: 1rem;
 }
@@ -644,7 +645,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  height: 48rem;
+  height: 52rem;
   min-width: 33rem;
   margin: 0 2rem;
   border-radius: 2rem;
@@ -662,6 +663,15 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 .news-container .news p {
   font-size: 1.6rem;
   font-weight: 300;
+  text-align: justify;
+}
+.news-container .news .news-section-btn {
+  background-color: #d4edda;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 /*-----------------------Responsiveness-style------------------------ */
 
