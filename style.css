@@ -404,19 +404,31 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 .services-sec-container {
   margin-top: 55rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  padding: 8rem 2rem;
+}
+
+.services-sec-container h1 {
+  font-size: 3.2rem;
+}
+
+.services-container {
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5rem 2rem;
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  width: 100%;
 }
 
-.services-sec-container::-webkit-scrollbar {
+.services-container::-webkit-scrollbar {
   display: none;
 }
 
-.services-sec-container .services-container {
+.services-container .services {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -431,23 +443,23 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   background-color: #f1f1f1;
 }
 
-.services-sec-container .services-container img {
+.services-container .services img {
   width: 6rem;
   background-color: #ffffff;
   border-radius: 50%;
   padding: 1rem;
 }
 
-.services-sec-container .services-container h1 {
+.services-container .services h1 {
   font-size: 2rem;
 }
 
-.services-sec-container .services-container p {
+.services-container .services p {
   font-size: 1.6rem;
   font-weight: 300;
 }
 
-/*----------------------- services-sec-style------------------------ */
+/*----------------------- specialist & consultation-sec-style------------------------ */
 
 .specialist-section,
 .consultation-section {
@@ -514,6 +526,144 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   height: 100%;
   width: 100%;
 }
+
+/*----------------------- step-sec-style------------------------ */
+.step-section-ctn {
+  display: flex;
+  gap: 8rem;
+  background-color: #000000;
+  margin: 0 10rem;
+  padding: 3rem 4rem;
+  height: 60rem;
+  border-radius: 2rem;
+}
+
+.step-section-ctn article {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  word-spacing: 1rem;
+  gap: 1.5rem;
+}
+
+.step-section-ctn article h2 {
+  font-size: 1.8rem;
+  color: #2f80ec;
+}
+
+.step-section-ctn article h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.step-section-ctn article p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2;
+  color: #ffffff;
+}
+
+.step-section-ctn article .step-section-btn {
+  padding: 1rem 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 1rem;
+  background-color: #2f80ec;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.step-section-ctn article .step-section-btn:hover {
+  background-color: #0a5ecd;
+  color: white;
+}
+
+.step-section-ctn .steps-container {
+  display: flex;
+  align-items: center;
+  /* gap: 1rem; */
+  flex-wrap: wrap;
+  width: 70rem;
+}
+
+.step-section-ctn .steps {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 23rem;
+  padding: 1.5rem;
+  margin-right: 8rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+.step-section-ctn .steps img {
+  width: 6rem;
+  padding: 2rem;
+  background-color: #f1f1f1;
+  border-radius: 1rem;
+}
+.step-section-ctn .steps p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/*----------------------- News-sec-style------------------------ */
+.news-sec-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+  padding: 8rem 2rem;
+}
+
+.news-sec-container h1 {
+  font-size: 3.2rem;
+}
+
+.news-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.news-container::-webkit-scrollbar {
+  display: none;
+}
+
+.news-container .news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  height: 48rem;
+  min-width: 33rem;
+  margin: 0 2rem;
+  border-radius: 2rem;
+}
+
+.news-container .news img {
+  width: 33rem;
+  height: 26rem;
+}
+
+.news-container .news h1 {
+  font-size: 2rem;
+}
+
+.news-container .news p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+/*-----------------------Responsiveness-style------------------------ */
 
 @media (max-width: 850px) {
   html {
