@@ -683,7 +683,8 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  padding: 4rem;
+  padding: 6rem;
+  background-color: rgb(254, 246, 235);
 }
 
 .donate-sec-container > h1 {
@@ -692,17 +693,18 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 
 .donate-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap-reverse;
-  gap: 6rem;
+  width: 100%;
+  gap: 4rem;
 }
 
 .donate-section > article {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  width: 57rem;
+  width: 58rem;
   line-height: 1.5;
 }
 
@@ -760,8 +762,8 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 }
 
 .donate-section > div {
-  height: 46rem;
-  width: 44rem;
+  height: 44rem;
+  width: 40rem;
 }
 
 .donate-section > div > img {
