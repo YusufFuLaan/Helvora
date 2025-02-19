@@ -64,9 +64,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Role-based redirection
     if (user.role === "patient") {
       window.location.href = "patient_dashboard.html";
+      body.classList.add.backgroundColor = "red";
     } else if (user.role === "doctor") {
       if (user.role === "doctors_form") {
         window.location.href = "sign_up.html";
+        body.classList.add.backgroundColor = "blue";
+
         return;
       }
       window.location.href = "sign_up.html";
