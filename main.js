@@ -69,15 +69,15 @@ let currentsSlide = 1;
 //Testimonial manual slide
 let manualTestimonialNav = function (manualTestimonial) {
   testimonialSlide.forEach((slide) => {
-    slide.classList.remove("active");
+    slide.classList.remove("tes-active");
 
     testimonialSlideBtns.forEach((btn) => {
-      btn.classList.remove("active");
+      btn.classList.remove("tes-active");
     });
   });
 
-  testimonialSlide[manualTestimonial].classList.add("active");
-  testimonialSlideBtns[manualTestimonial].classList.add("active");
+  testimonialSlide[manualTestimonial].classList.add("tes-active");
+  testimonialSlideBtns[manualTestimonial].classList.add("tes-active");
 };
 
 testimonialSlideBtns.forEach((btn, i) => {
@@ -87,19 +87,19 @@ testimonialSlideBtns.forEach((btn, i) => {
   });
 });
 
-//testimonial autoplay slide
+// testimonial autoplay slide
 let repeats = function (activeClass) {
-  let active = document.getElementsByClassName("active");
+  let active = document.getElementsByClassName("tes-active");
   let i = 1;
 
   let repeaters = () => {
     setTimeout(function () {
       [...active].forEach((activeSlide) => {
-        activeSlide.classList.remove("active");
+        activeSlide.classList.remove("tes-active");
       });
 
-      testimonialSlide[i].classList.add("active");
-      testimonialSlideBtns[i].classList.add("active");
+      testimonialSlide[i].classList.add("tes-active");
+      testimonialSlideBtns[i].classList.add("tes-active");
       i++;
 
       if (testimonialSlide.length == i) {

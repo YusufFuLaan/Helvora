@@ -803,7 +803,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   clip-path: circle(0% at 0 50%);
 }
 
-.Testimonials-sec-ctn .testimonial-slide.active {
+.Testimonials-sec-ctn .testimonial-slide.tes-active {
   clip-path: circle(150% at 0 50%);
   transition: 2s;
   transition-property: clip-path;
@@ -855,7 +855,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   cursor: pointer;
 }
 
-.testimonial-nav-container .testimonial-nav-btn.active {
+.testimonial-nav-container .testimonial-nav-btn.tes-active {
   background-color: navy;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
