@@ -774,7 +774,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 /*----------------------- Testimonial-sec-style------------------------ */
 
 .Testimonials-sec-ctn {
-  padding-top: 12.5rem;
+  padding: 8rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -788,16 +788,15 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 
 .Testimonials-sec-ctn .user-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 6rem;
   padding: 4rem;
   border: 2px solid #f3f3f3;
 }
 
 .Testimonials-sec-ctn .user-container .user {
-  width: 35rem;
+  min-width: 30rem;
   line-height: 2;
 }
 
@@ -818,7 +817,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 }
 
 .Testimonials-sec-ctn .testimony {
-  width: 65rem;
+  max-width: 60rem;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 2;
