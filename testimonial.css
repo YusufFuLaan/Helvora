@@ -178,13 +178,15 @@ main .user-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6rem;
-  padding-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 4rem;
   border-bottom: 2px solid #f3f3f3;
 }
 
 main .user-container .user {
   line-height: 2;
+  width: 35rem;
 }
 
 .user .user-name {
