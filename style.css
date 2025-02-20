@@ -773,17 +773,6 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 
 /*----------------------- Testimonial-sec-style------------------------ */
 
-/* main .hero-slide {
-  z-index: 2;
-  clip-path: circle(0% at 0 50%);
-}
-
-main .hero-slide.active {
-  clip-path: circle(150% at 0 50%);
-  transition: 2s;
-  transition-property: clip-path;
-} */
-
 .Testimonials-sec-ctn {
   position: relative;
   padding: 8rem 2rem;
@@ -799,7 +788,7 @@ main .hero-slide.active {
   font-size: 3.2rem;
 }
 
-.Testimonials-sec-ctn .user-container {
+.Testimonials-sec-ctn .testimonial-slide {
   position: absolute;
   top: 16rem;
   width: 90%;
@@ -810,9 +799,17 @@ main .hero-slide.active {
   padding: 4rem;
   border: 2px solid #f3f3f3;
   border-radius: 1.2rem;
+  z-index: 2;
+  clip-path: circle(0% at 0 50%);
 }
 
-.Testimonials-sec-ctn .user-container .user {
+.Testimonials-sec-ctn .testimonial-slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+.Testimonials-sec-ctn .testimonial-slide .user {
   min-width: 30rem;
   line-height: 2;
 }
@@ -840,7 +837,7 @@ main .hero-slide.active {
   line-height: 2;
 }
 
-.testimony-nav-container {
+.testimonial-nav-container {
   z-index: 5;
   position: absolute;
   display: flex;
@@ -849,7 +846,7 @@ main .hero-slide.active {
   transform: translateX(-50%);
 }
 
-.testimony-nav-container .testimony-nav-btn {
+.testimonial-nav-container .testimonial-nav-btn {
   background-color: rgba(162, 163, 168, 0.79);
   width: 1.2rem;
   height: 1.2rem;
@@ -858,10 +855,10 @@ main .hero-slide.active {
   cursor: pointer;
 }
 
-/* .testimony-nav-container .testimony-nav-btn.active {
+.testimonial-nav-container .testimonial-nav-btn.active {
   background-color: navy;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-} */
+}
 
 /*-----------------------Responsiveness-style------------------------ */
 
