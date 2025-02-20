@@ -86,31 +86,3 @@ testimonialSlideBtns.forEach((btn, i) => {
     currentsSlide = i;
   });
 });
-
-// testimonial autoplay slide
-let repeats = function (activeClass) {
-  let active = document.getElementsByClassName("tes-active");
-  let i = 1;
-
-  let repeaters = () => {
-    setTimeout(function () {
-      [...active].forEach((activeSlide) => {
-        activeSlide.classList.remove("tes-active");
-      });
-
-      testimonialSlide[i].classList.add("tes-active");
-      testimonialSlideBtns[i].classList.add("tes-active");
-      i++;
-
-      if (testimonialSlide.length == i) {
-        i = 0;
-      }
-      if (i >= testimonialSlide.length) {
-        return;
-      }
-      repeaters();
-    }, 6000);
-  };
-  repeaters();
-};
-repeats();
