@@ -835,6 +835,20 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   font-weight: 300;
   line-height: 2;
 }
+.testimonial-button-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 83%;
+  top: 30rem;
+}
+.testimonial-button-container > button {
+  font-size: 4rem;
+  border: none;
+  color: #1fc225;
+  background-color: transparent;
+  cursor: pointer;
+}
 
 .testimonial-nav-container {
   z-index: 5;
