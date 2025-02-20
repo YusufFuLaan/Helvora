@@ -176,17 +176,16 @@ main > p {
 
 main .user-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  align-items: center;
+  gap: 6rem;
   padding: 4rem;
   border-bottom: 2px solid #f3f3f3;
 }
 
 main .user-container .user {
+  min-width: 30rem;
   line-height: 2;
-  width: 35rem;
 }
 
 .user .user-name {
@@ -202,7 +201,7 @@ main .user-container .user {
 }
 
 main .testimony {
-  width: 70rem;
+  max-width: 60rem;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 2;
