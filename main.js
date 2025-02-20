@@ -5,6 +5,8 @@ document.querySelector("#menu").addEventListener("click", function () {
   icon.classList.toggle("fa-xmark");
 });
 
+// Hero Slide------------------------------------------
+
 let heroSlide = document.querySelectorAll(".hero-slide");
 let heroSlideBtns = document.querySelectorAll(".heroslide-nav-btn");
 let currentSlide = 1;
@@ -57,3 +59,58 @@ let repeat = function (activeClass) {
   repeater();
 };
 repeat();
+
+// Testimonial Slide------------------------------------------
+
+let testimonialSlide = document.querySelectorAll(".testimonial-slide");
+let testimonialSlideBtns = document.querySelectorAll(".testimonial-nav-btn");
+let currentsSlide = 1;
+
+//Testimonial manual slide
+let manualTestimonialNav = function (manualTestimonial) {
+  testimonialSlide.forEach((slide) => {
+    slide.classList.remove("active");
+
+    testimonialSlideBtns.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+  });
+
+  testimonialSlide[manualTestimonial].classList.add("active");
+  testimonialSlideBtns[manualTestimonial].classList.add("active");
+};
+
+testimonialSlideBtns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    manualTestimonialNav(i);
+    currentsSlide = i;
+  });
+});
+
+//testimonial autoplay slide
+let repeats = function (activeClass) {
+  let active = document.getElementsByClassName("active");
+  let i = 1;
+
+  let repeaters = () => {
+    setTimeout(function () {
+      [...active].forEach((activeSlide) => {
+        activeSlide.classList.remove("active");
+      });
+
+      testimonialSlide[i].classList.add("active");
+      testimonialSlideBtns[i].classList.add("active");
+      i++;
+
+      if (testimonialSlide.length == i) {
+        i = 0;
+      }
+      if (i >= testimonialSlide.length) {
+        return;
+      }
+      repeaters();
+    }, 6000);
+  };
+  repeaters();
+};
+repeats();
