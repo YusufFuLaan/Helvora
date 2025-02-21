@@ -62,55 +62,44 @@ repeat();
 
 // Testimonial Slide------------------------------------------
 
-let testimonialSlide = document.querySelectorAll(".testimonial-slide");
-let testimonialSlideBtns = document.querySelectorAll(".testimonial-nav-btn");
-let currentsSlide = 1;
+// Select elements
+let testimonialSlides = document.querySelectorAll(".testimonial-slide");
+let testimonialNavBtns = document.querySelectorAll(".testimonial-nav-btn");
+let prevBtn = document.querySelector(".testimonial-prev");
+let nextBtn = document.querySelector(".testimonial-next");
+let currentTesSlide = 0; // Track the active slide index
 
-//Testimonial manual slide
-let manualTestimonialNav = function (manualTestimonial) {
-  testimonialSlide.forEach((slide) => {
-    slide.classList.remove("tes-active");
+// Function to update slides
+function updateTestimonialSlide(index) {
+  // Remove active class from all slides and buttons
+  testimonialSlides.forEach((slide) => slide.classList.remove("tes-active"));
+  testimonialNavBtns.forEach((btn) => btn.classList.remove("tes-active"));
 
-    testimonialSlideBtns.forEach((btn) => {
-      btn.classList.remove("tes-active");
-    });
-  });
+  // Add active class to the current slide and button
+  testimonialSlides[index].classList.add("tes-active");
+  testimonialNavBtns[index].classList.add("tes-active");
+}
 
-  testimonialSlide[manualTestimonial].classList.add("tes-active");
-  testimonialSlideBtns[manualTestimonial].classList.add("tes-active");
-};
-
-testimonialSlideBtns.forEach((btn, i) => {
+// Manual navigation (dots)
+testimonialNavBtns.forEach((btn, i) => {
   btn.addEventListener("click", () => {
-    manualTestimonialNav(i);
-    currentsSlide = i;
+    currentTesSlide = i;
+    updateTestimonialSlide(currentTesSlide);
   });
 });
 
-// testimonial autoplay slide
-let repeats = function (activeClass) {
-  let active = document.getElementsByClassName("tes-active");
-  let i = 1;
+// Next button functionality
+nextBtn.addEventListener("click", () => {
+  currentTesSlide = (currentTesSlide + 1) % testimonialSlides.length; // Loop forward
+  updateTestimonialSlide(currentTesSlide);
+});
 
-  let repeaters = () => {
-    setTimeout(function () {
-      [...active].forEach((activeSlide) => {
-        activeSlide.classList.remove("tes-active");
-      });
+// Prev button functionality
+prevBtn.addEventListener("click", () => {
+  currentTesSlide =
+    (currentTesSlide - 1 + testimonialSlides.length) % testimonialSlides.length; // Loop backward
+  updateTestimonialSlide(currentTesSlide);
+});
 
-      testimonialSlide[i].classList.add("tes-active");
-      testimonialSlideBtns[i].classList.add("tes-active");
-      i++;
-
-      if (testimonialSlide.length == i) {
-        i = 0;
-      }
-      if (i >= testimonialSlide.length) {
-        return;
-      }
-      repeaters();
-    }, 6000);
-  };
-  repeaters();
-};
-repeats();
+// Initialize with first slide visible
+updateTestimonialSlide(currentTesSlide);

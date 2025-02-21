@@ -791,22 +791,19 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 .Testimonials-sec-ctn .testimonial-slide {
   position: absolute;
   top: 16rem;
-  width: 90%;
+  width: 85%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 6rem;
-  padding: 4rem;
+  gap: 2rem;
+  padding: 4rem 6rem;
   border: 2px solid #f3f3f3;
   border-radius: 1.2rem;
-  z-index: 2;
   clip-path: circle(0% at 0 50%);
 }
 
 .Testimonials-sec-ctn .testimonial-slide.tes-active {
   clip-path: circle(150% at 0 50%);
-  transition: 2s;
-  transition-property: clip-path;
 }
 
 .Testimonials-sec-ctn .testimonial-slide .user {
@@ -828,6 +825,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 
 .fa-star {
   color: #fccf18;
+  margin-right: 0.5rem;
 }
 
 .Testimonials-sec-ctn .testimony {
@@ -835,6 +833,20 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 2;
+}
+.testimonial-button-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 83%;
+  top: 30rem;
+}
+.testimonial-button-container > button {
+  font-size: 4rem;
+  border: none;
+  color: #1fc225;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .testimonial-nav-container {
