@@ -872,6 +872,18 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
+/*----------------------- Testimonial-sec-style------------------------ */
+
+.partners-sec-ctn {
+  margin-top: 50rem;
+}
+
+.partners-sec-ctn .partners-ctn {
+  display: flex;
+}
+
+.partners-sec-ctn .partners-ctn img {
+}
 /*-----------------------Responsiveness-style------------------------ */
 
 @media (max-width: 850px) {
