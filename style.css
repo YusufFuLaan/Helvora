@@ -799,7 +799,6 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   padding: 4rem 6rem;
   border: 2px solid #f3f3f3;
   border-radius: 1.2rem;
-  z-index: 2;
   clip-path: circle(0% at 0 50%);
 }
 

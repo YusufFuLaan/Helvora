@@ -62,66 +62,44 @@ repeat();
 
 // Testimonial Slide------------------------------------------
 
-// let testimonialSlide = document.querySelectorAll(".testimonial-slide");
-// let testimonialSlideBtns = document.querySelectorAll(".testimonial-nav-btn");
-// let currentsSlide = 1;
+// Select elements
+let testimonialSlides = document.querySelectorAll(".testimonial-slide");
+let testimonialNavBtns = document.querySelectorAll(".testimonial-nav-btn");
+let prevBtn = document.querySelector(".testimonial-prev");
+let nextBtn = document.querySelector(".testimonial-next");
+let currentTesSlide = 0; // Track the active slide index
 
-// //Testimonial manual slide
-// let manualTestimonialNav = function (manualTestimonial) {
-//   testimonialSlide.forEach((slide) => {
-//     slide.classList.remove("tes-active");
-
-//     testimonialSlideBtns.forEach((btn) => {
-//       btn.classList.remove("tes-active");
-//     });
-//   });
-
-//   testimonialSlide[manualTestimonial].classList.add("tes-active");
-//   testimonialSlideBtns[manualTestimonial].classList.add("tes-active");
-// };
-
-// testimonialSlideBtns.forEach((btn, i) => {
-//   btn.addEventListener("click", () => {
-//     manualTestimonialNav(i);
-//     currentsSlide = i;
-//   });
-// });
-
-// Testimonial Slide
-let testimonialSlide = document.querySelectorAll(".testimonial-slide");
-let testimonialSlideBtns = document.querySelectorAll(".testimonial-nav-btn");
-let prevBtn = document.querySelector(".testimonial-prev"); // Previous button
-let nextBtn = document.querySelector(".testimonial-next"); // Next button
-let currentTesSlide = 0; // Start from the first slide
-
-// Function to update the active slide
-let updateTestimonialNav = function (index) {
+// Function to update slides
+function updateTestimonialSlide(index) {
   // Remove active class from all slides and buttons
-  testimonialSlide.forEach((slide) => slide.classList.remove("tes-active"));
-  testimonialSlideBtns.forEach((btn) => btn.classList.remove("tes-active"));
+  testimonialSlides.forEach((slide) => slide.classList.remove("tes-active"));
+  testimonialNavBtns.forEach((btn) => btn.classList.remove("tes-active"));
 
   // Add active class to the current slide and button
-  testimonialSlide[index].classList.add("tes-active");
-  testimonialSlideBtns[index].classList.add("tes-active");
-};
+  testimonialSlides[index].classList.add("tes-active");
+  testimonialNavBtns[index].classList.add("tes-active");
+}
 
-// Manual slide navigation (dot click)
-testimonialSlideBtns.forEach((btn, i) => {
+// Manual navigation (dots)
+testimonialNavBtns.forEach((btn, i) => {
   btn.addEventListener("click", () => {
-    updateTestimonialNav(i);
     currentTesSlide = i;
+    updateTestimonialSlide(currentTesSlide);
   });
 });
 
 // Next button functionality
 nextBtn.addEventListener("click", () => {
-  currentTesSlide = (currentTesSlide + 1) % testimonialSlide.length; // Loop back to start
-  updateTestimonialNav(currentSlide);
+  currentTesSlide = (currentTesSlide + 1) % testimonialSlides.length; // Loop forward
+  updateTestimonialSlide(currentTesSlide);
 });
 
 // Prev button functionality
 prevBtn.addEventListener("click", () => {
   currentTesSlide =
-    (currentTesSlide - 1 + testimonialSlide.length) % testimonialSlide.length; // Loop to last slide
-  updateTestimonialNav(currentTesSlide);
+    (currentTesSlide - 1 + testimonialSlides.length) % testimonialSlides.length; // Loop backward
+  updateTestimonialSlide(currentTesSlide);
 });
+
+// Initialize with first slide visible
+updateTestimonialSlide(currentTesSlide);
