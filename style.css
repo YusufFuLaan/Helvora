@@ -875,14 +875,34 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 /*----------------------- Testimonial-sec-style------------------------ */
 
 .partners-sec-ctn {
-  margin-top: 50rem;
+  margin-top: 32rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color: #f1f1f166;
+}
+
+.partners-sec-ctn h1 {
+  font-size: 3.2rem;
+}
+
+.partners-sec-ctn p {
+  font-size: 1.8rem;
 }
 
 .partners-sec-ctn .partners-ctn {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
 }
 
 .partners-sec-ctn .partners-ctn img {
+  width: 10rem;
 }
 /*-----------------------Responsiveness-style------------------------ */
 
