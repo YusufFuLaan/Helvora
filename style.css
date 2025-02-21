@@ -897,20 +897,23 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 100%;
+  width: 95%;
   padding-top: 3rem;
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  white-space: nowrap;
 }
 
 .partners-ctn:-webkit-scrollbar {
   display: none;
 }
 
-.partners-sec-ctn .partners-ctn img {
-  width: 10rem;
-  /* padding: 1rem; */
+.partners-sec-ctn .partners-ctn .partner-company {
+  width: 12.8rem;
+  height: 10rem;
+  padding-right: 2rem;
+  flex-shrink: 0;
 }
 /*-----------------------Responsiveness-style------------------------ */
 
