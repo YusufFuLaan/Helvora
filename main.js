@@ -119,3 +119,20 @@ prevBtn.addEventListener("click", () => {
 
 // Initialize with first slide visible
 updateTestimonialSlide(currentTesSlide);
+
+// Partners Slide-----------------------------------------------------------------------------------------------------------------
+
+const partnersContainer = document.querySelector(".partners-ctn");
+
+function autoPartnersScroll() {
+  if (
+    partnersContainer.scrollLeft >=
+    partnersContainer.scrollWidth - partnersContainer.clientWidth
+  ) {
+    partnersContainer.scrollLeft = 1; // Instantly reset scroll position to the start
+  } else {
+    partnersContainer.scrollLeft += 1; // Move forward
+  }
+}
+
+setInterval(autoPartnersScroll, 20); // Adjust speed by changing interval time

@@ -895,14 +895,22 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 
 .partners-sec-ctn .partners-ctn {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  width: 90%;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-top: 3rem;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.partners-ctn:-webkit-scrollbar {
+  display: none;
 }
 
 .partners-sec-ctn .partners-ctn img {
   width: 10rem;
+  /* padding: 1rem; */
 }
 /*-----------------------Responsiveness-style------------------------ */
 
