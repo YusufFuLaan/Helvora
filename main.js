@@ -1,11 +1,11 @@
+// Hero Slide-----------------------------------------------------------------------------------------------------------
+
 document.querySelector("#menu").addEventListener("click", function () {
   const menuLinks = document.querySelector(".header-links");
   const icon = document.querySelector(".fa-bars");
   menuLinks.classList.toggle("show");
   icon.classList.toggle("fa-xmark");
 });
-
-// Hero Slide------------------------------------------
 
 let heroSlide = document.querySelectorAll(".hero-slide");
 let heroSlideBtns = document.querySelectorAll(".heroslide-nav-btn");
@@ -60,8 +60,42 @@ let repeat = function (activeClass) {
 };
 repeat();
 
-// Testimonial Slide------------------------------------------
+// Services Slide-----------------------------------------------------------------------------------------------------
 
+const servicesContainer = document.querySelector(".services-container");
+
+let scrollAmount = 0;
+let scrollInterval;
+let direction = 1; // 1 for right, -1 for left
+
+function autoScroll() {
+  if (servicesContainer.scrollWidth > servicesContainer.clientWidth) {
+    scrollInterval = setInterval(() => {
+      servicesContainer.scrollLeft += 1.5 * direction; // Adjust speed here
+
+      // Check if it has reached the end, then reverse direction
+      if (
+        servicesContainer.scrollLeft + servicesContainer.clientWidth >=
+        servicesContainer.scrollWidth
+      ) {
+        direction = -1;
+      } else if (servicesContainer.scrollLeft <= 0) {
+        direction = 1;
+      }
+    }, 30); // Adjust interval speed
+  }
+}
+
+// Start auto-scrolling
+autoScroll();
+
+// Stop auto-scroll when user interacts
+servicesContainer.addEventListener("mouseenter", () =>
+  clearInterval(scrollInterval)
+);
+servicesContainer.addEventListener("mouseleave", autoScroll);
+
+// Testimonial Slide---------------------------------------------------------------------------------------------------------------
 // Select elements
 let testimonialSlides = document.querySelectorAll(".testimonial-slide");
 let testimonialNavBtns = document.querySelectorAll(".testimonial-nav-btn");
