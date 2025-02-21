@@ -60,40 +60,22 @@ let repeat = function (activeClass) {
 };
 repeat();
 
-// Services Slide-----------------------------------------------------------------------------------------------------
+// Services Slide-----------------------------------------------------------------------------------------------------------------
 
 const servicesContainer = document.querySelector(".services-container");
 
-let scrollAmount = 0;
-let scrollInterval;
-let direction = 1; // 1 for right, -1 for left
-
 function autoScroll() {
-  if (servicesContainer.scrollWidth > servicesContainer.clientWidth) {
-    scrollInterval = setInterval(() => {
-      servicesContainer.scrollLeft += 1.5 * direction; // Adjust speed here
-
-      // Check if it has reached the end, then reverse direction
-      if (
-        servicesContainer.scrollLeft + servicesContainer.clientWidth >=
-        servicesContainer.scrollWidth
-      ) {
-        direction = -1;
-      } else if (servicesContainer.scrollLeft <= 0) {
-        direction = 1;
-      }
-    }, 30); // Adjust interval speed
+  if (
+    servicesContainer.scrollLeft >=
+    servicesContainer.scrollWidth - servicesContainer.clientWidth
+  ) {
+    servicesContainer.scrollLeft = 0; // Instantly reset scroll position to the start
+  } else {
+    servicesContainer.scrollLeft += 1; // Move forward
   }
 }
 
-// Start auto-scrolling
-autoScroll();
-
-// Stop auto-scroll when user interacts
-servicesContainer.addEventListener("mouseenter", () =>
-  clearInterval(scrollInterval)
-);
-servicesContainer.addEventListener("mouseleave", autoScroll);
+setInterval(autoScroll, 20); // Adjust speed by changing interval time
 
 // Testimonial Slide---------------------------------------------------------------------------------------------------------------
 // Select elements
