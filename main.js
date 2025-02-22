@@ -1,11 +1,11 @@
+// Hero Slide-----------------------------------------------------------------------------------------------------------
+
 document.querySelector("#menu").addEventListener("click", function () {
   const menuLinks = document.querySelector(".header-links");
   const icon = document.querySelector(".fa-bars");
   menuLinks.classList.toggle("show");
   icon.classList.toggle("fa-xmark");
 });
-
-// Hero Slide------------------------------------------
 
 let heroSlide = document.querySelectorAll(".hero-slide");
 let heroSlideBtns = document.querySelectorAll(".heroslide-nav-btn");
@@ -60,8 +60,24 @@ let repeat = function (activeClass) {
 };
 repeat();
 
-// Testimonial Slide------------------------------------------
+// Services Slide-----------------------------------------------------------------------------------------------------------------
 
+const servicesContainer = document.querySelector(".services-container");
+
+function autoScroll() {
+  if (
+    servicesContainer.scrollLeft >=
+    servicesContainer.scrollWidth - servicesContainer.clientWidth
+  ) {
+    servicesContainer.scrollLeft = 0; // Instantly reset scroll position to the start
+  } else {
+    servicesContainer.scrollLeft += 1; // Move forward
+  }
+}
+
+setInterval(autoScroll, 20); // Adjust speed by changing interval time
+
+// Testimonial Slide---------------------------------------------------------------------------------------------------------------
 // Select elements
 let testimonialSlides = document.querySelectorAll(".testimonial-slide");
 let testimonialNavBtns = document.querySelectorAll(".testimonial-nav-btn");
@@ -103,3 +119,20 @@ prevBtn.addEventListener("click", () => {
 
 // Initialize with first slide visible
 updateTestimonialSlide(currentTesSlide);
+
+// Partners Slide-----------------------------------------------------------------------------------------------------------------
+
+const partnersContainer = document.querySelector(".partners-ctn");
+
+function autoPartnersScroll() {
+  if (
+    partnersContainer.scrollLeft >=
+    partnersContainer.scrollWidth - partnersContainer.clientWidth
+  ) {
+    partnersContainer.scrollLeft = 1; // Instantly reset scroll position to the start
+  } else {
+    partnersContainer.scrollLeft += 1; // Move forward
+  }
+}
+
+setInterval(autoPartnersScroll, 20); // Adjust speed by changing interval time

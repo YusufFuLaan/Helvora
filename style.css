@@ -872,6 +872,49 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
+/*----------------------- Testimonial-sec-style------------------------ */
+
+.partners-sec-ctn {
+  margin-top: 32rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color: #f1f1f166;
+}
+
+.partners-sec-ctn h1 {
+  font-size: 3.2rem;
+}
+
+.partners-sec-ctn p {
+  font-size: 1.8rem;
+}
+
+.partners-sec-ctn .partners-ctn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 95%;
+  padding-top: 3rem;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  white-space: nowrap;
+}
+
+.partners-ctn:-webkit-scrollbar {
+  display: none;
+}
+
+.partners-sec-ctn .partners-ctn .partner-company {
+  width: 12.8rem;
+  height: 10rem;
+  padding-right: 2rem;
+  flex-shrink: 0;
+}
 /*-----------------------Responsiveness-style------------------------ */
 
 @media (max-width: 850px) {
