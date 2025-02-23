@@ -915,6 +915,58 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   padding-right: 2rem;
   flex-shrink: 0;
 }
+
+/*----------------------- FAQ-sec-style------------------------ */
+
+.faq-sec-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 6rem 8rem;
+}
+
+.faq-sec-container > h1 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.faq-sec-container > p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.faq-sec-container .faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 90%;
+  padding: 4rem;
+  background-color: #f1f1f1;
+}
+
+.faq-sec-container .faq-container .faqs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem;
+  background-color: #f1f1f1;
+  border: 1px solid #a8b7ca;
+}
+
+.faq-container .faqs p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.faq-container .faqs .fa-plus {
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
 /*-----------------------Responsiveness-style------------------------ */
 
 @media (max-width: 850px) {
