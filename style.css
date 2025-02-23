@@ -943,23 +943,39 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   gap: 3rem;
   width: 90%;
   padding: 4rem;
-  background-color: #f1f1f1;
+  background-color: #f5f8fd;
 }
 
-.faq-sec-container .faq-container .faqs {
+.faq-container .faqs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  min-width: 40rem;
+  padding: 2rem;
+  border: 1px solid #a8b7ca;
+}
+
+.faq-container .faqs .faq-question {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  min-width: 40rem;
-  padding: 2rem;
-  background-color: #f1f1f1;
-  border: 1px solid #a8b7ca;
 }
 
-.faq-container .faqs p {
+.faq-container .faqs .faq-question p {
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+.faq-container .faqs .faq-answer {
+  /* display: none; */
+  width: 100%;
+}
+
+.faq-container .faqs .faq-answer p {
+  font-size: 1.6rem;
 }
 
 .faq-container .faqs .fa-plus {
