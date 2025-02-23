@@ -970,8 +970,13 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 }
 
 .faq-container .faqs .faq-answer {
-  /* display: none; */
-  width: 100%;
+  display: none;
+  /* width: 100%; */
+}
+
+.faq-answer.show {
+  display: block;
+  /* width: 100%; */
 }
 
 .faq-container .faqs .faq-answer p {

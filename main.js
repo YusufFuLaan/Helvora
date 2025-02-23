@@ -1,4 +1,4 @@
-// Hero Slide-----------------------------------------------------------------------------------------------------------
+// Header responsiveness-----------------------------------------------------------------------------------------------------------
 
 document.querySelector("#menu").addEventListener("click", function () {
   const menuLinks = document.querySelector(".header-links");
@@ -7,6 +7,7 @@ document.querySelector("#menu").addEventListener("click", function () {
   icon.classList.toggle("fa-xmark");
 });
 
+// Hero Slide-----------------------------------------------------------------------------------------------------------
 let heroSlide = document.querySelectorAll(".hero-slide");
 let heroSlideBtns = document.querySelectorAll(".heroslide-nav-btn");
 let currentSlide = 1;
@@ -136,3 +137,24 @@ function autoPartnersScroll() {
 }
 
 setInterval(autoPartnersScroll, 20); // Adjust speed by changing interval time
+
+// FAQ Section-----------------------------------------------------------------------------------------------------------
+
+// document.querySelector(".fa-plus").addEventListener("click", function () {
+//   const faqAnswers = document.querySelector(".faq-answer");
+//   const plusIcon = document.querySelector(".fa-plus");
+//   faqAnswers.classList.toggle("show");
+//   plusIcon.classList.toggle("fa-minus");
+// });
+
+document.querySelectorAll(".fa-plus").forEach((plusIcon) => {
+  plusIcon.addEventListener("click", function () {
+    const faqItem = this.parentElement; // Get the parent .faqs div
+    const faqAnswer = faqItem.querySelector(".faq-answer"); // Get the corresponding answer
+
+    if (faqAnswer) {
+      faqAnswer.classList.toggle("show"); // Toggle visibility
+      this.classList.toggle("fa-minus"); // Change icon from plus to minus
+    }
+  });
+});
