@@ -965,6 +965,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 .faq-container .faqs .fa-plus {
   font-size: 1.8rem;
   font-weight: 700;
+  cursor: pointer;
 }
 /*-----------------------Responsiveness-style------------------------ */
 
