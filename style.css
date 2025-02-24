@@ -426,6 +426,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   -ms-overflow-style: none;
   scrollbar-width: none;
   width: 100%;
+  padding: 1rem;
 }
 
 .services-container::-webkit-scrollbar {
@@ -878,7 +879,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
-/*----------------------- Testimonial-sec-style------------------------ */
+/*----------------------- Partners-sec-style------------------------ */
 
 .partners-sec-ctn {
   margin-top: 32rem;
@@ -1138,6 +1139,83 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 
 .popup-content .close-popup:hover {
   color: #1590ff;
+}
+
+/*-----------------------Doctors-style------------------------ */
+
+.doctors-sec-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+  padding: 8rem 2rem;
+}
+
+.doctors-sec-container h1 {
+  font-size: 3.2rem;
+}
+
+.doctors-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100%;
+  padding: 1rem;
+}
+
+.doctors-container::-webkit-scrollbar {
+  display: none;
+}
+
+.doctors-container .doctor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 35rem;
+  min-width: 28rem;
+  margin: 0 2rem;
+  border-radius: 2rem;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.doctor .doctor-name {
+  font-size: 2rem;
+}
+
+.doctor .doctor-spec {
+  font-size: 1.6rem;
+}
+
+.doctor .rating {
+  font-size: 1.6rem;
+  font-weight: 350;
+}
+
+.doctor .rating .fa-star {
+  color: #fccf18;
+  margin-right: 0.5rem;
+}
+
+.doctor .doctor-section-btn {
+  padding: 1rem 2.4rem;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #2f80ec;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.doctor .doctor-section-btn:hover {
+  background-color: #0a5ecd;
+  color: white;
 }
 
 /*-----------------------Responsiveness-style------------------------ */
