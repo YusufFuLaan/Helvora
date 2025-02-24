@@ -72,6 +72,10 @@ header nav ul a:hover {
   font-weight: bolder;
 }
 
+.faq {
+  color: #2f80ec;
+}
+
 .fa-angle-down {
   padding-left: 0.8rem;
 }
@@ -161,11 +165,12 @@ main {
   position: relative;
   padding-top: 8.3rem;
   margin-bottom: 40rem;
+  width: 100%;
 }
 
 main > img {
   position: absolute;
-  width: 100vw;
+  width: inherit;
   max-height: 60vh;
 }
 
@@ -177,6 +182,50 @@ main > h1 {
   translate: -50%;
   font-size: 3.2rem;
   font-weight: 700;
+}
+
+/*----------------------- Hero-style------------------------ */
+.faq-sec-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 4rem;
+}
+
+.faqs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.faqs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  width: 48.5rem;
+  height: 20rem;
+  /* border: 1px solid #f1f1f1; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  border-radius: 1.2rem;
+}
+
+.faqs img {
+  align-self: center;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.faqs h2 {
+  font-size: 2.2rem;
+  color: #1fc225;
+}
+.faqs p {
+  font-size: 1.6rem;
 }
 
 /*-----------------------Responsiveness-style------------------------ */
