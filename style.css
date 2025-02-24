@@ -1186,6 +1186,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 
 .doctor .doctor-name {
   font-size: 2rem;
+  font-weight: 600;
 }
 
 .doctor .doctor-spec {
@@ -1216,6 +1217,60 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 .doctor .doctor-section-btn:hover {
   background-color: #0a5ecd;
   color: white;
+}
+
+.control-sec-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
+  padding: 4rem 0;
+  background-color: #d5e6fa;
+}
+
+.control-sec-container > h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.get-started-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43.2rem;
+  height: 6.2rem;
+  border: 1px solid #2f80ec;
+  border-radius: 1.2rem;
+  background-color: #ffffff;
+}
+
+.get-started-container:hover {
+  background-color: #d4edda;
+  color: #ffffff;
+  transition: all ease-in-out 1s;
+}
+
+.get-started-container h1 {
+  font-size: 2rem;
+  color: #2f80ec;
+  text-align: center;
+  margin-left: 12rem;
+}
+
+.get-started-container .fa-arrow-right-long {
+  background-color: #2f80ec;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-left: 13rem;
+  transition: all ease-in-out 0.3s;
+}
+
+.get-started-container .fa-arrow-right-long:hover {
+  background-color: #ffffff;
+  color: #2f80ec;
 }
 
 /*-----------------------Responsiveness-style------------------------ */
