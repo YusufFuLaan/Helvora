@@ -157,3 +157,17 @@ document.querySelectorAll(".fa-plus").forEach((icon) => {
     this.classList.toggle("fa-minus");
   });
 });
+
+// FAQ Section Popup-----------------------------------------------------------------------------------------------------------
+
+document.getElementById("submitBtn").addEventListener("click", function () {
+  document.getElementById("popup").style.display = "flex"; // Show popup
+});
+
+document.getElementById("closePopup").addEventListener("click", function () {
+  document.getElementById("popup").style.display = "none"; // Hide popup
+});
+
+document.getElementById("okBtn").addEventListener("click", function () {
+  document.getElementById("popup").style.display = "none"; // Hide popup
+});

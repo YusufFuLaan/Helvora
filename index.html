@@ -577,6 +577,44 @@
         </article>
     </section>
 
+    <section class="questionSubmission-sec-ctn">
+      <div class="faq-illustration-ctn">
+        <img src="Public/images/FAQ-illustration.png" alt="">
+      </div>
+
+      <article class="questionForm-ctn">
+
+        <div class="questionForm-heading-ctn">
+          <h2>FAQ Question Form</h2>
+          <p>Ask your questions below, make sure its short and clear.</p>
+        </div>
+
+        <form action="">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Enter your full name"><br>
+
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+
+  <label for="question">Question</label>
+  <textarea name="question" id="question" rows="10" cols="30"></textarea> 
+
+  <button type="button" id="submitBtn">Submit</button>
+
+  <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+      <i class="fa-solid fa-xmark close-popup" id="closePopup"></i>
+      <h2>Thank you for asking!</h2>
+      <p>Your question is submitted, you will get feedback via the email you submitted.</p>
+      <button type="button" id="okBtn">Ok</button>
+    </div>
+  </div>
+</form>
+
+
+      </article>
+    </section>
+
     <script src="main.js"></script>
   </body>
 </html>
