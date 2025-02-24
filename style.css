@@ -445,6 +445,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   margin: 0 2rem;
   border-radius: 2rem;
   background-color: #f1f1f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .services-container .services img {
@@ -801,7 +802,8 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   flex-wrap: wrap;
   gap: 2rem;
   padding: 4rem 6rem;
-  border: 2px solid #f3f3f3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
   border-radius: 1.2rem;
   clip-path: circle(0% at 0 50%);
 }
@@ -983,15 +985,81 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   display: block;
 }
 
-.faq-container .faqs .faq-answer p {
+.faqs .faq-answer p {
   font-size: 1.6rem;
 }
 
-.faq-container .faqs .fa-plus {
+.faqs .fa-plus {
   font-size: 1.8rem;
   font-weight: 700;
   cursor: pointer;
 }
+
+/*----------------------- QuestionSubmission-sec-style------------------------ */
+
+.questionSubmission-sec-ctn {
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.questionForm-ctn {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.questionForm-heading-ctn {
+}
+
+.questionForm-heading-ctn h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.questionForm-heading-ctn p {
+  font-size: 1.8rem;
+}
+
+.questionSubmission-sec-ctn form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 32.4rem;
+}
+
+.questionSubmission-sec-ctn form label {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.questionSubmission-sec-ctn form input {
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  border: 1px solid #d5e6fa;
+  border-radius: 1rem;
+}
+
+.questionSubmission-sec-ctn form textarea {
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  border: 1px solid #d5e6fa;
+}
+
+.questionSubmission-sec-ctn form button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  width: 20rem;
+  height: 5rem;
+}
+
 /*-----------------------Responsiveness-style------------------------ */
 
 @media (max-width: 850px) {
