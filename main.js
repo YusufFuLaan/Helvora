@@ -140,21 +140,20 @@ setInterval(autoPartnersScroll, 20); // Adjust speed by changing interval time
 
 // FAQ Section-----------------------------------------------------------------------------------------------------------
 
-// document.querySelector(".fa-plus").addEventListener("click", function () {
-//   const faqAnswers = document.querySelector(".faq-answer");
-//   const plusIcon = document.querySelector(".fa-plus");
-//   faqAnswers.classList.toggle("show");
-//   plusIcon.classList.toggle("fa-minus");
-// });
+document.querySelectorAll(".fa-plus").forEach((icon) => {
+  icon.addEventListener("click", function () {
+    // Close all other answers before opening a new one
+    document.querySelectorAll(".faq-answer").forEach((answer) => {
+      if (answer !== this.closest(".faqs").querySelector(".faq-answer")) {
+        answer.classList.remove("show");
+      }
+    });
 
-document.querySelectorAll(".fa-plus").forEach((plusIcon) => {
-  plusIcon.addEventListener("click", function () {
-    const faqItem = this.parentElement; // Get the parent .faqs div
-    const faqAnswer = faqItem.querySelector(".faq-answer"); // Get the corresponding answer
+    // Toggle clicked FAQ
+    const faqItem = this.closest(".faqs");
+    const faqAnswer = faqItem.querySelector(".faq-answer");
 
-    if (faqAnswer) {
-      faqAnswer.classList.toggle("show"); // Toggle visibility
-      this.classList.toggle("fa-minus"); // Change icon from plus to minus
-    }
+    faqAnswer.classList.toggle("show");
+    this.classList.toggle("fa-minus");
   });
 });

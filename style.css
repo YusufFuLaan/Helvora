@@ -941,7 +941,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  width: 90%;
+  width: 95%;
   padding: 4rem;
   background-color: #f5f8fd;
 }
@@ -969,14 +969,14 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   font-weight: 500;
 }
 
-.faq-container .faqs .faq-answer {
+.faq-answer {
   display: none;
-  /* width: 100%; */
+  width: 100%;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .faq-answer.show {
   display: block;
-  /* width: 100%; */
 }
 
 .faq-container .faqs .faq-answer p {
