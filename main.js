@@ -1,4 +1,4 @@
-// Hero Slide-----------------------------------------------------------------------------------------------------------
+// Header responsiveness-----------------------------------------------------------------------------------------------------------
 
 document.querySelector("#menu").addEventListener("click", function () {
   const menuLinks = document.querySelector(".header-links");
@@ -7,6 +7,7 @@ document.querySelector("#menu").addEventListener("click", function () {
   icon.classList.toggle("fa-xmark");
 });
 
+// Hero Slide-----------------------------------------------------------------------------------------------------------
 let heroSlide = document.querySelectorAll(".hero-slide");
 let heroSlideBtns = document.querySelectorAll(".heroslide-nav-btn");
 let currentSlide = 1;
@@ -136,3 +137,23 @@ function autoPartnersScroll() {
 }
 
 setInterval(autoPartnersScroll, 20); // Adjust speed by changing interval time
+
+// FAQ Section-----------------------------------------------------------------------------------------------------------
+
+document.querySelectorAll(".fa-plus").forEach((icon) => {
+  icon.addEventListener("click", function () {
+    // Close all other answers before opening a new one
+    document.querySelectorAll(".faq-answer").forEach((answer) => {
+      if (answer !== this.closest(".faqs").querySelector(".faq-answer")) {
+        answer.classList.remove("show");
+      }
+    });
+
+    // Toggle clicked FAQ
+    const faqItem = this.closest(".faqs");
+    const faqAnswer = faqItem.querySelector(".faq-answer");
+
+    faqAnswer.classList.toggle("show");
+    this.classList.toggle("fa-minus");
+  });
+});
