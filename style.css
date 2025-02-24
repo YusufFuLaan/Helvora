@@ -1184,6 +1184,10 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+.doctors-container .doctor img {
+  width: 12rem;
+}
+
 .doctor .doctor-name {
   font-size: 2rem;
   font-weight: 600;
@@ -1218,6 +1222,8 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   background-color: #0a5ecd;
   color: white;
 }
+
+/*-----------------------Control-style------------------------ */
 
 .control-sec-container {
   display: flex;
