@@ -72,6 +72,10 @@ header nav ul a:hover {
   font-weight: bolder;
 }
 
+.testimonial {
+  color: #2f80ec;
+}
+
 .fa-angle-down {
   padding-left: 0.8rem;
 }
