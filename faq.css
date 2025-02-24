@@ -156,6 +156,29 @@ header #menu {
   color: #000000;
 }
 
+/*----------------------- Hero-style------------------------ */
+main {
+  position: relative;
+  padding-top: 8.3rem;
+  margin-bottom: 40rem;
+}
+
+main > img {
+  position: absolute;
+  width: 100vw;
+  max-height: 60vh;
+}
+
+main > h1 {
+  position: absolute;
+  z-index: 4;
+  top: 40rem;
+  left: 50%;
+  translate: -50%;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
 /*-----------------------Responsiveness-style------------------------ */
 
 @media (max-width: 850px) {
