@@ -1282,9 +1282,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 /*-----------------------Footer-style------------------------ */
 footer {
   display: flex;
-  /* justify-content: space-between; */
-  flex-wrap: wrap;
-  gap: 6rem;
+  gap: 4rem;
   padding: 4rem 6rem;
   background-color: #000000;
   color: white;
@@ -1295,8 +1293,7 @@ footer article {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  /* justify-content: space-around; */
-  max-width: 42.5rem;
+  max-width: 42rem;
 }
 
 footer article img {
@@ -1318,7 +1315,7 @@ footer article .footer-section-btn {
   border-radius: 1rem;
   width: 11.5rem;
   height: 3.6rem;
-  /* margin-bottom: 6rem; */
+  margin-bottom: 6rem;
   cursor: pointer;
   transition: all ease-in-out 0.5s;
 }
@@ -1329,7 +1326,7 @@ footer article .footer-section-btn:hover {
   color: rgb(234, 167, 79);
 }
 
-footer article .copyright {
+footer article .copyright1 {
   font-size: 1.6rem;
 }
 
@@ -1366,11 +1363,19 @@ footer .footer-nav-container {
 .footer-nav-container ul li .nav-links-header {
   font-weight: 700;
 }
+
+.copyright2 {
+  display: none;
+  background-color: #000;
+  color: #ffffff;
+  font-size: 1.6rem;
+  padding: 2rem 6rem;
+}
 /*-----------------------Responsiveness-style------------------------ */
 
 @media (max-width: 850px) {
   html {
-    font-size: 52%;
+    font-size: 55%;
   }
 
   header nav ul {
@@ -1499,6 +1504,32 @@ footer .footer-nav-container {
 
   .hero-sec-three .hero-image {
     height: 35vw;
+  }
+
+  footer {
+    display: flex;
+    gap: 4rem;
+    padding: 4rem 6rem;
+    background-color: #000000;
+    color: white;
+    height: 70vh;
+    flex-wrap: wrap;
+  }
+
+  footer article .footer-section-btn {
+    margin-bottom: 0rem;
+  }
+
+  .footer-nav-container nav {
+    gap: 18rem;
+  }
+
+  footer article .copyright1 {
+    display: none;
+  }
+
+  .copyright2 {
+    display: block;
   }
 }
 
