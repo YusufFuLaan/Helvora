@@ -1301,6 +1301,7 @@ footer article img {
 footer article .mission {
   font-size: 1.6rem;
   text-align: justify;
+  line-height: 1.5;
   margin-bottom: 4rem;
 }
 
