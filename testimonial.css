@@ -336,7 +336,7 @@ li.nav-links-header {
   }
 
   header nav ul a {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: 500;
     color: #ffffff;
     transition: all 0.5s ease;
@@ -396,7 +396,7 @@ li.nav-links-header {
 
 @media (max-width: 450px) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
 
   main {
@@ -406,7 +406,7 @@ li.nav-links-header {
 
   main .user-container {
     gap: 2rem;
-    padding: 4rem;
+    padding: 3rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border-bottom: none;
   }
@@ -440,7 +440,7 @@ li.nav-links-header {
   }
 
   .footer-nav-container nav {
-    gap: 16rem;
+    gap: 12rem;
   }
 
   footer article .copyright1 {
@@ -454,12 +454,16 @@ li.nav-links-header {
 
 @media (max-width: 390px) {
   html {
-    font-size: 40%;
+    font-size: 45%;
   }
 }
 
 @media (max-width: 326px) {
   html {
-    font-size: 35%;
+    font-size: 40%;
+  }
+
+  footer {
+    height: 100vh;
   }
 }
