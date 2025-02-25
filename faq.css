@@ -184,7 +184,7 @@ main > h1 {
   font-weight: 700;
 }
 
-/*----------------------- Hero-style------------------------ */
+/*----------------------- Main-style------------------------ */
 .faq-sec-container {
   display: flex;
   align-items: center;
@@ -206,10 +206,8 @@ main > h1 {
   justify-content: space-around;
   padding: 2rem;
   width: 48.5rem;
-  height: 20rem;
-  /* border: 1px solid #f1f1f1; */
+  height: 23rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
   border-radius: 1.2rem;
 }
 
@@ -396,6 +394,19 @@ li.nav-links-header {
   .header-dropdown-content a:hover {
     font-weight: 400;
   }
+
+  main {
+    position: relative;
+    padding-top: 8.3rem;
+    margin-bottom: 40rem;
+    width: 100%;
+  }
+
+  main > h1 {
+    top: 30rem;
+    width: inherit;
+    text-align: center;
+  }
 }
 
 @media (max-width: 450px) {
@@ -405,6 +416,23 @@ li.nav-links-header {
 
   button.Signup-btn,
   button.login-btn {
+    display: none;
+  }
+
+  main {
+    margin-bottom: 30rem;
+  }
+
+  main > h1 {
+    top: 28rem;
+  }
+
+  .faqs {
+    width: 48rem;
+    height: 16rem;
+  }
+
+  .faqs img {
     display: none;
   }
 
