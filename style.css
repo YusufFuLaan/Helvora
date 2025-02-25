@@ -1393,11 +1393,11 @@ li.nav-links-header {
   }
 
   header nav ul li {
-    padding: 1.5rem 0rem;
+    padding: 2rem 0rem;
   }
 
   header nav ul a {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: 500;
     color: #ffffff;
     transition: all 0.5s ease;
@@ -1579,7 +1579,7 @@ li.nav-links-header {
   }
 
   .evolution-container img {
-    width: 5rem;
+    width: 4rem;
   }
   .evolution-container p {
     color: #2f80ec;
@@ -1667,6 +1667,7 @@ li.nav-links-header {
     position: absolute;
     top: 16rem;
     width: 85%;
+    height: 40rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap-reverse;
@@ -1681,7 +1682,7 @@ li.nav-links-header {
   }
 
   .testimonial-slide .user img {
-    width: 10rem;
+    width: 9rem;
   }
 
   .Testimonials-sec-ctn .testimony {
