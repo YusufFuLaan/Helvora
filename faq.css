@@ -228,6 +228,102 @@ main > h1 {
   font-size: 1.6rem;
 }
 
+/*-----------------------Footer-style------------------------ */
+footer {
+  display: flex;
+  gap: 4rem;
+  padding: 4rem 6rem;
+  background-color: #000000;
+  color: white;
+  height: 70vh;
+}
+
+footer article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 42rem;
+}
+
+footer article img {
+  width: 20rem;
+}
+
+footer article .mission {
+  font-size: 1.6rem;
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+footer article .footer-section-btn {
+  background-color: #ffffff;
+  color: #1590ff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 1rem;
+  width: 11.5rem;
+  height: 3.6rem;
+  margin-bottom: 6rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+
+footer article .footer-section-btn:hover {
+  background-color: #000;
+  border: 1px solid rgb(234, 167, 79);
+  color: rgb(234, 167, 79);
+}
+
+footer article .copyright1 {
+  font-size: 1.6rem;
+}
+
+footer .footer-nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 6rem;
+  gap: 5rem;
+}
+
+.footer-nav-container nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem;
+}
+
+/* .footer-nav-container ul {
+} */
+
+.footer-nav-container ul li {
+  margin-bottom: 2rem;
+}
+
+.footer-nav-container ul li a {
+  color: #f7f7f7;
+  font-size: 1.6rem;
+  transition: all ease-in-out 0.3s;
+}
+
+.footer-nav-container ul li a:hover {
+  color: rgb(234, 167, 79);
+}
+
+li.nav-links-header {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.copyright2 {
+  display: none;
+  background-color: #000;
+  color: #ffffff;
+  font-size: 1.6rem;
+  padding: 2rem 6rem;
+}
+
 /*-----------------------Responsiveness-style------------------------ */
 
 @media (max-width: 850px) {
@@ -310,6 +406,41 @@ main > h1 {
   button.Signup-btn,
   button.login-btn {
     display: none;
+  }
+
+  footer {
+    display: flex;
+    gap: 4rem;
+    padding: 4rem 6rem;
+    background-color: #000000;
+    color: white;
+    height: 80vh;
+    flex-wrap: wrap;
+  }
+
+  footer .footer-nav-container {
+    padding-top: 0rem;
+    gap: 3rem;
+  }
+
+  footer article .mission {
+    margin-bottom: 2rem;
+  }
+
+  footer article .footer-section-btn {
+    margin-bottom: 0rem;
+  }
+
+  .footer-nav-container nav {
+    gap: 16rem;
+  }
+
+  footer article .copyright1 {
+    display: none;
+  }
+
+  .copyright2 {
+    display: block;
   }
 }
 
