@@ -1575,7 +1575,7 @@ li.nav-links-header {
 
 @media (max-width: 450px) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
 
   .evolution-container img {
@@ -1594,6 +1594,17 @@ li.nav-links-header {
     font-size: 1.5rem;
   }
 
+  .hero-cta-btn {
+    padding: 1rem 4rem;
+    font-size: 1.8rem;
+  }
+
+  .hero-sec-two .hero-cta-btn,
+  .hero-sec-three .hero-cta-btn {
+    padding: 1rem 4rem;
+    font-size: 1.8rem;
+  }
+
   button.Signup-btn,
   button.login-btn {
     display: none;
@@ -1604,11 +1615,13 @@ li.nav-links-header {
   }
 
   .hero-sec-one .hero-image {
-    height: 35rem;
+    height: 30rem;
+    width: 55vw;
   }
 
   .hero-sec-two .hero-image {
-    height: 35rem;
+    height: 38rem;
+    width: 48vw;
   }
 
   .hero-sec-three .hero-image {
@@ -1631,6 +1644,14 @@ li.nav-links-header {
     min-height: 60rem;
   }
 
+  .donate-sec-container > h1 {
+    font-size: 3rem;
+  }
+
+  .donate-section .donate-cta-btn {
+    padding: 1.2rem 6rem;
+  }
+
   .Testimonials-sec-ctn {
     position: relative;
     display: flex;
@@ -1650,7 +1671,7 @@ li.nav-links-header {
     align-items: center;
     flex-wrap: wrap-reverse;
     gap: 2rem;
-    padding: 4rem 6rem;
+    padding: 4rem;
   }
 
   .Testimonials-sec-ctn .testimonial-slide .user {
@@ -1671,12 +1692,23 @@ li.nav-links-header {
   }
 
   .testimonial-button-container {
-    width: 81%;
+    width: 82%;
     top: 33rem;
   }
 
   .testimonial-nav-container {
-    top: 50rem;
+    top: 51rem;
+  }
+
+  .partners-ctn .partner-company {
+    width: 12.8rem;
+    height: 10rem;
+    padding-right: 2rem;
+    flex-shrink: 0;
+  }
+
+  .faq-sec-container {
+    padding: 3rem;
   }
 
   .questionSubmission-sec-ctn {
@@ -1700,6 +1732,15 @@ li.nav-links-header {
     flex-direction: column;
     gap: 1rem;
     width: 36rem;
+  }
+
+  .control-sec-container {
+    gap: 6rem;
+    padding: 4rem 0;
+  }
+
+  .control-sec-container > h1 {
+    font-size: 3rem;
   }
 
   footer {
@@ -1726,7 +1767,7 @@ li.nav-links-header {
   }
 
   .footer-nav-container nav {
-    gap: 16rem;
+    gap: 12rem;
   }
 
   footer article .copyright1 {
@@ -1740,7 +1781,7 @@ li.nav-links-header {
 
 @media (max-width: 390px) {
   html {
-    font-size: 40%;
+    font-size: 45%;
   }
 
   .hero-cta-container h1 {
@@ -1748,7 +1789,8 @@ li.nav-links-header {
   }
 
   .hero-sec-one .hero-image {
-    height: 40rem;
+    height: 30rem;
+    width: 55vw;
   }
 
   .hero-sec-two .hero-image {
@@ -1765,15 +1807,31 @@ li.nav-links-header {
     min-width: 29.5rem;
     padding: 0 2rem;
   }
+
+  .testimonial-nav-container {
+    top: 52rem;
+  }
+
+  .testimonial-slide .user img {
+    width: 8rem;
+  }
+
+  .faq-sec-container {
+    padding: 2rem;
+  }
+
+  .footer-nav-container nav {
+    gap: 10rem;
+  }
 }
 
 @media (max-width: 326px) {
   html {
-    font-size: 35%;
+    font-size: 40%;
   }
 
   .hero-sec-one .hero-image {
-    height: 40rem;
+    height: 30rem;
   }
 
   .hero-sec-two .hero-image {
@@ -1782,5 +1840,10 @@ li.nav-links-header {
 
   .hero-sec-three .hero-image {
     height: 35vw;
+  }
+
+  footer {
+    padding: 4rem;
+    height: 100vh;
   }
 }
