@@ -720,17 +720,16 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   line-height: 1.8;
 }
 
-.why-container {
-  line-height: 3;
-}
-
 .why-container > h3 {
   font-size: 1.8rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .why-container ul > li {
   font-size: 1.6rem;
+  margin-bottom: 2rem;
+  /* list-style-type: disc; */
 }
 
 .why-container ul > li:before {
@@ -1405,6 +1404,10 @@ li.nav-links-header {
 
   header nav ul a:hover {
     color: #000000;
+  }
+
+  .home {
+    color: navy;
   }
 
   header nav .header-btn-ctn {
