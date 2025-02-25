@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const contentSections = document.querySelectorAll(".content-section");
 
   function showContent(targetId) {
+    console.log("Target ID:", targetId); // Debugging log
     contentSections.forEach((section) => {
       section.classList.remove("active");
       if (section.id === targetId) {
@@ -10,28 +11,37 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+  console.log(`my style`);
 
   function handleNavigation(e) {
     e.preventDefault();
     const target = e.currentTarget;
+
+    // Normalize the link text
+    const normalizedText = target.textContent.trim().replace(/\s+/g, " ");
     const targetId =
-      target.textContent.trim().toLowerCase().replace(/ /g, "-") + "-content";
+      normalizedText.toLowerCase().replace(/ /g, "-") + "-content";
+
+    console.log("Link Text:", normalizedText);
+    console.log("Generated Target ID:", targetId);
 
     navLinks.forEach((link) => link.classList.remove("active"));
     target.classList.add("active");
-
     showContent(targetId);
   }
 
+  // Attach event listeners to all relevant links
   navLinks.forEach((link) => {
     if (!link.classList.contains("last")) {
       link.addEventListener("click", handleNavigation);
     }
   });
 
+  // Activate the default section
   document.querySelector(".side-bar li:first-child").classList.add("active");
   document.getElementById("dashboard-content").classList.add("active");
 
+  // Dropdown menu functionality
   const dropDownMenu = document.querySelector(".images");
   const sideMenu = document.getElementById("side-menu");
   const openSide = document.getElementById("image");
