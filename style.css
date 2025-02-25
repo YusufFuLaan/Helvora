@@ -1334,13 +1334,14 @@ footer .footer-nav-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 4rem;
+  padding-top: 6rem;
+  gap: 5rem;
 }
 
 .footer-nav-container nav {
   display: flex;
   justify-content: space-around;
-  gap: 4rem;
+  gap: 5rem;
 }
 
 /* .footer-nav-container ul {
@@ -1360,7 +1361,8 @@ footer .footer-nav-container {
   color: rgb(234, 167, 79);
 }
 
-.footer-nav-container ul li .nav-links-header {
+li.nav-links-header {
+  font-size: 1.6rem;
   font-weight: 700;
 }
 
@@ -1514,6 +1516,15 @@ footer .footer-nav-container {
     color: white;
     height: 70vh;
     flex-wrap: wrap;
+  }
+
+  footer .footer-nav-container {
+    padding-top: 0rem;
+    gap: 3rem;
+  }
+
+  footer article .mission {
+    margin-bottom: 2rem;
   }
 
   footer article .footer-section-btn {
