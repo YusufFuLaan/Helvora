@@ -347,7 +347,7 @@ li.nav-links-header {
   }
 
   header nav ul a {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: 500;
     color: #ffffff;
     transition: all 0.5s ease;
@@ -415,7 +415,7 @@ li.nav-links-header {
 
 @media (max-width: 450px) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
 
   button.Signup-btn,
@@ -424,20 +424,28 @@ li.nav-links-header {
   }
 
   main {
-    margin-bottom: 30rem;
+    margin-bottom: 25rem;
   }
 
   main > h1 {
-    top: 28rem;
+    top: 26rem;
   }
 
   .faqs {
-    width: 48rem;
+    width: 44rem;
     height: 16rem;
   }
 
   .faqs img {
     display: none;
+  }
+
+  .faqs h2 {
+    font-size: 2.2rem;
+    color: #1fc225;
+  }
+  .faqs p {
+    font-size: 1.6rem;
   }
 
   footer {
@@ -464,7 +472,7 @@ li.nav-links-header {
   }
 
   .footer-nav-container nav {
-    gap: 16rem;
+    gap: 12rem;
   }
 
   footer article .copyright1 {
@@ -478,12 +486,30 @@ li.nav-links-header {
 
 @media (max-width: 390px) {
   html {
-    font-size: 40%;
+    font-size: 45%;
+  }
+
+  main > h1 {
+    top: 24rem;
+  }
+
+  .faqs {
+    width: 44rem;
+    height: 16rem;
   }
 }
 
 @media (max-width: 326px) {
   html {
-    font-size: 35%;
+    font-size: 40%;
+  }
+
+  footer {
+    display: flex;
+    gap: 4rem;
+    padding: 4rem;
+    background-color: #000000;
+    color: white;
+    height: 100vh;
   }
 }
