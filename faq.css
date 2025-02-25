@@ -184,7 +184,7 @@ main > h1 {
   font-weight: 700;
 }
 
-/*----------------------- Hero-style------------------------ */
+/*----------------------- Main-style------------------------ */
 .faq-sec-container {
   display: flex;
   align-items: center;
@@ -206,10 +206,8 @@ main > h1 {
   justify-content: space-around;
   padding: 2rem;
   width: 48.5rem;
-  height: 20rem;
-  /* border: 1px solid #f1f1f1; */
+  height: 23rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
   border-radius: 1.2rem;
 }
 
@@ -226,6 +224,102 @@ main > h1 {
 }
 .faqs p {
   font-size: 1.6rem;
+}
+
+/*-----------------------Footer-style------------------------ */
+footer {
+  display: flex;
+  gap: 4rem;
+  padding: 4rem 6rem;
+  background-color: #000000;
+  color: white;
+  height: 70vh;
+}
+
+footer article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 42rem;
+}
+
+footer article img {
+  width: 20rem;
+}
+
+footer article .mission {
+  font-size: 1.6rem;
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+footer article .footer-section-btn {
+  background-color: #ffffff;
+  color: #1590ff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 1rem;
+  width: 11.5rem;
+  height: 3.6rem;
+  margin-bottom: 6rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+
+footer article .footer-section-btn:hover {
+  background-color: #000;
+  border: 1px solid rgb(234, 167, 79);
+  color: rgb(234, 167, 79);
+}
+
+footer article .copyright1 {
+  font-size: 1.6rem;
+}
+
+footer .footer-nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 6rem;
+  gap: 5rem;
+}
+
+.footer-nav-container nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem;
+}
+
+/* .footer-nav-container ul {
+} */
+
+.footer-nav-container ul li {
+  margin-bottom: 2rem;
+}
+
+.footer-nav-container ul li a {
+  color: #f7f7f7;
+  font-size: 1.6rem;
+  transition: all ease-in-out 0.3s;
+}
+
+.footer-nav-container ul li a:hover {
+  color: rgb(234, 167, 79);
+}
+
+li.nav-links-header {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.copyright2 {
+  display: none;
+  background-color: #000;
+  color: #ffffff;
+  font-size: 1.6rem;
+  padding: 2rem 6rem;
 }
 
 /*-----------------------Responsiveness-style------------------------ */
@@ -261,6 +355,10 @@ main > h1 {
 
   header nav ul a:hover {
     color: #000000;
+  }
+
+  .faq {
+    color: navy;
   }
 
   header nav .header-btn-ctn {
@@ -300,6 +398,19 @@ main > h1 {
   .header-dropdown-content a:hover {
     font-weight: 400;
   }
+
+  main {
+    position: relative;
+    padding-top: 8.3rem;
+    margin-bottom: 40rem;
+    width: 100%;
+  }
+
+  main > h1 {
+    top: 30rem;
+    width: inherit;
+    text-align: center;
+  }
 }
 
 @media (max-width: 450px) {
@@ -310,6 +421,58 @@ main > h1 {
   button.Signup-btn,
   button.login-btn {
     display: none;
+  }
+
+  main {
+    margin-bottom: 30rem;
+  }
+
+  main > h1 {
+    top: 28rem;
+  }
+
+  .faqs {
+    width: 48rem;
+    height: 16rem;
+  }
+
+  .faqs img {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    gap: 4rem;
+    padding: 4rem 6rem;
+    background-color: #000000;
+    color: white;
+    height: 80vh;
+    flex-wrap: wrap;
+  }
+
+  footer .footer-nav-container {
+    padding-top: 0rem;
+    gap: 3rem;
+  }
+
+  footer article .mission {
+    margin-bottom: 2rem;
+  }
+
+  footer article .footer-section-btn {
+    margin-bottom: 0rem;
+  }
+
+  .footer-nav-container nav {
+    gap: 16rem;
+  }
+
+  footer article .copyright1 {
+    display: none;
+  }
+
+  .copyright2 {
+    display: block;
   }
 }
 
