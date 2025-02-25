@@ -387,6 +387,11 @@ li.nav-links-header {
   .header-dropdown-content a:hover {
     font-weight: 400;
   }
+
+  main {
+    padding: 12.5rem 10rem;
+    gap: 3rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -396,10 +401,6 @@ li.nav-links-header {
 
   main {
     padding: 12.5rem 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 3rem;
   }
 
