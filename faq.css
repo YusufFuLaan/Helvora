@@ -357,6 +357,10 @@ li.nav-links-header {
     color: #000000;
   }
 
+  .faq {
+    color: navy;
+  }
+
   header nav .header-btn-ctn {
     display: flex;
     align-items: center;
