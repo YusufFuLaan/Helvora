@@ -221,6 +221,13 @@ select {
   border: 1px solid transparent;
   color: white;
 }
+
+.button:hover {
+  background-color: rgba(1, 97, 226, 1);
+}
+.button:active {
+  background-color: rgba(0, 0, 0, 1);
+}
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus {

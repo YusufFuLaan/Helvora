@@ -40,7 +40,7 @@ img {
   border-radius: 1.6rem;
   padding: 2.9rem 5rem;
   width: 79.6vw;
-  height: 97.6vh;
+  min-height: 97.6vh;
   flex-direction: column;
   display: flex;
   margin: auto;
@@ -72,7 +72,7 @@ img {
 .as-a {
   display: flex;
   width: 49.9vw;
-  height: 22vh;
+  min-height: 22vh !important;
   justify-content: space-between;
   border-radius: 1.2rem;
   border: 1px solid var(--blue);

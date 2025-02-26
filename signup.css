@@ -33,7 +33,7 @@ main {
   display: flex;
   width: 80vw;
   margin: auto;
-  height: 90vh;
+  max-height: 90vh;
   padding: 6rem 0;
   color: var(--white);
 }
@@ -41,7 +41,7 @@ img {
   width: 53.15rem;
 }
 .for-image {
-  height: 125%;
+  height: 100%;
 }
 .main-section {
   width: 68vw;
@@ -49,7 +49,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  min-height: 86.5vh;
+  height: 100%;
   padding: 1.45rem 5.5rem;
 }
 .going-to-previous-page {
@@ -136,10 +136,18 @@ button {
   background-color: var(--black);
   color: var(--white);
   padding: 1.6rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.1rem;
+  border: none;
   border-radius: 0.7rem;
   font-size: var(--font-size-18);
   font-weight: var(--font-weigh-400);
+}
+
+button:hover {
+  background-color: rgba(1, 97, 226, 1);
+}
+button:active {
+  background-color: rgba(47, 128, 236, 1);
 }
 input[type="checkbox"] {
   margin-bottom: 1rem;
@@ -159,6 +167,7 @@ input[type="checkbox"] {
   }
   .main-section {
     width: 100%;
+    height: 100vh;
     padding: 3.4rem 2rem;
   }
   .create-account {

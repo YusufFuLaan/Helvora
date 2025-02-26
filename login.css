@@ -34,6 +34,8 @@ main {
   display: flex;
   width: 80vw;
   margin: auto;
+  max-height: 90vh;
+
   padding: 8rem 0;
   color: var(--white);
 }
@@ -41,7 +43,7 @@ img {
   width: 56.15rem;
 }
 .for-image {
-  height: 20rem;
+  height: 100%;
 }
 .main-section {
   width: 60vw;
@@ -49,6 +51,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  height: 100%;
   padding: 3.4rem 5.5rem;
 }
 .login-with {
@@ -146,6 +149,14 @@ button {
   font-size: var(--font-size-18);
   font-weight: var(--font-weigh-500);
 }
+
+button:hover {
+  background-color: rgba(1, 97, 226, 1);
+}
+button:active {
+  background-color: rgba(47, 128, 236, 1);
+}
+
 input[type="checkbox"] {
   margin-bottom: 1rem;
 }
@@ -178,8 +189,13 @@ input[type="checkbox"] {
   background-color: transparent;
   color: var(--white);
   font-size: var(--font-size-16);
+  border: none;
   border: 1px solid var(--white);
   margin-bottom: 2.49rem;
+}
+#button2:hover {
+  background-color: black;
+  border: 1px solid var(--black);
 }
 .button-img {
   width: 3.7rem;
@@ -203,6 +219,7 @@ input:-webkit-autofill:focus {
   }
   .main-section {
     width: 100vw;
+    min-height: 100vh;
     padding: 3.4rem 2rem;
   }
   input[type="email"],

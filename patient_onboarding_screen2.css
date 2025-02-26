@@ -154,6 +154,12 @@ input:focus::placeholder {
   border: 1px solid transparent;
   font-size: var(--font-size-14);
 }
+.continue-button:hover {
+  background-color: rgba(1, 97, 226, 1);
+}
+.continue-button:active {
+  background-color: rgba(0, 0, 0, 1);
+}
 .continue-button a {
   color: white;
   text-decoration: none;
@@ -232,5 +238,5 @@ img {
 }
 .padding-extra {
   padding: 2rem 3rem !important;
-  height: 98vh;
+  min-height: 95vh !important;
 }
