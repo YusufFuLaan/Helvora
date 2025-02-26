@@ -140,21 +140,30 @@ setInterval(autoPartnersScroll, 20); // Adjust speed by changing interval time
 
 // FAQ Section-----------------------------------------------------------------------------------------------------------
 
-document.querySelectorAll(".fa-plus").forEach((icon) => {
-  icon.addEventListener("click", function () {
-    // Close all other answers before opening a new one
-    document.querySelectorAll(".faq-answer").forEach((answer) => {
-      if (answer !== this.closest(".faqs").querySelector(".faq-answer")) {
-        answer.classList.remove("show");
-      }
-    });
-
-    // Toggle clicked FAQ
+document.querySelectorAll(".faq-question").forEach((question) => {
+  question.addEventListener("click", function () {
     const faqItem = this.closest(".faqs");
     const faqAnswer = faqItem.querySelector(".faq-answer");
+    const icon = this.querySelector("i");
 
-    faqAnswer.classList.toggle("show");
-    this.classList.toggle("fa-minus");
+    // Check if this FAQ is already open
+    const isOpen = faqAnswer.classList.contains("show");
+
+    // Close all FAQs and reset all icons to plus
+    document
+      .querySelectorAll(".faq-answer")
+      .forEach((answer) => answer.classList.remove("show"));
+    document.querySelectorAll(".faq-question i").forEach((i) => {
+      i.classList.remove("fa-minus");
+      i.classList.add("fa-plus");
+    });
+
+    // If this FAQ wasn't already open, open it and change its icon
+    if (!isOpen) {
+      faqAnswer.classList.add("show");
+      icon.classList.remove("fa-plus");
+      icon.classList.add("fa-minus");
+    }
   });
 });
 
