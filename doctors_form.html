@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="doctors_form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="whole-page">
+      <article class="header">
+        <p>Helvora</p>
+      </article>
+
+      <form class="form">
+        <section class="basic-information">
+          <p class="text">Basic information</p>
+          <section class="basic-information-main">
+            <article class="basic-information1">
+              <div class="first-input">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+              <div class="first-input">
+                <label for="phone">Phone number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Enter your digits"
+                  required
+                />
+              </div>
+              <div class="first-input">
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  id="address"
+                  placeholder="Enter your address"
+                  required
+                />
+              </div>
+            </article>
+
+            <article class="basic-information1 for-spacing">
+              <div class="email-section email">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" />
+              </div>
+              <article class="country-state">
+                <div class="country">
+                  <label for="country">Country</label>
+                  <select id="country">
+                    <option value="">Select</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                  </select>
+                </div>
+
+                <div class="country">
+                  <label for="state">State</label>
+                  <select id="state">
+                    <option value="">Select</option>
+                    <option value="california">California</option>
+                    <option value="texas">Texas</option>
+                  </select>
+                </div>
+              </article>
+
+              <div class="drag-drop-area">
+                <label for="photos">Photos</label>
+                <div class="file-upload" id="fileUpload">
+                  <p>Click to upload or drag and drop file (Png/Jpg)</p>
+                  <input
+                    type="file"
+                    id="photos"
+                    accept=".png, .jpg, .jpeg"
+                    hidden
+                  />
+                </div>
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <section class="clinic-information-main">
+          <p class="text">Clinic information</p>
+          <section class="clinic-information">
+            <article class="first-row">
+              <div class="form-group">
+                <label for="clinic-name">Clinic Name</label>
+                <input
+                  type="text"
+                  id="clinic-name"
+                  placeholder="Enter your clinic name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="clinic-address">Clinic Address</label>
+                <input
+                  type="text"
+                  id="clinic-address"
+                  placeholder="Enter your clinic address"
+                />
+              </div>
+            </article>
+            <article class="second-row">
+              <div class="form-group">
+                <label for="education">Education</label>
+                <input type="text" id="education" placeholder="E.g. B.Sc" />
+              </div>
+              <div class="form-group">
+                <label for="experience">Years of Experience</label>
+                <input type="text" id="experience" placeholder="E.g. 2" />
+              </div>
+              <div class="form-group">
+                <label for="license">License Number</label>
+                <input type="text" id="license" placeholder="E.g. 1123456789" />
+              </div>
+              <div class="form-group">
+                <label for="services">Services offered</label>
+                <input
+                  type="text"
+                  id="services"
+                  placeholder="E.g. Consultation"
+                />
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <section class="form-section-container">
+          <p class="text">Availability</p>
+          <article class="form-section">
+            <div class="form-group">
+              <label for="working-hours">Working hours</label>
+              <input
+                type="text"
+                id="working-hours"
+                placeholder="E.g. 9 AM - 5 PM"
+              />
+            </div>
+            <div class="form-group">
+              <label for="consultation-fee">Consultation Fee</label>
+              <input
+                type="text"
+                id="consultation-fee"
+                placeholder="Range should be $000-15000"
+              />
+            </div>
+          </article>
+        </section>
+      </form>
+      <article class="button-container">
+        <button class="button">save data</button>
+      </article>
+    </main>
+    <script src="doctors_form.js"></script>
+  </body>
+</html>

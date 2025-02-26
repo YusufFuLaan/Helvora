@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient-onboarding-screen-pt2</title>
+    <link rel="stylesheet" href="patient_onboarding_screen2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="major-content">
+      <article class="logo-Helvora">
+        <p class="helvora-text">Helvora</p>
+      </article>
+      <div class="progress-bar">
+        <div class="progress-step"></div>
+        <div class="progress-step active"></div>
+        <div class="progress-step"></div>
+      </div>
+      <div class="one-two-three"><p class="one two">2 of 3</p></div>
+
+      <form class="fill-in">
+        <p class="health-record">Health record</p>
+        <p class="chronic-condition hide-display">
+          Do you have any chronic health conditions
+        </p>
+        <p class="chronic-condition display-hide">
+          Do you have any existing health records from the past 6 to 12 months?
+        </p>
+
+        <p class="health-record">(e.g diabetes, hypertension)</p>
+        <div class="radio-input">
+          <div class="answer">
+            <input type="radio" name="chronic-condition" value="yes" />
+            <span>Yes</span>
+          </div>
+          <div class="answer">
+            <input type="radio" name="chronic-condition" value="no" />
+            <span>No</span>
+          </div>
+        </div>
+
+        <p class="chronic-condition">
+          Do you have any previous history of surgery or hospitialization
+        </p>
+        <div class="radio-input">
+          <div class="answer">
+            <input type="radio" name="surgery" value="yes" />
+            <span>Yes</span>
+          </div>
+          <div class="answer">
+            <input type="radio" name="surgery" value="no" />
+            <span>No</span>
+          </div>
+        </div>
+
+        <article class="button-container">
+          <button class="continue-button">Continue</button>
+        </article>
+      </form>
+    </main>
+    <script src="patient_onboarding2.js"></script>
+  </body>
+</html>

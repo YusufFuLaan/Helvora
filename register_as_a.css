@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+:root {
+  --blue: #0c6be8;
+  --deepblue: #0161e2;
+  --grey: #00000080;
+
+  --font-weight-800: 800;
+  --font-weight-500: 500;
+
+  --font-size-24: 2.4rem;
+  --font-size-2: 2rem;
+  --font-size-32: 3.2rem;
+  --font-size-18: 1.8rem;
+  --font-size-36: 3.6rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  height: 100vh;
+  align-items: center;
+}
+img {
+  width: 18rem;
+}
+.major-content {
+  background-color: white;
+  border-radius: 1.6rem;
+  padding: 2.9rem 5rem;
+  width: 79.6vw;
+  min-height: 97.6vh;
+  flex-direction: column;
+  display: flex;
+  margin: auto;
+}
+.select-your-role {
+  display: flex;
+  justify-content: start;
+  padding: 0 18rem;
+}
+.register-text-container {
+  display: flex;
+  justify-content: center;
+}
+.register-as {
+  display: flex;
+  gap: 1.6rem;
+  flex-direction: column;
+}
+.register-text {
+  font-size: var(--font-size-32);
+  font-weight: var(--font-weight-500);
+}
+.for-all-boxes {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+.as-a {
+  display: flex;
+  width: 49.9vw;
+  min-height: 22vh !important;
+  justify-content: space-between;
+  border-radius: 1.2rem;
+  border: 1px solid var(--blue);
+  padding: 1rem 1.9rem;
+}
+.logo {
+  font-size: var(--font-size-36);
+  font-weight: var(--font-weight-800);
+  color: var(--deepblue);
+}
+.for-text {
+  width: 100%;
+}
+.aligning-self {
+  display: flex;
+  align-items: start;
+  height: 100%;
+}
+.select {
+  font-size: 1.7rem;
+  color: var(--black);
+}
+.as-a-patient {
+  text-align: center;
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-500);
+  padding-top: 2.4rem;
+  padding-left: 4rem;
+  width: 18rem;
+}
+@media (max-width: 40rem) {
+  body {
+    background-color: #0161e2;
+  }
+
+  .major-content {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    padding: 2rem;
+  }
+  .as-a {
+    width: 90vw;
+    height: 25vh;
+  }
+  .logo {
+    font-size: var(--font-size-24);
+  }
+  .register-text {
+    font-size: var(--font-size-24);
+  }
+  .as-a-patient {
+    font-size: var(--font-size-18);
+    width: 11rem;
+  }
+  .select-your-role {
+    padding: 0 0.9rem;
+  }
+}

@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue: #2f80ec;
+  --green: #1fc225;
+
+  --font-size-14: 1.4rem;
+  --font-size-24: 2.4rem;
+  --font-size-18: 1.8rem;
+  --font-size-38: 3.8rem;
+  --font-size-16: 1.6rem;
+  --font-size-12: 1.2rem;
+
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+  --font-weigh-400: 400;
+}
+
+main {
+  display: flex;
+  width: 80vw;
+  margin: auto;
+  max-height: 90vh;
+
+  padding: 8rem 0;
+  color: var(--white);
+}
+img {
+  width: 56.15rem;
+}
+.for-image {
+  height: 100%;
+}
+.main-section {
+  width: 60vw;
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  padding: 3.4rem 5.5rem;
+}
+.login-with {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.login-with::before,
+.login-with::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid white;
+  margin: 0 1rem;
+}
+
+.or-text {
+  color: white;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.going-to-previous-page {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-account {
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-size-38);
+  font-weight: var(--font-weight-500);
+}
+.have-account {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: var(--font-size-12);
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 1.4rem;
+  height: 5.8rem;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 0.7rem;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  font-weight: var(--font-weigh-400);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: transparent;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input::placeholder {
+  font-size: 1.4rem;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+label {
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-500);
+}
+.going-to-previous-page a {
+  color: white;
+}
+button {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1.6rem;
+  margin-bottom: 2.45rem;
+  border-radius: 0.7rem;
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weigh-500);
+}
+
+button:hover {
+  background-color: rgba(1, 97, 226, 1);
+}
+button:active {
+  background-color: rgba(47, 128, 236, 1);
+}
+
+input[type="checkbox"] {
+  margin-bottom: 1rem;
+}
+.create a {
+  color: #000;
+}
+#button a {
+  color: white;
+}
+.checkbox-forgotpassword {
+  display: flex;
+  justify-content: space-between;
+}
+.black-link {
+  color: black;
+  font-weight: 700;
+}
+.create-account-section {
+  display: flex;
+  padding: 0.5rem 2.8rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  gap: 3rem;
+}
+.create {
+  color: var(--black);
+  font-weight: 700;
+}
+#button2 {
+  background-color: transparent;
+  color: var(--white);
+  font-size: var(--font-size-16);
+  border: none;
+  border: 1px solid var(--white);
+  margin-bottom: 2.49rem;
+}
+#button2:hover {
+  background-color: black;
+  border: 1px solid var(--black);
+}
+.button-img {
+  width: 3.7rem;
+}
+/* Prevent autofill styling */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #000;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+@media (max-width: 40rem) {
+  main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 0;
+  }
+  img {
+    display: none;
+  }
+  .main-section {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 3.4rem 2rem;
+  }
+  input[type="email"],
+  input[type="password"] {
+    padding: 1.4rem;
+    height: 5.3rem;
+  }
+  button {
+    padding: 1.3rem 1.6rem;
+  }
+  .create {
+    color: var(--green);
+  }
+  .login-with {
+    display: none;
+  }
+  .create-account-section {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .button-img {
+    width: 2.8rem;
+    display: block !important;
+  }
+
+  .create-account {
+    font-size: var(--font-size-24);
+  }
+  .have-account {
+    font-size: var(--font-size-12);
+  }
+}
