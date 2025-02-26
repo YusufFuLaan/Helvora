@@ -1000,6 +1000,12 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   cursor: pointer;
 }
 
+.fa-minus {
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 /*----------------------- QuestionSubmission-sec-style------------------------ */
 
 .questionSubmission-sec-ctn {
