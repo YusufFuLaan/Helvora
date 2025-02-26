@@ -605,7 +605,13 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
   margin-right: 7rem;
   background-color: #ffffff;
   border-radius: 1rem;
+  transition: all ease-in-out 0.3s;
 }
+
+.steps:hover {
+  transform: scale(1.05);
+}
+
 .step-section-ctn .steps img {
   width: 6rem;
   padding: 2rem;
