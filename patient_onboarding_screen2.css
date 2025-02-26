@@ -41,7 +41,7 @@ body {
   border-radius: 1.6rem;
   padding: 5rem 3rem;
   width: 59.6vw;
-  height: 93.6vh;
+  min-height: 93.6vh !important;
   flex-direction: column;
   display: flex;
   margin: auto;
