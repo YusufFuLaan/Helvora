@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Role-based redirection based on the stored value
     switch (user.role) {
       case "patient_onboarding_screen":
         window.location.href = "register_as_a.html";
@@ -60,22 +59,20 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = "doctors_dashboard.html";
         break;
       case "":
-        window.location.href = "admin_dashboard.html"; // Assuming empty value corresponds to admin
+        window.location.href = "admin_dashboard.html";
         break;
       default:
         errorMessage.textContent = "Invalid account type";
     }
 
-    clearForm(); // Clear form after successful login
+    clearForm();
   });
 
-  // Email validation
   const isValidEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
   };
 
-  // Clear errors on input
   [emailInput, passwordInput].forEach((input) => {
     input.addEventListener("input", () => {
       errorMessage.textContent = "";
@@ -83,13 +80,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Force clear on page refresh
   if (performance.navigation?.type === 1) {
     sessionStorage.setItem("loginRefresh", "true");
     clearForm();
   }
 
-  // Initialize autocomplete prevention
   if (window.history && window.history.replaceState) {
     window.history.replaceState(null, null, window.location.href);
   }
