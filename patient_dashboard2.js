@@ -1,6 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".side-bar li, #side-menu li");
   const contentSections = document.querySelectorAll(".content-section");
+  const appointmentBtn = document.querySelectorAll(".book-appointment");
+  const findDoctorsPage = document.querySelector(
+    ".for-doctors-cards-container"
+  );
+  const confirmBtn = document.querySelector(".confirm-btn-container");
+  const appointmentPage2 = document.querySelector(".appointment-screen2");
+  const overlayBookNowBtn = document.querySelector(".book-now");
+  const aboutDoctors = document.querySelector(".about-doctors");
+  const backToFindDoctorsBtn = document.getElementById(
+    "back-to-find-doctors-btn"
+  );
+
+  if (backToFindDoctorsBtn) {
+    backToFindDoctorsBtn.addEventListener("click", function () {
+      console.log("Back button clicked!");
+
+      // Show the "Find Doctors" section
+
+      // Hide the "Appointment 2" section
+
+      findDoctorsPage.classList.remove("hiddens");
+      appointmentPage2.classList.add("hiddens");
+      confirmBtn.classList.add("hiddens");
+      backToFindDoctorsBtn.style.display = "none";
+    });
+  }
 
   function showContent(targetId) {
     console.log("Target ID:", targetId); // Debugging log
@@ -29,6 +55,23 @@ document.addEventListener("DOMContentLoaded", () => {
     target.classList.add("active");
     showContent(targetId);
   }
+  appointmentBtn.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      findDoctorsPage.classList.add("hiddens");
+      appointmentPage2.classList.remove("hiddens");
+      confirmBtn.classList.remove("hiddens");
+      backToFindDoctorsBtn.style.display = "block";
+    });
+  });
+  overlayBookNowBtn.addEventListener("click", function () {
+    findDoctorsPage.classList.add("hiddens");
+    appointmentPage2.classList.remove("hiddens");
+    confirmBtn.classList.remove("hiddens");
+    backToFindDoctorsBtn.style.display = "block";
+    aboutDoctors.classList.remove("hidden");
+
+    aboutDoctors.classList.add("hidden");
+  });
 
   // Attach event listeners to all relevant links
   navLinks.forEach((link) => {

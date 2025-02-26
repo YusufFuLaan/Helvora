@@ -553,22 +553,23 @@ li {
     height: 2.4rem;
     color: rgba(252, 207, 27, 1);
   }
-  .book-new-appointment {
-    margin-top: 4rem;
-    width: 37.8rem;
-    height: 5.2rem;
-    border-radius: 0.8rem;
-    background-color: rgba(47, 128, 236, 1);
-    padding: 1.6rem 2.4rem;
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: var(--font-size-18);
-    font-weight: var(--font-weight-700);
-  }
 }
 .hide-on-bigScreens {
   display: none;
+}
+
+.book-new-appointment {
+  margin-top: 4rem;
+  width: 37.8rem;
+  height: 5.2rem;
+  border-radius: 0.8rem;
+  background-color: rgba(47, 128, 236, 1);
+  padding: 1.6rem 2.4rem;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-700);
 }
 
 .really-hide {
@@ -672,7 +673,13 @@ li {
   background-color: white;
   text-align: center;
 }
+#back-to-find-doctors-btn {
+  display: none;
+}
 .hidden {
+  display: none !important;
+}
+.hiddens {
   display: none !important;
 }
 
@@ -1133,4 +1140,9 @@ th {
 
 .content-section.active {
   display: block !important;
+}
+
+.container-for-book-new-appointment {
+  display: flex;
+  justify-content: center;
 }
