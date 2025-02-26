@@ -61,9 +61,10 @@ img {
   flex-direction: column;
 }
 a {
-  color: var(--green);
+  color: greenyellow;
   text-decoration: none;
   margin-left: 0.3rem;
+  font-weight: 700;
 }
 .create-account {
   display: flex;
