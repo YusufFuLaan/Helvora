@@ -12,14 +12,48 @@ document.addEventListener("DOMContentLoaded", () => {
   const backToFindDoctorsBtn = document.getElementById(
     "back-to-find-doctors-btn"
   );
+  const overlayForAppointment = document.querySelector(
+    ".overlay-for-appointment"
+  );
+  const viewDetailsBtn = document.querySelectorAll(".view-details");
+  const closeAppointmentModal = document.querySelectorAll(
+    ".hide-appointment-modals"
+  );
+  const appointmentSmallScreenDisplay = document.querySelector(
+    ".for-small-screen-appointment"
+  );
+  const tableDisplays = document.querySelectorAll(".table");
+  const bookNewAppointmentBtn = document.querySelector(".book-new-appointment");
+  const disturbingMe = document.querySelector(".disturbing");
+  bookNewAppointmentBtn.addEventListener("click", function () {
+    tableDisplays.forEach((table) => {
+      table.style.display = "none";
+      console.log(`haaaaaa`);
+    });
 
+    console.log(`works`);
+    appointmentSmallScreenDisplay.classList.add("hidden");
+    disturbingMe.classList.remove("hidden");
+    bookNewAppointmentBtn.style.display = "none";
+  });
+
+  viewDetailsBtn.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const status = this.getAttribute("data-status");
+      console.log("Status:", status);
+
+      if (status === "completed") {
+        document.getElementById("successor").classList.remove("hidden");
+      } else if (status === "missed") {
+        document.getElementById("missed-modal").classList.remove("hidden");
+      } else if (status === "cancelled") {
+        document.getElementById("cancelled-section").classList.remove("hidden");
+      }
+    });
+  });
   if (backToFindDoctorsBtn) {
     backToFindDoctorsBtn.addEventListener("click", function () {
       console.log("Back button clicked!");
-
-      // Show the "Find Doctors" section
-
-      // Hide the "Appointment 2" section
 
       findDoctorsPage.classList.remove("hiddens");
       appointmentPage2.classList.add("hiddens");
@@ -28,8 +62,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  closeAppointmentModal.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      this.closest(".overlay-for-appointment").classList.add("hidden");
+      console.log(`work`);
+    });
+  });
+
   function showContent(targetId) {
-    console.log("Target ID:", targetId); // Debugging log
+    console.log("Target ID:", targetId);
     contentSections.forEach((section) => {
       section.classList.remove("active");
       if (section.id === targetId) {
@@ -55,6 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     target.classList.add("active");
     showContent(targetId);
   }
+
   appointmentBtn.forEach((btn) => {
     btn.addEventListener("click", function () {
       findDoctorsPage.classList.add("hiddens");
@@ -63,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
       backToFindDoctorsBtn.style.display = "block";
     });
   });
+
   overlayBookNowBtn.addEventListener("click", function () {
     findDoctorsPage.classList.add("hiddens");
     appointmentPage2.classList.remove("hiddens");
@@ -73,18 +116,15 @@ document.addEventListener("DOMContentLoaded", () => {
     aboutDoctors.classList.add("hidden");
   });
 
-  // Attach event listeners to all relevant links
   navLinks.forEach((link) => {
     if (!link.classList.contains("last")) {
       link.addEventListener("click", handleNavigation);
     }
   });
 
-  // Activate the default section
   document.querySelector(".side-bar li:first-child").classList.add("active");
   document.getElementById("dashboard-content").classList.add("active");
 
-  // Dropdown menu functionality
   const dropDownMenu = document.querySelector(".images");
   const sideMenu = document.getElementById("side-menu");
   const openSide = document.getElementById("image");

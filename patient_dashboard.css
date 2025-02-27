@@ -369,6 +369,9 @@ li {
   .view-profile a {
     color: rgba(47, 128, 236, 1);
   }
+  .view-profile a:hover {
+    color: white !important;
+  }
   /* appointment-screen2 */
   .appointment-screen2 {
     height: 190vh;
@@ -557,6 +560,9 @@ li {
 .hide-on-bigScreens {
   display: none;
 }
+button {
+  cursor: pointer !important;
+}
 
 .book-new-appointment {
   margin-top: 4rem;
@@ -571,7 +577,12 @@ li {
   font-size: var(--font-size-18);
   font-weight: var(--font-weight-700);
 }
-
+.book-new-appointment:hover {
+  background-color: rgba(1, 97, 226, 1);
+}
+.book-new-appointment:active {
+  background-color: rgba(0, 0, 0, 1);
+}
 .really-hide {
   display: none !important;
 }
@@ -663,6 +674,12 @@ li {
   color: white;
   text-align: center;
 }
+.book-appointment:hover {
+  background-color: rgba(1, 97, 226, 1);
+}
+.book-appointment:active {
+  background-color: rgba(0, 0, 0, 1);
+}
 .view-profile {
   border-radius: 0.8rem;
   position: relative;
@@ -672,6 +689,26 @@ li {
   color: var(--blue);
   background-color: white;
   text-align: center;
+}
+.view-profile:hover {
+  background-color: rgba(47, 128, 236, 1);
+  color: white !important;
+}
+.view-profile:active {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(47, 128, 236, 1);
+}
+.book-now:hover {
+  background-color: rgba(1, 97, 226, 1);
+}
+.book-now:active {
+  background-color: rgba(0, 0, 0, 1);
+}
+.confirm-btn:hover {
+  background-color: rgba(1, 97, 226, 1) s;
+}
+.confirm-btn:active {
+  background-color: rgba(0, 0, 0, 1);
 }
 #back-to-find-doctors-btn {
   display: none;
@@ -858,12 +895,18 @@ caption {
   padding: 1rem;
   width: 13.2rem;
   height: 4.1rem;
+  position: relative;
   align-items: center;
+  color: black !important;
   justify-content: center;
   margin-bottom: 4rem;
   border: 1px solid rgba(47, 128, 236, 1);
   justify-content: center;
   border: 1px solid rgba(47, 128, 236, 1);
+}
+.view-details:hover {
+  background-color: rgba(149, 143, 143, 1);
+  border: none;
 }
 .text-align-center {
   padding-left: 7rem;
@@ -1145,4 +1188,44 @@ th {
 .container-for-book-new-appointment {
   display: flex;
   justify-content: center;
+}
+
+.overlay-for-appointment {
+  width: 39rem;
+  height: 33.8rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.1rem;
+  position: absolute;
+  top: 318px;
+  left: 650px;
+  padding: 2.6rem;
+}
+.past-appointment-header {
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-500);
+}
+.display-side-by-side {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.ordinary-texts {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weigh-400);
+}
+.ordinary-text-span {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weigh-300);
+}
+.cancelled {
+  color: rgba(221, 18, 18, 1);
+}
+.missed {
+  color: rgba(252, 207, 27, 1);
+}
+.green {
+  color: rgba(31, 194, 37, 1);
 }
