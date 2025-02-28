@@ -933,28 +933,31 @@
               </section>
 
               <article class="calendar-appointment-time flex-type-column">
+                <!-- Second Calendar -->
                 <section class="for-calendar">
-                  <div class="calendar-header">
-                    <button onclick="changeMonth(-1)">&lt;</button>
-                    <h1 id="monthYear"></h1>
-                    <button onclick="changeMonth(1)">&gt;</button>
+                  <div class="calendar-header-2">
+                    <button onclick="changeMonth2(-1)"><</button>
+                    <h1 class="monthYear-2"></h1>
+                    <button onclick="changeMonth2(1)">></button>
                   </div>
-
-                  <div id="calendar"></div>
-                  <div id="timeModal" class="modal">
+                  <div class="calendar-2"></div>
+                  <div class="timeModal-2 modal">
                     <div class="modal-content">
-                      <span class="close">&times;</span>
+                      <span class="close" onclick="hideTimeModal2()"
+                        >&times;</span
+                      >
                       <p>Select Time:</p>
-                      <select id="timeSelect">
+                      <select class="timeSelect-2">
                         <option>09:00 AM</option>
                         <option>10:00 AM</option>
                         <option>02:00 PM</option>
                         <option>03:00 PM</option>
                       </select>
-                      <button onclick="bookAppointment()">Confirm</button>
+                      <button onclick="bookAppointment2()">Confirm</button>
                     </div>
                   </div>
                 </section>
+
                 <section class="available-date-time hide-on-small-screens">
                   <p class="select-available-text">
                     Select available date & time
