@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="patient_dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="grid-container">
+      <!-- HEADER PART OF THE PROJECT -->
+      <section class="header">
+        <section class="small-screen-display">
+          <article class="small-logo">
+            <p class="helvora">Helvora</p>
+          </article>
+          <nav class="small-screen-type">
+            <ul id="side-menu">
+              <p>
+                Helvora
+                <img src="Public/images/close_menu.svg" alt="" id="drop_down" />
+              </p>
+              <li>
+                <img src="Public/images/dashboard.svg" alt="" /> Dashboard
+              </li>
+              <li>
+                <img src="Public/images/find_a_doctor.svg" alt="" />Find A
+                Doctor
+              </li>
+              <li>
+                <img src="Public/images/appointments.svg" alt="" /> Appointments
+              </li>
+              <li>
+                <img src="Public/images/medical_records.svg" alt="" /> Medical
+                Records
+              </li>
+              <li>
+                <img src="Public/images/messages.svg" class="" alt="" />
+                Messages
+              </li>
+              <li class="last"></li>
+              <li id="extra-work">
+                <img src="Public/images/help_center.svg" alt="" />Help Centre
+              </li>
+              <li><img src="Public/images/settings.svg" alt="" />Settings</li>
+            </ul>
+
+            <i class="fa-solid fa-bars" id="fa-bars"></i>
+            <img src="Public/images/drop_down_menu.svg" id="image" alt="" />
+          </nav>
+        </section>
+
+        <article class="top-logos">
+          <form action="/search" method="GET">
+            <div class="search-container">
+              <input
+                type="search"
+                class="search-input"
+                placeholder="Search for doctors "
+                aria-label="Search for doctors"
+                name="query"
+              />
+              <svg
+                class="search-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+          </form>
+
+          <article class="filter">
+            <li><img src="Public/images/filter.svg" alt="" /> Filter</li>
+          </article>
+          <article class="for-filter-user-value-notification">
+            <article class="rounded-bordeer">
+              <img src="Public/images/notification.svg" alt="" />
+            </article>
+
+            <article class="user-profile">
+              <li><img src="Public/images/user_dp.svg" alt="" /> Annabel</li>
+            </article>
+          </article>
+        </article>
+        <section class="go-to-Homepage">
+          <p><a href="">Go to Homepage</a></p>
+        </section>
+      </section>
+
+      <!-- SIDE BAR -->
+      <section class="side-bar">
+        <article class="logo">
+          <p>Helvora</p>
+        </article>
+        <nav class="otherpages">
+          <ul class="links">
+            <li><img src="Public/images/dashboard.svg" alt="" /> Dashboard</li>
+            <li>
+              <img
+                src="Public/images/find_a_doctor.svg"
+                alt=""
+                class="find-doctor"
+              />Find A Doctor
+            </li>
+            <li>
+              <img src="Public/images/appointments.svg" alt="" /> Appointments
+            </li>
+            <li>
+              <img src="Public/images/medical_records.svg" alt="" /> Medical
+              Records
+            </li>
+            <li><img src="Public/images/messages.svg" alt="" /> Messages</li>
+          </ul>
+        </nav>
+
+        <ul class="help-settings">
+          <li><img src="Public/images/help_center.svg" alt="" />Help Centre</li>
+          <li><img src="Public/images/settings.svg" alt="" />Settings</li>
+        </ul>
+      </section>
+
+      <!-- MAIN CONTENT OF THE DASHBOARD -->
+      <section class="main-content">
+        <!-- OVERVIEW PAGE -->
+        <article id="dashboard-content" class="content-section">
+          <h2>Dashboard</h2>
+          <p>Welcome to your dashboard!</p>
+        </article>
+
+        <!--  FIND A DOCTOR  -->
+        <article id="find-a-doctor-content" class="content-section">
+          <!-- more info about doctors -->
+          <article class="about-doctors hidden">
+            <section class="image-and-text">
+              <article class="side-image">
+                <img src="Public/images/dr_rabiu_rectangle.svg" alt="" />
+              </article>
+              <article class="about-info">
+                <p class="doctors-name align-right">Dr Rabiu John</p>
+                <p class="doctors-field">
+                  Gastroenterology
+                  <span>(Digestive System & Liver Specialist)</span>
+                </p>
+                <p class="doctors-hospital">
+                  Hospital/Clinic:
+                  <span class="deeperfont">Holy Ground Hospital</span>
+                </p>
+                <p class="average">Average Rating ⭐️⭐️⭐️⭐️⭐️</p>
+                <p class="doctors-status">
+                  Available Status :<span class="deeperfont"
+                    >Available Soon</span
+                  >
+                </p>
+              </article>
+              <article class="close-overlay-img">
+                <img
+                  src="Public/images/close_menu.svg"
+                  class="closing-overlay"
+                  alt=""
+                />
+              </article>
+            </section>
+
+            <section class="more-infromation">
+              <div class="for-centering-in-smaal-screens">
+                <h1 class="about-text center">About</h1>
+              </div>
+              <p class="about-us-paragraph">
+                "Dr Rabiu John is a board-certified Gastroenterologist with over
+                a decade of experience in diagnosing and treating digestive
+                disorders, liver diseases, and Gastrointestinal infections .He
+                specializes in endoscopy procedures, acid reflux treatment, and
+                irritable bowel syndrome(IBS)management
+              </p>
+              <h1 class="about-text">Available Consultation Options</h1>
+              <ul class="list">
+                <li>
+                  In person Consultation (At Lagos University Teaching Hospital)
+                </li>
+                <li>Video Consultation (Through the Helvora Platform)</li>
+              </ul>
+
+              <h1 class="about-text avails">
+                Doctor's Schedule & Availability
+              </h1>
+              <ul class="list">
+                <li>Next Available Slot : Tuesday, Feb 5th -10:30Am</li>
+                <li>Consultation Hours :Mon-Fri(9AM-6PM),Sat(10AM-2PM)</li>
+              </ul>
+              <h1 class="about-text avails">
+                Areas of Expertise & Conditions Treated
+              </h1>
+              <ul class="list">
+                <li>Acid Reflux & Heartburn</li>
+                <li>Irritable Bowel Syndrome (IBS)</li>
+                <li>Liver Diseases (Hepatitis, Fatty Liver)</li>
+                <li>Stomach Ulcer</li>
+                <li>Colonoscopy & Endoscopy</li>
+                <li>Gastrointestinal Infections</li>
+              </ul>
+            </section>
+
+            <article class="book-now-container-btn">
+              <button class="book-now">Book Now</button>
+              <button class="book-now hide-on-bigScreens">Book now</button>
+            </article>
+          </article>
+
+          <!--           Main doctors page
+ -->
+          <section class="for-doctors-cards-container">
+            <article class="doctors-card">
+              <img src="Public/images/rabiu.jpg" class="drs-image" alt="" />
+              <p class="doctors-name">Dr Rabiu John</p>
+              <p class="doctors-field-of-study">Gastroenterology</p>
+              <p class="doctors-hospital">Hospital/Clinic</p>
+              <article class="average-rating">
+                <p class="average">Average Rating ⭐️⭐️⭐️⭐️</p>
+              </article>
+              <p class="doctors-status">
+                Availability Status:
+                <span class="deeperfont">Available Soon</span>
+              </p>
+              <article class="view-profile-book-appointment">
+                <button class="view-profile hide-on-smallScreens">
+                  View Profile
+                </button>
+                <button class="view-profile hide-on-bigScreens">
+                  <a href="little_overlay.html">View Profile</a>
+                </button>
+                <button class="book-appointment">Book Appointment</button>
+              </article>
+            </article>
+
+            <article class="doctors-card hide-doctor">
+              <img src="Public/images/abel.jpg" class="drs-image" alt="" />
+              <p class="doctors-name">Dr Abel Son</p>
+              <p class="doctors-field-of-study">Cardiology</p>
+              <p class="doctors-hospital">
+                Hospital/Clinic:
+                <span class="deeperfont">Holy Ground Hospital</span>
+              </p>
+              <article class="average-rating">
+                <p class="average">Average Rating ⭐️⭐️⭐️⭐️⭐️</p>
+              </article>
+              <p class="doctors-status">Online</p>
+              <article class="view-profile-book-appointment">
+                <button class="view-profile hide-on-smallScreens">
+                  View Profile
+                </button>
+                <button class="view-profile hide-on-bigScreens">
+                  <a href="little_overlay.html">View Profile</a>
+                </button>
+                <button class="book-appointment">Book Appointment</button>
+              </article>
+            </article>
+            <article class="doctors-card hide-doctor">
+              <img src="Public/images/maxwell.jpg" class="drs-image" alt="" />
+              <p class="doctors-name">Dr Maxwell Obey</p>
+              <p class="doctors-field-of-study">Family Medicine</p>
+              <p class="doctors-hospital">
+                Hospital/Clinic
+                <span class="deeperfont">Hoowk's General Hospital</span>
+              </p>
+              <article class="average-rating">
+                <p class="average">Average Rating ⭐️⭐️⭐️⭐️⭐️</p>
+              </article>
+              <p class="doctors-status">
+                Available Status :<span class="deeperfont">Available Soon</span>
+              </p>
+              <article class="view-profile-book-appointment">
+                <button class="view-profile hide-on-smallScreens">
+                  View Profile
+                </button>
+                <button class="view-profile hide-on-bigScreens">
+                  <a href="little_overlay.html">View Profile</a>
+                </button>
+                <button class="book-appointment">Book Appointment</button>
+              </article>
+            </article>
+
+            <article class="doctors-card hide-doctor">
+              <img src="Public/images/ruth.jpg" class="drs-image" alt="" />
+              <p class="doctors-name">Dr. Ruth Fikayo</p>
+              <p class="doctors-field-of-study">Oncology</p>
+              <p class="doctors-hospital">
+                Hospital/Clinic
+                <span class="deeperfont">Basic General Hospital</span>
+              </p>
+              <article class="average-rating">
+                <p class="average">Average Rating ⭐️⭐️⭐️⭐️⭐️</p>
+              </article>
+              <p class="doctors-status">
+                Available Status :<span class="deeperfont">Available Soon</span>
+              </p>
+              <article class="view-profile-book-appointment">
+                <button class="view-profile hide-on-smallScreens">
+                  View Profile
+                </button>
+                <button class="view-profile hide-on-bigScreens">
+                  <a href="little_overlay.html">View Profile</a>
+                </button>
+                <button class="book-appointment">Book Appointment</button>
+              </article>
+            </article>
+            <article class="doctors-card hide-doctor">
+              <img src="Public/images/best.jpg" class="drs-image" alt="" />
+              <p class="doctors-name">Dr. Best Ujuwan</p>
+              <p class="doctors-field-of-study">Pediatrics</p>
+              <p class="doctors-hospital">
+                Hospital/Clinic
+                <span class="deeperfont">Salindem Healthcare</span>
+              </p>
+              <article class="average-rating">
+                <p class="average">Average Rating ⭐️⭐️⭐️⭐️⭐️</p>
+              </article>
+              <p class="doctors-status">
+                Available Status :<span class="deeperfont">Available Soon</span>
+              </p>
+              <article class="view-profile-book-appointment">
+                <button class="view-profile hide-on-smallScreens">
+                  View Profile
+                </button>
+                <button class="view-profile hide-on-bigScreens">
+                  <a href="little_overlay.html">View Profile</a>
+                </button>
+                <button class="book-appointment">Book Appointment</button>
+              </article>
+            </article>
+            <article class="doctors-card hide-doctor">
+              <img src="Public/images/simeon.jpg" class="drs-image" alt="" />
+              <p class="doctors-name">Dr. Simeon Onga</p>
+              <p class="doctors-field-of-study">Neurology</p>
+              <p class="doctors-hospital">
+                Hospital/Clinic
+                <span class="deeperfont">Hoowk's General Hospital</span>
+              </p>
+              <article class="average-rating">
+                <p class="average">Average Rating ⭐️⭐️⭐️⭐️⭐️</p>
+              </article>
+              <p class="doctors-status">
+                Available Status :<span class="deeperfont">Available Soon</span>
+              </p>
+              <article class="view-profile-book-appointment">
+                <button class="view-profile hide-on-smallScreens">
+                  View Profile
+                </button>
+                <button class="view-profile hide-on-bigScreens">
+                  <a href="little_overlay.html">View Profile</a>
+                </button>
+                <button class="book-appointment">Book Appointment</button>
+              </article>
+            </article>
+          </section>
+
+          <!--           this takes you to the appoinment page with a calendar
+ -->
+          <article>
+            <button id="back-to-find-doctors-btn">←</button>
+            <section
+              class="appointment-screen2 hiddens"
+              id="appointment-screen-2"
+            >
+              <article class="doctors-area-review flex-type-column">
+                <article class="doctors-box-and-review">
+                  <div class="rounded-image-area">
+                    <img src="Public/images/rounded-dr-rabiu.svg" alt="" />
+                  </div>
+                  <div class="centering-texts">
+                    <p class="doctors-name">Dr Rabiu John</p>
+                    <p class="doctors-speciality">Gastroenterology</p>
+                  </div>
+                  <div class="reviews-area">
+                    <p class="reviews-ratings-text">
+                      Reviews & Ratings: ⭐️ ⭐️ ⭐️ ⭐️ ⭐️
+                    </p>
+                    <article class="aText-image">
+                      <img src="Public/images/mabel.svg" alt="" />
+                      <p class="review-text">
+                        "Dr Rabiu is a amazing doctor, he is always patient and
+                        ready to listen "- Mabel O
+                      </p>
+                    </article>
+                    <article class="aText-image">
+                      <img src="Public/images/peace.svg" alt="" />
+                      <p class="review-text">
+                        "I highly recommend Dr Rabiu, he is your everyday go to
+                        Doctor "- Peace O
+                      </p>
+                    </article>
+                    <article class="aText-image">
+                      <img src="Public/images/chioma.svg" alt="" />
+                      <p class="review-text">
+                        "Dr Rabiu is very knowledgeable and professional . He
+                        helped me manage acid reflux with a personalized
+                        treatment plan "- Chionma A
+                      </p>
+                    </article>
+                  </div>
+                </article>
+                <select
+                  name="choose Appointment Type"
+                  id="choose-type "
+                  class="hide-on-small-screens"
+                >
+                  <option value="">Choose Appointment Type</option>
+                  <option value=""></option>
+                </select>
+                <label
+                  for="provide-reason"
+                  class="provide-reason hide-on-small-screens"
+                  >Provide a reason for the visit (optional)</label
+                >
+                <textarea
+                  name="provide-reason"
+                  id="provide-reasons"
+                  cols="30"
+                  class="hide-on-small-screens"
+                  rows="5"
+                ></textarea>
+              </article>
+
+              <section class="available-date-time dispay-on-small-screens">
+                <p class="select-available-text">
+                  Select available date & time <br /><br /><span
+                    class="available-span"
+                    >Available <span class="color-green"></span
+                  ></span>
+                  <span class="unaavilable-span"
+                    >Unavailable <span class="color-grey"></span
+                  ></span>
+                </p>
+              </section>
+
+              <article class="calendar-appointment-time flex-type-column">
+                <section class="for-calendar">
+                  <div class="calendar-header">
+                    <button onclick="changeMonth(-1)">&lt;</button>
+                    <h1 id="monthYear"></h1>
+                    <button onclick="changeMonth(1)">&gt;</button>
+                  </div>
+
+                  <div id="calendar"></div>
+                  <div id="timeModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p>Select Time:</p>
+                      <select id="timeSelect">
+                        <option>09:00 AM</option>
+                        <option>10:00 AM</option>
+                        <option>02:00 PM</option>
+                        <option>03:00 PM</option>
+                      </select>
+                      <button onclick="bookAppointment()">Confirm</button>
+                    </div>
+                  </div>
+                </section>
+                <section class="available-date-time hide-on-small-screens">
+                  <p class="select-available-text">
+                    Select available date & time
+                    <span class="available-span"
+                      >Available <span class="color-green"></span
+                    ></span>
+                    <span class="unaavilable-span"
+                      >Unavailable <span class="color-grey"></span
+                    ></span>
+                  </p>
+                </section>
+
+                <section class="setting-time">
+                  <div class="timer-text">
+                    <img src="Public/images/timer.svg" alt="" />
+                    <p class="timer-text-main">3:00pm</p>
+                  </div>
+                  <div class="timer-text">
+                    <img src="Public/images/timer.svg" alt="" />
+                    <p class="timer-text-main">2:00pm</p>
+                  </div>
+                  <div class="timer-text">
+                    <img src="Public/images/timer.svg" alt="" />
+                    <p class="timer-text-main">10:45am</p>
+                  </div>
+                  <div class="timer-text">
+                    <img src="Public/images/timer.svg" alt="" />
+                    <p class="timer-text-main">5:00pm</p>
+                  </div>
+
+                  <div class="timer-text">
+                    <img src="Public/images/timer.svg" alt="" />
+                    <p class="timer-text-main">8:00am</p>
+                  </div>
+                </section>
+                <select
+                  name="choose Appointment Type"
+                  id="choose-type "
+                  class="dispay-on-small-screens"
+                >
+                  <option value="">Choose Appointment Type</option>
+                  <option value=""></option>
+                </select>
+                <label
+                  for="provide-reason"
+                  class="provide-reason dispay-on-small-screens"
+                  >Provide a reason for the visit (optional)</label
+                >
+                <input type="text" class="as-text-area" />
+              </article>
+
+              <!-- for overlay -->
+              <section class="success-overlay">
+                <img src="Public/images/booking_sucessful.svg" alt="" />
+                <p class="booking-successful-text">
+                  Your booking has been successful
+                </p>
+                <button class="buttons-under-successful-booking">
+                  Reschedule <img src="Public/images/" alt="" />
+                </button>
+                <button class="buttons-under-successful-booking">
+                  Cancel Appointment<img src="Public/images/" alt="" />
+                </button>
+                <button class="buttons-under-successful-booking">
+                  Join Virtual Consultation <img src="Public/images/" alt="" />
+                </button>
+                <button class="buttons-under-successful-booking">
+                  Go to Home Dashboard <img src="Public/images/" alt="" />
+                </button>
+              </section>
+
+              <section class="success-overlay failed">
+                <img src="Public/images/bookings_failed.svg" alt="" />
+                <p class="booking-successful-text margin-bottom">
+                  Your booking has been can cancelled
+                </p>
+                <button class="buttons-under-successful-booking">
+                  Go to Home Dashboard
+                </button>
+              </section>
+            </section>
+            <section class="confirm-btn-container hiddens">
+              <button class="confirm-btn">Confirm Booking</button>
+            </section>
+          </article>
+        </article>
+
+        <!-- APPOINTMENT PAGE -->
+        <article id="appointments-content" class="content-section">
+          <article class="for-small-screen-appointment">
+            <article class="upcoming-appoint">
+              <p class="upcoming-appoint-text">Upcoming Appointment</p>
+            </article>
+            <section class="conatiner-for-upcoming-appointment-data">
+              <article class="upcoming-data-box">
+                <article class="flex-only-top-data">
+                  <p class="service-type">Service Type : check-up</p>
+                </article>
+                <p class="service-provider">Service Provider: Dr Peter Abel</p>
+                <p class="date">Date:20,March 2024, 12:50pm</p>
+              </article>
+              <article class="upcoming-data-box">
+                <article class="flex-only-top-data">
+                  <p class="service-type">Service Type : Neuro-brain Scan</p>
+                </article>
+                <p class="service-provider">Service Provider:Dr Isaac John</p>
+                <p class="date">Date: 15th March 2024, 9:00am</p>
+              </article>
+              <article class="upcoming-data-box">
+                <article class="flex-only-top-data">
+                  <p class="service-type">Service Type : Orthopedic care</p>
+                </article>
+                <p class="service-provider">Service Provider: Dr Anu Ade</p>
+                <p class="date">Date:20th August 2024, 1:00pm</p>
+              </article>
+              <article class="upcoming-data-box">
+                <article class="flex-only-top-data">
+                  <p class="service-type">Service Type :check-up</p>
+                </article>
+                <p class="service-provider">Service Provider:Dr Alex Jarry</p>
+                <p class="date">Date:20th Oct 2024, 12pm</p>
+              </article>
+              <article class="upcoming-data-box">
+                <article class="flex-only-top-data">
+                  <p class="service-type">Service Type :Heart scan</p>
+                </article>
+                <p class="service-provider">Service Provider:Dr Alex Jarry</p>
+                <p class="date">Date:24th Oct 2024,11am</p>
+              </article>
+            </section>
+
+            <article class="past-appoint">
+              <p class="upcoming-appoint-text">Past Appointment</p>
+            </article>
+            <section class="conatiner-for-past-appointment-data">
+              <article class="past-data-box">
+                <article class="flex-only-top-data">
+                  <p class="service-type">Service Type :Check-up</p>
+                  <p class="completd">completed</p>
+                </article>
+                <p class="service-provider">Service Provider:Dr Chukwuma Obi</p>
+                <p class="date">Date:20 Sept 2024,11:19am</p>
+              </article>
+              <article class="past-data-box">
+                <article class="flex-only-top-data">
+                  <p class="service-type">Service Type :Consultation</p>
+                  <p class="completd">completed</p>
+                </article>
+                <p class="service-provider">Service Provider:Dr Haruna</p>
+                <p class="date">Date:10th May 2024, 10:00am</p>
+              </article>
+              <article class="past-data-box">
+                <article class="flex-only-top-data">
+                  <p class="service-type">Service Type :</p>
+                  <p class="missed">Missed</p>
+                </article>
+                <p class="service-provider">Service Provider:Dr Haruna</p>
+                <p class="date">Date:19th Oct 2024,3pm</p>
+              </article>
+              <article class="past-data-box">
+                <article class="flex-only-top-data">
+                  <p class="service-type">Service Type :Check-up</p>
+                  <p class="cancelled">cancelled</p>
+                </article>
+                <p class="service-provider">
+                  Service Provider: Dr Chukwuma Obi
+                </p>
+                <p class="date">Date:20th Oct 2024, 12pm</p>
+              </article>
+              <article class="past-data-box">
+                <article class="flex-only-top-data">
+                  <p class="service-type">Service Type : Heart scan</p>
+                  <p class="completd">completed</p>
+                </article>
+                <p class="service-provider">Service Provider:Dr Chika Odili</p>
+                <p class="date">Date:24th Oct 2024, 11am</p>
+              </article>
+            </section>
+          </article>
+
+          <table class="table">
+            <caption>
+              Upcoming Appointment
+            </caption>
+            <tr>
+              <th class="for-upcoming">List</th>
+              <th class="for-upcoming">Date</th>
+              <th class="for-upcoming">Time</th>
+              <th class="for-upcoming">Doctors Name</th>
+            </tr>
+
+            <tr>
+              <td class="for-upcpiming-appointment-data">S/N 004</td>
+              <td class="for-upcpiming-appointment-data">24-March,2025</td>
+              <td class="for-upcpiming-appointment-data">12:50pm</td>
+              <td class="for-upcpiming-appointment-data">Dr Peter Abel</td>
+            </tr>
+            <tr>
+              <td class="for-upcpiming-appointment-data">S/N 224</td>
+              <td class="for-upcpiming-appointment-data">29 March, 2025</td>
+              <td class="for-upcpiming-appointment-data">09:00AN</td>
+              <td class="for-upcpiming-appointment-data">Dr.Isaac John</td>
+            </tr>
+            <tr>
+              <td class="for-upcpiming-appointment-data">S/N 120</td>
+              <td class="for-upcpiming-appointment-data">20-August,2025</td>
+              <td class="for-upcpiming-appointment-data">1:00PM</td>
+              <td class="for-upcpiming-appointment-data">Dr.Anu Ade</td>
+            </tr>
+            <tr>
+              <td class="for-upcpiming-appointment-data">S/N 007</td>
+              <td class="for-upcpiming-appointment-data">24-August,2025</td>
+              <td class="for-upcpiming-appointment-data">12:50PM</td>
+              <td class="for-upcpiming-appointment-data">Dr.Hassan Jarry</td>
+            </tr>
+            <tr>
+              <td class="for-upcpiming-appointment-data">S/N 040</td>
+              <td class="for-upcpiming-appointment-data">26-August,2025</td>
+              <td class="for-upcpiming-appointment-data">12:50pm</td>
+              <td class="for-upcpiming-appointment-data">Dr.Hassan Jarry</td>
+            </tr>
+          </table>
+
+          <table class="Past-appointment table">
+            <caption>
+              Past Appointment
+            </caption>
+            <tr>
+              <th class="passed-appointment-date-time">Date and Time</th>
+              <th class="passed-appointment-date-time">Service Provider</th>
+              <th class="passed-appointment-date-time text-align-center">
+                Status
+              </th>
+              <th class="passed-appointment-date-time action-table-header">
+                Action
+              </th>
+            </tr>
+            <tr>
+              <td class="passed-information-data">28-Sep, 11:39AM</td>
+              <td class="passed-information-data">28-Sep, 11:39AM</td>
+              <td class="passed-information-data btn-green">Completed</td>
+              <td class="rounded-radius">
+                <button class="view-details success" data-status="completed">
+                  View Details
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="passed-information-data">10-May,10:00AM</td>
+              <td class="passed-information-data">10-May,10:00AM</td>
+              <td class="passed-information-data btn-yellow">Missed</td>
+              <td class="rounded-radius">
+                <button class="view-details missed" data-status="missed">
+                  View Details
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="passed-information-data">10-May,10:00AM</td>
+              <td class="passed-information-data">10-May,10:00AM</td>
+              <td class="passed-information-data btn-green">Completed</td>
+              <td class="rounded-radius">
+                <button class="view-details sucess" data-status="completed">
+                  View Details
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="passed-information-data">29-June,13:30PM</td>
+              <td class="passed-information-data">29-June,13:30PM</td>
+              <td class="passed-information-data btn-red">Cancelled</td>
+              <td class="rounded-radius">
+                <button class="view-details cancelled" data-status="cancelled">
+                  View Details
+                </button>
+              </td>
+            </tr>
+          </table>
+
+          <article id="successor" class="overlay-for-appointment hidden">
+            <div class="display-side-by-side">
+              <p class="past-appointment-header">Past Appointment</p>
+              <img
+                src="Public/images/close_menu copy.svg"
+                class="hide-appointment-modals"
+                alt=""
+              />
+            </div>
+            <p class="ordinary-texts">
+              Date :Date :28th September 2024
+              <span class="ordinary-text-span"></span>
+            </p>
+            <p class="ordinary-texts">
+              Time :11:19AM<span class="ordinary-text-span"></span>
+            </p>
+            <p class="ordinary-texts">
+              Service Type:Consultation <span class="ordinary-text-span"></span>
+            </p>
+            <p class="ordinary-texts">
+              Service Provider :Dr Chukwuma<span
+                class="ordinary-text-span"
+              ></span>
+            </p>
+            <p class="ordinary-texts">
+              Service Charge:#1000<span class="ordinary-text-span"></span>
+            </p>
+            <p class="ordinary-texts">
+              Status <span class="green">Completed</span>
+            </p>
+          </article>
+
+          <!--           modal for missed meeting
+ -->
+          <article id="missed-modal" class="overlay-for-appointment hidden">
+            <div class="display-side-by-side">
+              <p class="past-appointment-header">Past Appointment</p>
+              <img
+                src="Public/images/close_menu copy.svg"
+                class="hide-appointment-modals"
+                alt=""
+              />
+            </div>
+            <p class="ordinary-texts">
+              Date :28th September 2024 <span class="ordinary-text-span"></span>
+            </p>
+            <p class="ordinary-texts">
+              Time :10:00AM<span class="ordinary-text-span"></span>
+            </p>
+            <p class="ordinary-texts">
+              Service Type:Consultation <span class="ordinary-text-span"></span>
+            </p>
+            <p class="ordinary-texts">
+              Service Provider :Dr Samuel. A<span
+                class="ordinary-text-span"
+              ></span>
+            </p>
+            <p class="ordinary-texts">
+              Status <span class="missed">Missed</span>
+            </p>
+          </article>
+          <!--           modal for cancelled meeting
+ -->
+          <article
+            id="cancelled-section"
+            class="overlay-for-appointment hidden"
+          >
+            <div class="display-side-by-side">
+              <p class="past-appointment-header">Past Appointment</p>
+              <img
+                src="Public/images/close_menu copy.svg"
+                class="hide-appointment-modals"
+                alt=""
+              />
+            </div>
+            <p class="ordinary-texts">
+              Date :20 June 2024 <span class="ordinary-text-span"></span>
+            </p>
+            <p class="ordinary-texts">
+              Time :12:30AM<span class="ordinary-text-span"></span>
+            </p>
+            <p class="ordinary-texts">
+              Service Type:Consultation <span class="ordinary-text-span"></span>
+            </p>
+            <p class="ordinary-texts">
+              Service Provider :Dr Nuruden. A<span
+                class="ordinary-text-span"
+              ></span>
+            </p>
+            <p class="ordinary-texts">
+              Status <span class="cancelled">Cancelled</span>
+            </p>
+          </article>
+
+          <div class="container-for-book-new-appointment">
+            <button class="book-new-appointment">Book New Appointment</button>
+          </div>
+
+          <article>
+            <button id="back-to-find-doctors-btn">←</button>
+            <section
+              class="appointment-screen2 disturbing hidden"
+              id="appointment-screen-2"
+            >
+              <article class="doctors-area-review flex-type-column">
+                <article class="doctors-box-and-review">
+                  <div class="rounded-image-area">
+                    <img src="Public/images/rounded-dr-rabiu.svg" alt="" />
+                  </div>
+                  <div class="centering-texts">
+                    <p class="doctors-name">Dr Rabiu John</p>
+                    <p class="doctors-speciality">Gastroenterology</p>
+                  </div>
+                  <div class="reviews-area">
+                    <p class="reviews-ratings-text">
+                      Reviews & Ratings: ⭐️ ⭐️ ⭐️ ⭐️ ⭐️
+                    </p>
+                    <article class="aText-image">
+                      <img src="Public/images/mabel.svg" alt="" />
+                      <p class="review-text">
+                        "Dr Rabiu is a amazing doctor, he is always patient and
+                        ready to listen "- Mabel O
+                      </p>
+                    </article>
+                    <article class="aText-image">
+                      <img src="Public/images/peace.svg" alt="" />
+                      <p class="review-text">
+                        "I highly recommend Dr Rabiu, he is your everyday go to
+                        Doctor "- Peace O
+                      </p>
+                    </article>
+                    <article class="aText-image">
+                      <img src="Public/images/chioma.svg" alt="" />
+                      <p class="review-text">
+                        "Dr Rabiu is very knowledgeable and professional . He
+                        helped me manage acid reflux with a personalized
+                        treatment plan "- Chionma A
+                      </p>
+                    </article>
+                  </div>
+                </article>
+                <select
+                  name="choose Appointment Type"
+                  id="choose-type "
+                  class="hide-on-small-screens"
+                >
+                  <option value="">Choose Appointment Type</option>
+                  <option value=""></option>
+                </select>
+                <label
+                  for="provide-reason"
+                  class="provide-reason hide-on-small-screens"
+                  >Provide a reason for the visit (optional)</label
+                >
+                <textarea
+                  name="provide-reason"
+                  id="provide-reasons"
+                  cols="30"
+                  class="hide-on-small-screens"
+                  rows="5"
+                ></textarea>
+              </article>
+
+              <section class="available-date-time dispay-on-small-screens">
+                <p class="select-available-text">
+                  Select available date & time <br /><br /><span
+                    class="available-span"
+                    >Available <span class="color-green"></span
+                  ></span>
+                  <span class="unaavilable-span"
+                    >Unavailable <span class="color-grey"></span
+                  ></span>
+                </p>
+              </section>
+
+              <article class="calendar-appointment-time flex-type-column">
+                <!-- Second Calendar -->
+                <section class="for-calendar">
+                  <div class="calendar-header-2">
+                    <button onclick="changeMonth2(-1)"><</button>
+                    <h1 class="monthYear-2"></h1>
+                    <button onclick="changeMonth2(1)">></button>
+                  </div>
+                  <div class="calendar-2"></div>
+                  <div class="timeModal-2 modal">
+                    <div class="modal-content">
+                      <span class="close" onclick="hideTimeModal2()"
+                        >&times;</span
+                      >
+                      <p>Select Time:</p>
+                      <select class="timeSelect-2">
+                        <option>09:00 AM</option>
+                        <option>10:00 AM</option>
+                        <option>02:00 PM</option>
+                        <option>03:00 PM</option>
+                      </select>
+                      <button onclick="bookAppointment2()">Confirm</button>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="available-date-time hide-on-small-screens">
+                  <p class="select-available-text">
+                    Select available date & time
+                    <span class="available-span"
+                      >Available <span class="color-green"></span
+                    ></span>
+                    <span class="unaavilable-span"
+                      >Unavailable <span class="color-grey"></span
+                    ></span>
+                  </p>
+                </section>
+
+                <section class="setting-time">
+                  <div class="timer-text">
+                    <img src="Public/images/timer.svg" alt="" />
+                    <p class="timer-text-main">3:00pm</p>
+                  </div>
+                  <div class="timer-text">
+                    <img src="Public/images/timer.svg" alt="" />
+                    <p class="timer-text-main">2:00pm</p>
+                  </div>
+                  <div class="timer-text">
+                    <img src="Public/images/timer.svg" alt="" />
+                    <p class="timer-text-main">10:45am</p>
+                  </div>
+                  <div class="timer-text">
+                    <img src="Public/images/timer.svg" alt="" />
+                    <p class="timer-text-main">5:00pm</p>
+                  </div>
+
+                  <div class="timer-text">
+                    <img src="Public/images/timer.svg" alt="" />
+                    <p class="timer-text-main">8:00am</p>
+                  </div>
+                </section>
+                <select
+                  name="choose Appointment Type"
+                  id="choose-type "
+                  class="dispay-on-small-screens"
+                >
+                  <option value="">Choose Appointment Type</option>
+                  <option value=""></option>
+                </select>
+                <label
+                  for="provide-reason"
+                  class="provide-reason dispay-on-small-screens"
+                  >Provide a reason for the visit (optional)</label
+                >
+                <input type="text" class="as-text-area" />
+              </article>
+
+              <!-- for overlay -->
+              <section class="success-overlay">
+                <img src="Public/images/booking_sucessful.svg" alt="" />
+                <p class="booking-successful-text">
+                  Your booking has been successful
+                </p>
+                <button class="buttons-under-successful-booking">
+                  Reschedule <img src="Public/images/" alt="" />
+                </button>
+                <button class="buttons-under-successful-booking">
+                  Cancel Appointment<img src="Public/images/" alt="" />
+                </button>
+                <button class="buttons-under-successful-booking">
+                  Join Virtual Consultation <img src="Public/images/" alt="" />
+                </button>
+                <button class="buttons-under-successful-booking">
+                  Go to Home Dashboard <img src="Public/images/" alt="" />
+                </button>
+              </section>
+
+              <section class="success-overlay failed">
+                <img src="Public/images/bookings_failed.svg" alt="" />
+                <p class="booking-successful-text margin-bottom">
+                  Your booking has been can cancelled
+                </p>
+                <button class="buttons-under-successful-booking">
+                  Go to Home Dashboard
+                </button>
+              </section>
+            </section>
+            <section class="confirm-btn-container hiddens">
+              <button class="confirm-btn">Confirm Booking</button>
+            </section>
+          </article>
+        </article>
+        <!--  MEDICAL RECORDS -->
+        <article id="medical-records-content" class="content-section">
+          <h2>Medical Records</h2>
+
+          <p>Your medical records will appear here...</p>
+
+          <div class="welcome">wekelmcencecnekcece</div>
+        </article>
+
+        <!--  MESSAGES  -->
+        <article class="content-section" id="messages-content">
+          <p class="jd">heklo</p>
+        </article>
+      </section>
+    </main>
+    <script src="patient_dashboard1.js"></script>
+    <script src="patient_dashboard2.js"></script>
+    <script src="for_appointment.js"></script>
+  </body>
+</html>
