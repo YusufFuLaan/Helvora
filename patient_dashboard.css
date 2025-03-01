@@ -1230,9 +1230,7 @@ th {
   color: rgba(31, 194, 37, 1);
 }
 
-/* calendar2 */
-
-/* General calendar styling */
+/* General calendar - 2styling */
 .calendar-2 {
   width: 100%;
   overflow-x: auto;
@@ -1322,4 +1320,95 @@ th {
   top: 1rem;
   cursor: pointer;
   font-size: var(--font-size-24);
+}
+
+/* MEDICAL RECORDS SECTION */
+
+.medical-record-container {
+  gap: 4rem;
+  display: flex;
+  margin-left: 4rem;
+  flex-wrap: wrap;
+}
+.medical-record-boxes {
+  display: flex;
+  flex-direction: column;
+  width: 39.3rem;
+  height: 41.7rem;
+  border-radius: 1.2rem;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+}
+.patient-data-conatiner {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  padding: 1.6rem;
+  margin-bottom: 1rem;
+}
+.entry {
+  display: flex;
+  position: relative;
+
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+.green-lines {
+  width: 10rem;
+  height: 2px;
+  margin-top: 0.9rem;
+  background-color: #4caf50;
+}
+.black-lines {
+  width: 10rem;
+  height: 2px;
+  margin-top: 0.9rem;
+  background-color: rgba(0, 0, 0, 1);
+}
+.patient-data-text {
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weigh-400);
+  color: rgba(0, 0, 0, 1);
+}
+.red-lines {
+  width: 10rem;
+  height: 2px;
+  margin-top: 0.9rem;
+  background-color: rgba(255, 0, 0, 1);
+}
+.red-liners {
+  width: 5rem;
+  height: 2px;
+  margin-top: 0.9rem;
+  background-color: rgba(255, 0, 0, 1);
+}
+.medical-history {
+  text-align: center;
+}
+
+.personal-information-text {
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weigh-400);
+  margin-top: 0.9rem;
+  color: rgba(51, 51, 51, 0.4);
+}
+.other-information-texts {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weigh-300);
+  color: rgba(0, 0, 0, 1);
+  padding: 0.8rem 1.6rem;
+}
+.bigtexts {
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weigh-400);
+  margin-top: 0.9rem;
+}
+.entry-text {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weigh-300);
+  color: rgba(0, 0, 0, 1);
+}
+.view-all {
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-size-20);
+  margin-top: 3rem;
+  font-weight: var(--font-weigh-400);
 }
