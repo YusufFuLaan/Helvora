@@ -37,3 +37,23 @@ closingOverlay.addEventListener("click", function () {
     element.style.display = "";
   });
 });
+const dropDownPersonalInfo = document.querySelectorAll(
+  ".drop-down-personal-info"
+);
+const personalInfoDisplay = document.querySelectorAll(".parent");
+const closeModalProfilePhoto = document.querySelectorAll(".close-modal-image");
+
+dropDownPersonalInfo.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    personalInfoDisplay.forEach((image) => {
+      image.style.display = "grid";
+    });
+  });
+});
+closeModalProfilePhoto.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    personalInfoDisplay.forEach((image) => {
+      image.style.display = "none";
+    });
+  });
+});
