@@ -293,8 +293,111 @@
       <section class="main-content">
         <!-- OVERVIEW PAGE -->
         <article id="dashboard-content" class="content-section">
-          <h2>Dashboard</h2>
-          <p>Welcome to your dashboard!</p>
+         <section class="general-overview">
+          <article class="welcome-section-calendar">
+            <article class="welcome-section">
+              <p class="welcome-text">Welcome Annabel</p>
+              <p class="how-can">How can we assist you today</p>
+
+              <div class="welcome-box-container">
+                <div class="welcome-box">
+                  <div class="welcome-box-content">
+                    <img src="Public/images/upcoming_appointment.png" alt="">
+                    <div class="welcome-box-content-text">
+                      <p class="deepertext">2 
+                        <br><span class="breakdowns">Upcoming Appointment</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="welcome-box">
+                  <div class="welcome-box-content">
+                    <img src="Public/images/unread_messages.svg" alt="">
+                    <div class="welcome-box-content-text">
+                      <p class="deepertext">1 
+                        <br><span class="breakdowns">Unread  Messages</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+            <!--             calendar will be here--> 
+
+            <article class="calendar-container">
+              <div class="calendar-header">
+                <button onclick="changeStaticMonth(-1)">&lt;</button>
+                <h2 id="staticMonthYear"></h2>
+                <button onclick="changeStaticMonth(1)">&gt;</button>
+              </div>
+              <div id="staticCalendar"></div>
+            </article>
+         </article>
+
+         <article class="lower-regions">
+          <section class="chart-main-container">
+
+            <p class=" margin-top">
+              <span class="available-span">
+              <span class="color-green"></span>completed appointments</span>      
+              <span class="available-span"> <span class="color-red"></span>missed Appointment
+              <span class="available-span"> <span class="color-blue"></span>Upcoming Appointment
+
+            </p>
+            <section class="chart-container">
+            
+              <article class="background-grid">
+                <div class="grid-line" value="120"></div>
+                <div class="grid-line" value="100"></div>
+                <div class="grid-line" value="80"></div>
+                <div class="grid-line" value="60"></div>
+                <div class="grid-line" value="40"></div>
+                <div class="grid-line" value="20"></div>
+                <div class="grid-line" value="0"></div>
+              </article>
+      
+              <article class="bar-chart-container">
+                <div class="bars height1 green"></div>
+                <div class="bars height2 green"></div>
+                <div class="bars height3 red"></div>
+                <div class="bars height4 blue"></div>
+                <div class="bars height5 green"></div>
+                <div class="bars height6 blue"></div>
+              </article>
+      
+              <article class="day-labels">
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+                <div></div>
+              </article>
+
+            </section>
+            
+          </section>
+          <article class="small-screen">
+            <p class="available-spans">
+            <span class="color-green"></span>completed appointments</p>      
+            <p class="available-spans"> <span class="color-red"></span>missed Appointment
+            <p class="available-spans"> <span class="color-blue"></span>Upcoming Appointment
+
+            </article>
+          
+
+          <section class="recent-health-records">
+            <p class="recent-health-records-main-text">Recent Health Records</p>
+            <p class="recent-health-records-text">Test Reports Blood test</p>
+            <p class="recent-health-records-text">Prescription Onoing medication</p>
+            <p class="recent-health-records-text">Doctors Name:</p>
+            <button class="view-medical-result-btn">View Full Medical History</button>
+          </section>
+        
+         </article>
+         </section>
         </article>
 
         <!--  FIND A DOCTOR  -->
@@ -714,7 +817,7 @@
 
         <!-- APPOINTMENT PAGE -->
         <article id="appointments-content" class="content-section">
-          <article class="for-small-screen-appointment">
+          <article class="for-small-screen-appointment settings ">
             <article class="upcoming-appoint">
               <p class="upcoming-appoint-text">Upcoming Appointment</p>
             </article>
@@ -897,7 +1000,7 @@
               <td class="passed-information-data">29-June,13:30PM</td>
               <td class="passed-information-data btn-red">Cancelled</td>
               <td class="rounded-radius">
-                <button class="view-details cancelled" data-status="cancelled">
+                <button class="view-details sucess" data-status="cancelled">
                   View Details
                 </button>
               </td>
@@ -1309,7 +1412,193 @@
 
         <!--  MESSAGES  -->
         <article class="content-section" id="messages-content">
-          <p class="jd">heklo</p>
+          <section class="messages-parent">
+            <article class="chat-names-and-texts">
+              <section class="messages-search-area">
+                <img src="Public/images/Search.svg" alt="">
+                <p class="messages-search-text">Search</p>
+              </section> 
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_philips.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Philips</p>
+                  <p class="doctors-messages-texts">The result for the blood test conducted...</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">2</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_daniel.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Daniel</p>
+                  <p class="doctors-messages-texts">No one should forget such</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">2</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_sanusi.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Sanusi </p>
+                  <p class="doctors-messages-texts">Hello <span class="usersname">Annabel</span></p>
+                </article>
+                </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">1</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_william.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Rita </p>
+                  <p class="doctors-messages-texts">Are you there</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">2</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_fabs.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Fabs</p>
+                  <p class="doctors-messages-texts">Hope you are much better</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">2</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_smith.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Smith </p>
+                  <p class="doctors-messages-texts">Hello Ann</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">2</p>
+                </article>
+              </section>
+              
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_henry.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Henry </p>
+                  <p class="doctors-messages-texts">Don't take that to heart </p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">3</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_holmes.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Holmes </p>
+                  <p class="doctors-messages-texts">Don't forget </p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">2</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_william.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr William </p>
+                  <p class="doctors-messages-texts">Everyday</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">2</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_ashanka.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Ashanka </p>
+                  <p class="doctors-messages-texts">I understand</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">1</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_peace.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Peace </p>
+                  <p class="doctors-messages-texts">Don't forget our section on tuesady</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2 days ago</p>
+                  <p class="messages-count"></p>
+                </article>
+              </section>
+
+            </article>
+            <article class="messages-area"> 
+              <section class="doctors-name-chat-area">
+                <img src="Public/images/Dr_philips.svg" alt="">
+                <p class="doctors-name-texts">Dr Philips <br>
+                  <span class="online">Online</span></p>
+                  
+              </section>
+              <section class="doctors-messages-area">
+                <p class="messages-here">How are you feeling today <span class="username">Annabel</span></p>
+              </section>
+              <section class="patients-messages-area">
+                <p class="messages-here">I am fine much better Doc , the prescription you gave me is really effective <span class="username">Annabel</span></p>
+              </section>
+              <section class="doctors-messages-area">
+                <p class="messages-here">The result fot the blood test result is out <span class="username">Annabel</span></p>
+              </section>
+              <section class="send-messages-area">
+                <p class="send-messages-here">Write your message <span class="username"><img src="Public/images/" alt=""></span></p>
+              </section>
+              <div class=" margin-to-top"></div>
+              
+            </article>
+
+            </section>
         </article>
       </section>
     </main>

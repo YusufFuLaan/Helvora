@@ -251,3 +251,79 @@ function bookAppointment2() {
 document.addEventListener("DOMContentLoaded", () => {
   updateCalendar2();
 });
+let staticCurrentDate = new Date();
+
+function updateStaticCalendar() {
+  document.getElementById(
+    "staticMonthYear"
+  ).textContent = `${getStaticMonthName(
+    staticCurrentDate.getMonth()
+  )} ${staticCurrentDate.getFullYear()}`;
+  generateStaticCalendar(staticCurrentDate);
+}
+
+function changeStaticMonth(offset) {
+  staticCurrentDate.setMonth(staticCurrentDate.getMonth() + offset);
+  updateStaticCalendar();
+}
+
+function generateStaticCalendar(date) {
+  const calendar = document.getElementById("staticCalendar");
+  const year = date.getFullYear();
+  const month = date.getMonth();
+
+  const firstDay = new Date(year, month, 1);
+  const lastDay = new Date(year, month + 1, 0);
+  const startingDay = firstDay.getDay();
+  const monthLength = lastDay.getDate();
+
+  let html = `<table>
+    <tr>
+      <th>Sun</th><th>Mon</th><th>Tue</th>
+      <th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+    </tr><tr>`;
+
+  // Empty cells for days before the first day
+  for (let i = 0; i < startingDay; i++) {
+    html += `<td class="non-current-month"></td>`;
+  }
+
+  // Calendar days
+  for (let day = 1; day <= monthLength; day++) {
+    if ((day + startingDay - 1) % 7 === 0 && day !== 1) {
+      html += "</tr><tr>";
+    }
+    html += `<td>${day}</td>`;
+  }
+
+  // Remaining empty cells
+  const remainingCells = 7 - ((monthLength + startingDay) % 7);
+  if (remainingCells < 7) {
+    for (let i = 0; i < remainingCells; i++) {
+      html += `<td class="non-current-month"></td>`;
+    }
+  }
+
+  html += "</tr></table>";
+  calendar.innerHTML = html;
+}
+
+function getStaticMonthName(monthIndex) {
+  return [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ][monthIndex];
+}
+
+// Initialize
+document.addEventListener("DOMContentLoaded", updateStaticCalendar);
