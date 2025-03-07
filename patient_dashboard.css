@@ -1713,6 +1713,9 @@ th {
   margin-bottom: 0;
   background-color: rgba(241, 241, 241, 1);
 }
+.working {
+  display: none;
+}
 @media (max-width: 40rem) {
   .grid-container {
     grid-template-columns: 1fr;
@@ -1978,11 +1981,9 @@ th {
     font-optical-sizing: auto;
     font-style: normal;
     flex-direction: column;
-    display: flex !important;
+    display: flex;
 
     align-items: center;
-  }
-  .settings {
   }
   .upcoming-appoint-text {
     font-size: var(--font-size-24);

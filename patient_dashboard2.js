@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const appointmentSmallScreenDisplay = document.querySelector(
     ".for-small-screen-appointment"
   );
-  const settingDisplay = document.querySelector(".settings");
+  const working = document.querySelector("#working");
   const tableDisplays = document.querySelectorAll(".table");
   const bookNewAppointmentBtn = document.querySelector(".book-new-appointment");
   const disturbingMe = document.querySelector(".disturbing");
@@ -32,10 +32,15 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(`haaaaaa`);
     });
 
+    console.log(`works`);
+    appointmentSmallScreenDisplay.classList.remove("settingDisplay");
     console.log(`i am here`);
     appointmentSmallScreenDisplay.style.display = "none";
     disturbingMe.classList.remove("hidden");
     bookNewAppointmentBtn.style.display = "none";
+    appointmentSmallScreenDisplay.classList.remove("working");
+    settingDisplay.style.display = "none";
+    working.style.display = "none";
   });
 
   viewDetailsBtn.forEach((btn) => {
