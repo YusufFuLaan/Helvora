@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ".for-doctors-cards-container"
   );
   const confirmBtn = document.querySelector(".confirm-btn-container");
+  const confirmBtns = document.querySelector(".confirm-btn-containers");
   const appointmentPage2 = document.querySelector(".appointment-screen2");
   const overlayBookNowBtn = document.querySelector(".book-now");
   const aboutDoctors = document.querySelector(".about-doctors");
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const tableDisplays = document.querySelectorAll(".table");
   const bookNewAppointmentBtn = document.querySelector(".book-new-appointment");
   const disturbingMe = document.querySelector(".disturbing");
+
   bookNewAppointmentBtn.addEventListener("click", function () {
     tableDisplays.forEach((table) => {
       table.style.display = "none";
@@ -39,7 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
     disturbingMe.classList.remove("hidden");
     bookNewAppointmentBtn.style.display = "none";
     appointmentSmallScreenDisplay.classList.remove("working");
-    settingDisplay.style.display = "none";
+    confirmBtns.style.display = "flex";
+
     working.style.display = "none";
   });
 
@@ -108,6 +111,8 @@ document.addEventListener("DOMContentLoaded", () => {
       findDoctorsPage.classList.add("hiddens");
       appointmentPage2.classList.remove("hiddens");
       confirmBtn.classList.remove("hiddens");
+      confirmBtn.style.display = "flex";
+
       backToFindDoctorsBtn.style.display = "block";
     });
   });
@@ -116,6 +121,8 @@ document.addEventListener("DOMContentLoaded", () => {
     findDoctorsPage.classList.add("hiddens");
     appointmentPage2.classList.remove("hiddens");
     confirmBtn.classList.remove("hiddens");
+    confirmBtn.style.display = "flex";
+
     backToFindDoctorsBtn.style.display = "block";
     aboutDoctors.classList.remove("hidden");
 

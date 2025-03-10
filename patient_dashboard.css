@@ -625,7 +625,7 @@ caption {
 /* calendar-styling */
 .calendar-appointment-time {
   width: 51.5rem;
-  height: 40rem;
+  height: 44rem;
   border: 1px solid rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
@@ -802,12 +802,20 @@ th {
 .confirm-btn-container {
   display: flex;
   margin-top: 4rem;
+  display: none;
   justify-content: center;
+  align-items: center;
+}
+.confirm-btn-containers {
+  margin-top: 4rem;
+  justify-content: center;
+  display: none;
   align-items: center;
 }
 .confirm-btn {
   width: 33.3rem;
   border-radius: 0.8rem;
+  position: relative;
   height: 5.2rem;
   padding: 1.6rem 2.4rem;
   background-color: rgba(47, 128, 236, 1);
@@ -819,9 +827,152 @@ th {
   border: none;
 }
 
+.confirm-btn-2 {
+  width: 33.3rem;
+  border-radius: 0.8rem;
+  position: relative;
+  height: 5.2rem;
+  padding: 1.6rem 2.4rem;
+  background-color: rgba(47, 128, 236, 1);
+  color: white;
+  font-size: var(--font-size-18);
+  text-align: center;
+  position: relative;
+  font-weight: var(--font-weight-700);
+  border: none;
+}
+
+/* doctors availabity modals for .appointments
+ */
+
+.doctors-availabity-card-booked {
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1.4rem;
+  display: none;
+  padding: 2rem 5rem;
+  position: absolute;
+  bottom: 50rem;
+  height: 37.4rem;
+  width: 36.5rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 1.2rem;
+  border: 1px solid rgba(241, 241, 241, 1);
+}
+
+.doctors-availabity-card-booked-2 {
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1.4rem;
+  display: none;
+  padding: 2rem 5rem;
+  position: absolute;
+  bottom: 50rem;
+  height: 37.4rem;
+  width: 36.5rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 1.2rem;
+  border: 1px solid rgba(241, 241, 241, 1);
+}
+
+.calendar td.selected-date,
+.calendar-2 td.selected-date {
+  background-color: #007bff !important;
+  color: white;
+}
+
+.doctors-availabity-card-success {
+  position: absolute;
+  display: none;
+
+  flex-direction: column;
+  bottom: 50rem;
+
+  justify-content: center;
+  padding: 2rem;
+  align-items: center;
+  gap: 1.4rem;
+
+  height: 37.4rem;
+  width: 36.5rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 1.2rem;
+  border: 1px solid rgba(241, 241, 241, 1);
+}
+
+.doctors-availabity-card-success-2 {
+  position: absolute;
+  display: none;
+
+  flex-direction: column;
+  bottom: 50rem;
+
+  justify-content: center;
+  padding: 2rem;
+  align-items: center;
+  gap: 1.4rem;
+
+  height: 37.4rem;
+  width: 36.5rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 1.2rem;
+  border: 1px solid rgba(241, 241, 241, 1);
+}
+.doctors-availability {
+  font-size: var(--font-size-24);
+  text-align: center;
+
+  font-weight: var(--font-weight-500);
+}
+.doctors-booked-text {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weigh-300);
+  color: rgba(0, 0, 0, 1);
+  line-height: 3.6rem;
+  text-align: center;
+}
+.ok-button {
+  padding: 0.5rem 1rem;
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weigh-300);
+
+  width: 4.4rem;
+  height: 4.6rem;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.ok-button-2 {
+  padding: 0.5rem 1rem;
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weigh-300);
+
+  width: 4.4rem;
+  height: 4.6rem;
+  border: none;
+  border-radius: 0.4rem;
+}
+
 /* for booking-sucessful overlay
  */
 .success-overlay {
+  position: absolute;
+  top: 238px;
+  left: 450px;
+  display: none;
+  gap: 1.6rem;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 1);
+  width: 54rem;
+  height: 54.7rem;
+  border-radius: 1.2rem;
+}
+
+.success-overlay-2 {
   position: absolute;
   top: 238px;
   left: 450px;
@@ -1716,6 +1867,9 @@ th {
 .working {
   display: none;
 }
+
+/*  media queries
+ */
 @media (max-width: 40rem) {
   .grid-container {
     grid-template-columns: 1fr;
@@ -1878,10 +2032,13 @@ th {
   }
   /* appointment-screen2 */
   .appointment-screen2 {
-    height: 190vh;
+    height: 200vh;
     flex-direction: column;
     width: 90vw;
     margin: auto;
+  }
+  .disturbing {
+    height: 220vh !important;
   }
   select {
     width: 54vw !important;
@@ -1900,8 +2057,6 @@ th {
   #calendar td {
     min-width: 35px; /* Prevent cell collapse */
     padding: 5px;
-  }
-  .confirm-btn {
   }
   #monthYear {
     border-bottom: 1px solid black;
@@ -1949,11 +2104,12 @@ th {
   #calendar {
     overflow-x: auto;
     display: block;
+
     width: 100%;
   }
 
   .second-appointment {
-    background-color: pink !important;
+    background-color: transparent !important;
     display: table !important;
     border-spacing: 1.5rem !important;
   }
@@ -1961,7 +2117,6 @@ th {
     display: table !important;
     border-spacing: 1.5rem !important;
   }
-
   .available {
     background-color: #e8f5e9;
     cursor: pointer;
@@ -2096,8 +2251,18 @@ th {
     margin: auto;
   }
   .calendar-container {
-    width: 40rem;
+    width: 42rem;
+    justify-content: center;
+    align-items: center;
     max-height: 50rem;
+    margin-left: -4rem;
+  }
+  .calendar-appointment-time {
+    min-height: 44rem;
+    min-width: 43rem;
+  }
+  .calendar-2 {
+    padding-left: 2.5rem;
   }
   .lower-regions {
     flex-direction: column;
@@ -2106,8 +2271,29 @@ th {
     height: 100rem;
     width: 39rem;
   }
+  .welcome-box img {
+    width: 30%;
+    margin-top: 2rem;
+    height: 10%;
+  }
+  .welcome-box-content {
+    gap: 2rem;
+  }
   .margin-top {
     display: none;
+  }
+  .welcome-text {
+    text-align: center;
+  }
+  .how-can {
+    text-align: center;
+  }
+  .calendar-2 {
+    width: 42rem;
+    justify-content: center;
+    align-items: center;
+    max-height: 50rem;
+    margin-left: -4rem;
   }
 
   .chart-main-container {
