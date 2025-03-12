@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctors-Dashboard</title>
+
+    <link rel="stylesheet" href="doctors_dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="grid-container">
+      <section class="header">
+        <section class="small-screen-display">
+          <article class="small-logo">
+            <p class="helvora">Helvora</p>
+          </article>
+          <nav class="small-screen-type">
+            <ul id="side-menu">
+              <p>
+                Helvora
+                <img src="Public/images/close_menu.svg" alt="" id="drop_down" />
+              </p>
+              <li>
+                <img src="Public/images/dashboard.svg" alt="" /> Dashboard
+              </li>
+              <li>
+                <img src="Public/images/appointments.svg" alt="" /> Appointment
+              </li>
+              <li><img src="Public/images/" alt="" /> Patients</li>
+              <li><img src="Public/images/" alt="" /> Consultation</li>
+              <li><img src="Public/images/messages.svg" alt="" /> Messages</li>
+              <li><img src="Public/images/" alt="" /> Reviews</li>
+              <li class="last"></li>
+              <li id="extra-work">
+                <img src="Public/images/help_center.svg" alt="" />Help Centre
+              </li>
+              <li><img src="Public/images/settings.svg" alt="" />Settings</li>
+            </ul>
+
+            <i class="fa-solid fa-bars" id="fa-bars"></i>
+            <img src="Public/images/drop_down_menu.svg" id="image" alt="" />
+          </nav>
+        </section>
+
+        <article class="top-logos">
+          <form action="/search" method="GET">
+            <div class="search-container">
+              <input
+                type="search"
+                class="search-input"
+                placeholder="Search for doctors "
+                aria-label="Search for doctors"
+                name="query"
+              />
+              <svg
+                class="search-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+          </form>
+
+          <article class="filter">
+            <li><img src="Public/images/filter.svg" alt="" /> Filter</li>
+          </article>
+          <article class="for-filter-user-value-notification">
+            <article class="rounded-bordeer">
+              <img src="Public/images/notification.svg" alt="" />
+            </article>
+
+            <article class="user-profile">
+              <li>
+                <img src="Public/images/" alt="" />
+                <span class="doctors-name"
+                  >Dr.Liam John <br />
+                  <span class="doctors-speciality">Neurologist</span>
+                </span>
+              </li>
+            </article>
+          </article>
+        </article>
+        <section class="go-to-Homepage">
+          <p><a href="">Go to Homepage</a></p>
+        </section>
+      </section>
+
+      <section class="side-bar">
+        <article class="logo">
+          <p>Helvora</p>
+        </article>
+        <nav class="otherpages">
+          <ul class="links">
+            <li><img src="Public/images/dashboard.svg" alt="" /> Dashboard</li>
+            <li>
+              <img src="Public/images/appointments.svg" alt="" /> Appointment
+            </li>
+            <li>
+              <img src="Public/images/medical_records.svg" alt="" /> Patients
+            </li>
+            <li>
+              <img src="Public/images/find_a_doctor.svg" alt="" /> Consultation
+            </li>
+            <li><img src="Public/images/messages.svg" alt="" /> Messages</li>
+            <li><img src="Public/images/reviews.svg" alt="" /> Reviews</li>
+            <!-- Add reviews icon -->
+          </ul>
+        </nav>
+
+        <ul class="help-settings">
+          <li><img src="Public/images/help_center.svg" alt="" />Help Centre</li>
+          <li><img src="Public/images/settings.svg" alt="" />Settings</li>
+        </ul>
+      </section>
+      <section class="main-content">
+        <!-- Add this inside the <section class="main-content"> -->
+        <section class="main-content">
+          <article id="dashboard-content" class="content-section">
+            <section class="whole-page">
+              Good morning, dr <span class="doctors-name">Liam</span>
+              <p class="header-text"></p>
+              <article class="first-section-column">
+                <section class="box-containing-circle">
+                  <p class="circle-text">Total <br />Appointment</p>
+
+                  <div class="progress-container">
+                    <div class="progress-bg"></div>
+
+                    <div class="progress-bar"></div>
+
+                    <div class="progress-text">
+                      <p>80</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="box-containing-circle">
+                  <p class="circle-text">Total Patients</p>
+
+                  <div class="progress-container">
+                    <div class="progress-bg light-green"></div>
+
+                    <div class="progress-bar deeper-green-50"></div>
+
+                    <div class="progress-text">
+                      <p>100</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="box-containing-circle">
+                  <p class="circle-text">Total Virtual <br />Consultation</p>
+
+                  <div class="progress-container">
+                    <div class="progress-bg"></div>
+
+                    <div class="progress-bar number-40"></div>
+
+                    <div class="progress-text">
+                      <p>40</p>
+                    </div>
+                  </div>
+                </section>
+                <section class="box-containing-circle">
+                  <p class="circle-text">
+                    Total Clinic <br />
+                    Visits
+                  </p>
+
+                  <div class="progress-container">
+                    <div class="progress-bg light-green"></div>
+
+                    <div class="progress-bar deeper-green-70"></div>
+
+                    <div class="progress-text">
+                      <p>70</p>
+                    </div>
+                  </div>
+                </section>
+              </article>
+            </section>
+          </article>
+          <article id="appointment-content" class="content-section">
+            <h2>Appointment</h2>
+            <p>appointment files here</p>
+          </article>
+
+          <article id="patients-content" class="content-section">
+            <!-- Appointments Content -->
+            <h2>Patients</h2>
+            <p>patient files</p>
+          </article>
+
+          <article id="consultation-content" class="content-section">
+            <!-- Medical Records Content -->
+            <h2>consultation</h2>
+            <p>consult here</p>
+          </article>
+
+          <article id="messages-content" class="content-section">
+            <!-- Messages Content -->
+            <h2>Messages</h2>
+            <p>Your messages will appear here...</p>
+          </article>
+          <article id="reviews-content" class="content-section">
+            <h2>reviews</h2>
+            <p>reviews here</p>
+          </article>
+        </section>
+      </section>
+    </main>
+    <script src="main.js"></script>
+    <script src="doctors_dashboard.js"></script>
+  </body>
+</html>
