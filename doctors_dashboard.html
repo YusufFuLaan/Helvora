@@ -199,9 +199,9 @@
                   </article>
                   <p class=" margin-top">
                     <span class="available-span">
-                    <span class="color-green"></span>Total Patients</span>      
-                    <span class="available-span"> <span class="color-blue"></span>missed Appointment
-                    <span class="available-span"> <span class="color-purple"></span>Upcoming Appointment
+                    <span class="circle green"></span>Total Patients</span>      
+                    <span class="available-span"> <span class="circle blue"></span>missed Appointment
+                    <span class="available-span"> <span class="circle purple"></span>Upcoming Appointment
             
                   </p>
                   <section class="chart-container">
@@ -215,20 +215,40 @@
             
                     <article class="bar-chart-container">
                       <div class="bars">
-                        <div class="smaller-bars"></div>
-                        <div class="smaller-bar"></div>
-                        <div class="smaller-bar"></div>
+                        <div class="smaller-bar green height30"></div>
+                        <div class="smaller-bar  blue height20"></div>
+                        <div class="smaller-bar purple height10"></div>
                       </div>
                       <div class="bars">
-                        <div class="smaller-bars"></div>
-                        <div class="smaller-bar"></div>
-                        <div class="smaller-bar"></div>
+                        <div class="smaller-bars green height14 "></div>
+                        <div class="smaller-bar blue height20"></div>
+                        <div class="smaller-bar purple height5"></div>
                       
                       </div>
-                      <div class="bars"></div>
-                      <div class="bars"></div>
-                      <div class="bars"></div>
-                      <div class="bars"></div>
+                      <div class="bars">
+                        <div class="smaller-bars green height20 "></div>
+                        <div class="smaller-bar blue height30"></div>
+                        <div class="smaller-bar purple height20"></div>
+                      
+                      </div>
+                      <div class="bars">
+                        <div class="smaller-bars green height40 "></div>
+                        <div class="smaller-bar blue height20"></div>
+                        <div class="smaller-bar purple height15"></div>
+                      
+                      </div>
+                      <div class="bars">
+                        <div class="smaller-bars green height20 "></div>
+                        <div class="smaller-bar blue height30"></div>
+                        <div class="smaller-bar purple height10"></div>
+                      
+                      </div>
+                      <div class="bars">
+                        <div class="smaller-bars green height50 "></div>
+                        <div class="smaller-bar blue height20"></div>
+                        <div class="smaller-bar purple height10"></div>
+                      
+                      </div>
                     </article>
             
                     <article class="day-labels">
@@ -242,17 +262,35 @@
                     </article>
             
                   </section>
+                 </section>
+                  <article class="calendar-container">
+                    <div class="calendar-header">
+                      <button onclick="changeStaticMonth(-1)">&lt;</button>
+                      <h2 id="staticMonthYear"></h2>
+                      <button onclick="changeStaticMonth(1)">&gt;</button>
+                    </div>
+                    <div id="staticCalendar"></div>
+                  </article>
+
+                 </article>
+
+             
               </article>
-              <article class="calendar-container">
-                <div class="calendar-header">
-                  <button onclick="changeStaticMonth(-1)">&lt;</button>
-                  <h2 id="staticMonthYear"></h2>
-                  <button onclick="changeStaticMonth(1)">&gt;</button>
-                </div>
-                <div id="staticCalendar"></div>
+              <article class="third-section">
+                <table class="patient-general-table">
+                   <article class="patient-dets">
+                    <p class="heavier-text">Patient</p>
+                    <p class="arrow">></p>
+                   </article>
+
+                   
+                </table>
+
+                <section class="today-passed-appointment">
+                  <article class="todays-appointment"></article>
+                  <article class="upcoming-appointment"></article>
+                </section>
               </article>
-           </article>
-        
             </section>
           </article>
           <article id="appointment-content" class="content-section">
