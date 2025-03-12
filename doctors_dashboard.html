@@ -191,6 +191,68 @@
                   </div>
                 </section>
               </article>
+
+              <article class="second-section">
+                <section class="chart-main-container">
+                  <article class="center-middle">       
+                       <p class="heavy-text">Weekly Overview</p>
+                  </article>
+                  <p class=" margin-top">
+                    <span class="available-span">
+                    <span class="color-green"></span>Total Patients</span>      
+                    <span class="available-span"> <span class="color-blue"></span>missed Appointment
+                    <span class="available-span"> <span class="color-purple"></span>Upcoming Appointment
+            
+                  </p>
+                  <section class="chart-container">
+                  
+                    <article class="background-grid">
+                      <div class="grid-line" value="60"></div>
+                      <div class="grid-line" value="40"></div>
+                      <div class="grid-line" value="20"></div>
+                      <div class="grid-line" value="0"></div>
+                    </article>
+            
+                    <article class="bar-chart-container">
+                      <div class="bars">
+                        <div class="smaller-bars"></div>
+                        <div class="smaller-bar"></div>
+                        <div class="smaller-bar"></div>
+                      </div>
+                      <div class="bars">
+                        <div class="smaller-bars"></div>
+                        <div class="smaller-bar"></div>
+                        <div class="smaller-bar"></div>
+                      
+                      </div>
+                      <div class="bars"></div>
+                      <div class="bars"></div>
+                      <div class="bars"></div>
+                      <div class="bars"></div>
+                    </article>
+            
+                    <article class="day-labels">
+                      <div>Mon</div>
+                      <div>Tue</div>
+                      <div>Wed</div>
+                      <div>Thu</div>
+                      <div>Fri</div>
+                      <div>Sat</div>
+                      <div></div>
+                    </article>
+            
+                  </section>
+              </article>
+              <article class="calendar-container">
+                <div class="calendar-header">
+                  <button onclick="changeStaticMonth(-1)">&lt;</button>
+                  <h2 id="staticMonthYear"></h2>
+                  <button onclick="changeStaticMonth(1)">&gt;</button>
+                </div>
+                <div id="staticCalendar"></div>
+              </article>
+           </article>
+        
             </section>
           </article>
           <article id="appointment-content" class="content-section">
@@ -224,5 +286,6 @@
     </main>
     <script src="main.js"></script>
     <script src="doctors_dashboard.js"></script>
+    <script src="static-calendar.js"></script>
   </body>
 </html>

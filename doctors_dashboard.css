@@ -357,17 +357,7 @@ li:hover {
     width: 98%;
   }
 }
-
-.boxess {
-  width: 26rem;
-  height: 11.2rem;
-  border: 1.2rem;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 11px 12px 9px 2px red;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
+/* doctors overview */
 .progress-container {
   position: relative;
   width: 8.2rem;
@@ -452,4 +442,237 @@ li:hover {
 }
 .number-40 {
   clip-path: inset(0 0 0 68%);
+}
+/* second-sectionn */
+.calendar-container {
+  margin: 20px auto;
+  width: 51.5rem;
+  max-height: 38.6rem;
+  border-radius: 1.6rem;
+  border: 1px solid rgba(31, 194, 37, 1);
+  overflow-x: auto; /* Allows horizontal scrolling on mobile */
+}
+
+#staticCalendar {
+  min-width: 300px; /* Minimum width for mobile screens */
+}
+
+#staticCalendar table {
+  width: 100%;
+
+  margin-top: 1rem;
+  border: none;
+  background-color: transparent !important;
+}
+
+#staticCalendar th,
+#staticCalendar td {
+  text-align: center;
+  font-weight: 400;
+  font-size: var(--font-size-16);
+  padding: 1rem;
+  border-collapse: collapse !important;
+  border-spacing: 1.5rem !important;
+}
+
+#staticCalendar th {
+  font-weight: 500;
+  border-collapse: collapse !important;
+  border-spacing: 1.5rem !important;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  border-bottom: 2px solid #eee;
+}
+
+.calendar-header button {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* general overview styling */
+.welcome-section-calendar {
+  display: flex;
+  justify-content: space-between;
+}
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.welcome-text {
+  font-size: var(--font-size-32);
+  font-weight: var(--font-weight-500);
+}
+.how-can {
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weigh-400);
+}
+.welcome-box-container {
+  display: flex;
+  gap: 1rem;
+}
+.welcome-box {
+  width: 26.3rem;
+  border-radius: 1.2rem;
+  height: 16.4rem;
+  border: 1px solid rgba(241, 241, 241, 1);
+}
+.welcome-box-content {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+.welcome-box-content-text {
+  text-align: center;
+  font-size: var(--font-size-32);
+  font-weight: var(--font-weight-500);
+}
+.breakdowns {
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weigh-400);
+}
+
+.chart-main-container {
+  width: 55rem;
+  height: 34rem;
+  padding: 2rem 0;
+  background-color: var(--another-white);
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  align-items: center;
+  border-radius: 1rem;
+  flex-direction: column;
+}
+.chart-container {
+  width: 80%;
+  position: relative;
+  height: 9.8rem;
+  background-color: 0, 0, 0, 0.1;
+}
+.background-grid {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+}
+.background-grid .grid-line {
+  position: relative;
+  width: 100%;
+  height: calc(5rem / 1);
+  border-top: 1px dashed black;
+  z-index: 2;
+}
+.background-grid .grid-line::before {
+  content: attr(value);
+  position: absolute;
+  left: -4rem;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.bar-chart-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  gap: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  z-index: 4;
+}
+.bar-chart-container .bars {
+  position: relative;
+  width: 8rem;
+  z-index: 5;
+  gap: 0.3rem;
+  display: flex;
+  right: -2.7rem;
+  height: 100%;
+}
+.smaller-bars {
+  position: relative;
+  width: 0.6rem;
+  z-index: 5;
+  border-radius: 0.9rem 0.9rem 0 0;
+  top: 4rem;
+
+  background-color: #0161e2;
+  height: 100%;
+}
+.smaller-bar {
+  position: relative;
+  width: 0.6rem;
+  z-index: 5;
+  background-color: green;
+  top: -2.3rem;
+  height: 180%;
+}
+.height1 {
+  height: 100% !important;
+  background-color: red !important;
+}
+.height2 {
+  height: 40% !important;
+}
+.height3 {
+  height: 80% !important;
+}
+
+.height4 {
+  height: 100% !important;
+}
+
+.height5 {
+  height: 82% !important;
+}
+
+.height6 {
+  height: 106% !important;
+}
+.day-labels {
+  position: absolute;
+  width: 100%;
+  top: 46rem;
+  display: grid;
+  z-index: 5;
+  grid-template-columns: repeat(6, 1fr);
+}
+.day-labels div {
+  color: #222;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.red {
+  background-color: rgba(255, 0, 0, 1) !important;
+}
+.blue {
+  background-color: rgba(47, 128, 236, 1) !important;
+}
+.green {
+  background-color: rgba(31, 194, 37, 1) !important;
+}
+.margin-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.color-green {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  padding: 1.9rem;
+  background-color: rgba(31, 194, 37, 1);
 }
