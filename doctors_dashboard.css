@@ -19,8 +19,11 @@ html {
   --light-green: #1fc22533;
   --deep-green: rgba(31, 194, 37, 1);
 
+  --font-size-08: 0.8rem;
+  --font-size-10: 1rem;
   --font-size-14: 1.4rem;
   --font-size-24: 2.4rem;
+  --font-size-20: 2rem;
   --font-size-18: 1.8rem;
   --font-size-38: 3.8rem;
   --font-size-32: 3.2rem;
@@ -452,12 +455,14 @@ li:hover {
   margin-top: 2rem;
 
   gap: 2rem;
+  flex-direction: column;
   display: flex;
 }
 
 .calendar-container {
   width: 53.5rem;
-  height: 43.6rem;
+  height: 50.6rem;
+  margin-top: 2rem;
   border-radius: 1.6rem;
   background-color: var(--another-white);
   overflow-x: auto; /* Allows horizontal scrolling on mobile */
@@ -711,4 +716,168 @@ li:hover {
 }
 .progress-text {
   font-size: var(--font-size-16);
+}
+/* liitle table overview */
+
+.patient-general-table {
+  background-color: var(--another-white);
+  font-size: var(--font-size-10);
+  padding: 1.6rem;
+  height: 57rem;
+  border-radius: 1rem;
+  width: 53rem;
+  font-weight: var(--font-weigh-300);
+  color: rgba(0, 0, 0, 1);
+}
+.passed-information-data {
+  font-size: var(--font-size-10);
+  color: rgba(0, 0, 0, 1);
+}
+.patient-general-table tr {
+  padding-bottom: 7rem !important;
+  margin-bottom: 5rem !important;
+}
+.view-details {
+  border-radius: 1.8rem;
+  text-align: center;
+  display: flex;
+  background-color: transparent;
+  padding: 1rem;
+  width: 12.2rem;
+  height: 1.7rem;
+  position: relative;
+  align-items: center;
+  color: rgba(47, 128, 236, 1);
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  border: 1px solid rgba(47, 128, 236, 1);
+  justify-content: center;
+  border: 1px solid rgba(47, 128, 236, 1);
+}
+.view-details:hover {
+  background-color: rgba(149, 143, 143, 1);
+  border: none;
+}
+.text-align-center {
+  padding-left: 7rem;
+}
+.action-table-header {
+  padding-left: 2rem;
+}
+.dispaly-flex {
+  display: flex;
+  gap: 1rem;
+}
+.dispaly-flex img {
+  width: 2rem;
+}
+.passed-information-data {
+  padding: 0 1.7rem;
+}
+.patient-dets {
+  margin-bottom: 7rem !important;
+
+  padding: 7rem;
+}
+.heavier-text {
+  padding: 0 1.7rem;
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+.dispaly-flexgap {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.patient-age {
+  font-size: var(--font-size-08);
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.7);
+}
+.arrow {
+  position: relative;
+  font-size: 2.2rem;
+  left: 31rem;
+  bottom: 1rem;
+}
+.todays-appointment {
+  background-color: var(--another-white);
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.todays-appointment td {
+  padding-right: 1rem;
+}
+.move td {
+  background-color: #000 !important;
+  width: 100rem !important;
+}
+.orange {
+  color: rgba(252, 207, 27, 1) !important;
+}
+.blueish {
+  color: rgba(47, 128, 236, 1) !important;
+}
+.light-green-color {
+  color: rgba(31, 194, 37, 1) !important;
+}
+.margin-bottom {
+  margin-bottom: 1.9rem;
+}
+.first-appointmnet-table {
+  width: 100%;
+  border-collapse: collapse; /* Merge borders into single lines */
+  border-spacing: 0;
+  height: 34.2rem;
+  background-color: rgba(31, 194, 37, 0.08) !important;
+}
+.dispaly-flexgap img {
+  width: 2rem;
+}
+#appointment-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.thead {
+  font-size: var(--font-size-20);
+  font-weight: 500;
+  width: 100%;
+}
+.first-appointmnet-table .background-blue {
+  background-color: rgba(47, 128, 236, 1);
+  padding: 2.3rem 2rem;
+  border-radius: 0.8rem;
+  font-size: var(--font-size-20);
+  color: rgba(255, 255, 255, 1);
+}
+.first-appointmnet-table td {
+  background-color: rgba(31, 194, 37, 0.08);
+  text-align: center;
+  font-size: var(--font-size-18);
+  font-weight: 300;
+  color: rgba(0, 0, 0, 1);
+}
+.first-appointmnet-table .dispaly-flexgap {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  height: 50%;
+  background-color: rgba(31, 194, 37, 0.08) !important;
+}
+
+.details-view {
+  width: 7.7rem;
+  height: 2.2rem;
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem !important;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 1);
+  margin-left: 1.5rem;
 }
