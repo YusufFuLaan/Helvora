@@ -27,6 +27,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const tableDisplays = document.querySelectorAll(".table");
   const bookNewAppointmentBtn = document.querySelector(".book-new-appointment");
   const disturbingMe = document.querySelector(".disturbing");
+  const goToDashboardBtns = document.querySelectorAll(
+    ".buttons-under-successful-booking"
+  );
+  goToDashboardBtns.forEach((button) => {
+    button.addEventListener("click", function () {
+      console.log("Go to Home Dashboard button clicked!");
+      showContent("dashboard-content");
+      navLinks.forEach((link) => link.classList.remove("active"));
+      document
+        .querySelector(".side-bar li:first-child")
+        .classList.add("active");
+      document.getElementById("dashboard-content").classList.add("active");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      document.querySelector(".success-overlay-2").style.display = "none";
+      document.querySelector(".success-overlay").style.display = "none";
+    });
+  });
 
   bookNewAppointmentBtn.addEventListener("click", function () {
     tableDisplays.forEach((table) => {

@@ -137,11 +137,37 @@ function showAvailabilityModal1(type) {
 }
 
 function setupModalHandlers1() {
+  document.querySelectorAll(".ok-button-2").forEach((button) => {
+    button.addEventListener("click", () => {
+      document
+        .querySelectorAll(".doctors-availabity-card-success-2")
+
+        .forEach((modal) => {
+          console.log(`did it work>`);
+          modal.style.display = "none";
+        });
+    });
+  });
+
   document.querySelectorAll(".ok-button").forEach((button) => {
     button.addEventListener("click", () => {
-      document.querySelectorAll(".doctors-availabity-card").forEach((modal) => {
-        modal.style.display = "none";
-      });
+      document
+        .querySelectorAll(".doctors-availabity-card-success")
+        .forEach((modal) => {
+          modal.style.display = "none";
+        });
+
+      document
+        .querySelectorAll(".doctors-availabity-card-booked")
+        .forEach((modals) => {
+          modals.style.display = "none";
+        });
+
+      document
+        .querySelectorAll(".doctors-availabity-card-booked-2")
+        .forEach((modals) => {
+          modals.style.display = "none";
+        });
     });
   });
 

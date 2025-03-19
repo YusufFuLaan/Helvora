@@ -853,7 +853,7 @@ th {
   display: none;
   padding: 2rem 5rem;
   position: absolute;
-  bottom: 50rem;
+  bottom: 30rem;
   height: 37.4rem;
   width: 36.5rem;
   background-color: rgba(255, 255, 255, 1);
@@ -869,7 +869,7 @@ th {
   display: none;
   padding: 2rem 5rem;
   position: absolute;
-  bottom: 50rem;
+  bottom: 30rem;
   height: 37.4rem;
   width: 36.5rem;
   background-color: rgba(255, 255, 255, 1);
@@ -888,7 +888,7 @@ th {
   display: none;
 
   flex-direction: column;
-  bottom: 50rem;
+  bottom: 30rem;
 
   justify-content: center;
   padding: 2rem;
@@ -907,7 +907,7 @@ th {
   display: none;
 
   flex-direction: column;
-  bottom: 50rem;
+  bottom: 30rem;
 
   justify-content: center;
   padding: 2rem;
@@ -959,8 +959,8 @@ th {
  */
 .success-overlay {
   position: absolute;
-  top: 238px;
-  left: 450px;
+  top: 138px;
+  left: 250px;
   display: none;
   gap: 1.6rem;
   flex-direction: column;
@@ -1102,7 +1102,7 @@ th {
 }
 
 .available-2 {
-  background-color: #e8f5e9;
+  background-color: rgba(31, 194, 37, 1);
   cursor: pointer;
 }
 
@@ -2092,8 +2092,14 @@ th {
   }
   .success-overlay {
     width: 33.3rem !important;
-    top: 204px !important;
-    left: 47px !important;
+    top: 404px !important;
+    left: 87px !important;
+  }
+  .success-overlay-2 {
+    width: 33.3rem !important;
+
+    top: 404px !important;
+    left: 87px !important;
   }
   .success-overlay img {
     width: 13rem !important;
@@ -2431,6 +2437,25 @@ th {
   .messages-area {
     min-width: 100vw;
     display: none;
+  }
+  .doctors-availabity-card-2 {
+    bottom: 10rem;
+  }
+  .doctors-availabity-card {
+    bottom: 10rem;
+  }
+  .doctors-availabity-card-booked {
+    bottom: 10rem;
+  }
+
+  .doctors-availabity-card-booked-2 {
+    bottom: 10rem;
+  }
+  .doctors-availabity-card-success {
+    bottom: 10rem;
+  }
+  .doctors-availabity-card-success-2 {
+    bottom: 10rem;
   }
 }
 .small-screen {
