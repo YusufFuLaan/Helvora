@@ -215,8 +215,11 @@ input:focus::placeholder {
   }
 
   .reduce-width {
-    width: 45rem !important;
+    width: 40rem !important;
     font-size: var(--font-size-22);
+  }
+  .padding-extra {
+    min-width: 100vw;
   }
 }
 /* for-page-3 */

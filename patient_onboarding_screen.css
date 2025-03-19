@@ -238,8 +238,8 @@ input:focus::placeholder {
 
 @media (max-width: 40rem) {
   .major-content {
-    width: 100vw;
     border-radius: 0;
+    min-width: 100vw;
     height: 130vh;
   }
   .progress-step {
