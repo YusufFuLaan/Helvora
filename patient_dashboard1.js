@@ -9,18 +9,52 @@ const hideDoctor = document.querySelectorAll(".hide-doctors"); // NodeList of el
 const closingOverlay = document.querySelector(".closing-overlay");
 const aboutDoctors = document.querySelector(".about-doctors");
 const doctorsContainer = document.querySelector(".for-doctors-cards-container");
+
+const messagesArea = document.querySelector(" .messages-area");
+const chatNames = document.querySelector(".chat-names-and-texts");
+let isSmallScreen = window.matchMedia("(max-width: 40rem)").matches;
+console.log(
+  "Initial screen size:",
+  isSmallScreen ? "Small Screen" : "Large Screen"
+);
+
+// Select all chat container buttons
 const messagesChatContainer = document.querySelectorAll(
   ".messages-chat-container"
 );
-const messagesArea = document.querySelector(" .messages-area");
-const chatNames = document.querySelector(".chat-names-and-texts");
+console.log(`Found ${messagesChatContainer.length} chat container buttons.`);
 
-messagesChatContainer.forEach((btn) => {
-  btn.addEventListener("click", function () {
-    chatNames.style.display = "none";
+// Function to reset layout for large screens
+function resetLayoutForLargeScreen() {
+  if (!isSmallScreen) {
+    console.log("Resetting layout for large screen...");
+    chatNames.style.display = "flex";
     messagesArea.style.display = "block";
+  } else {
+    chatNames.style.display = "flex";
+    messagesArea.style.display = "none";
+  }
+}
+
+// Add event listeners to each button
+messagesChatContainer.forEach((btn, index) => {
+  btn.addEventListener("click", function () {
+    if (isSmallScreen) {
+      chatNames.style.display = "none";
+      messagesArea.style.display = "block";
+    } else {
+      console.log("Large screen detected. No action taken.");
+    }
   });
 });
+
+window.addEventListener("resize", () => {
+  isSmallScreen = window.matchMedia("(max-width: 40rem)").matches;
+  resetLayoutForLargeScreen();
+});
+
+resetLayoutForLargeScreen();
+
 function forOpening() {
   sideMenu.style.left = "0";
   closeSide.style.display = "block";
