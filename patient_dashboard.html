@@ -99,9 +99,156 @@
             <article class="rounded-bordeer">
               <img src="Public/images/notification.svg" alt="" />
             </article>
-
+            <!-- overlay for personal info -->
             <article class="user-profile">
-              <li><img src="Public/images/user_dp.svg" alt="" /> Annabel</li>
+              <li><img src="Public/images/user_dp.svg" class="drop-down-personal-info" alt="" /> Annabel</li>
+              <section class="parent">
+                <article class="sidebars">
+                  <section class="profile-header">
+                    <article class="profile-image">
+                      <img src="Public/images/username_img.svg" class="user-profile-picture" alt="" />
+                      <img src="Public/images/edit_username_img.svg" alt="" />
+                    </article>
+                    <p class="useername">Ayuba Annabel</p>
+
+                    <button class="edit-profile-btn">Edit Profile</button>
+                  </section>
+                  <div class="given-height"></div>
+                </article>
+
+                <article class="main-contents">
+                  <section class="personal-infos">
+                    <article class="close-modal-image">
+                      <img
+                        src="Public/images/close_menu.svg"
+                        class="close-modal-profile-photo"
+                        alt=""
+                      />
+                    </article>
+                    <article class="personal-information-texts">
+                      <p>Personal Information</p>
+                    </article>
+                    <article class="gender-info">
+                      <p class="gender-info-text">
+                        Gender <br />
+                        <span class="breakdown">Male</span>
+                      </p>
+                      <p class="gender-info-text">
+                        Age <br />
+                        <span class="breakdown">26</span>
+                      </p>
+                      <p class="gender-info-text">
+                        Eamil Address <br /><span class="breakdown">
+                          Ayubaannbel@gmail.com
+                        </span>
+                      </p>
+                      <p class="gender-info-text">
+                        Phone Number <br />
+                        <span class="breakdown">0800000000</span>
+                      </p>
+                      <p class="gender-info-text">
+                        Address <br />
+                        <span class="breakdown">Comic-Man Street</span>
+                      </p>
+                    </article>
+                    <!-- s -->
+                  </section>
+                  <section class="medical-infos">
+                    <article class="personal-information-texts">
+                      <p>Medical Information</p>
+                    </article>
+                    <article class="gender-info">
+                      <p class="gender-info-text">
+                        Blood Group <br />
+                        <span class="breakdown">0+</span>
+                      </p>
+                      <p class="gender-info-text">
+                        Medical Conditions <br /><span class="breakdown"
+                          >Bipolar</span
+                        >
+                      </p>
+                      <p class="gender-info-text">
+                        Emergency Contact <br /><span class="breakdown"
+                          >0811111111</span
+                        >
+                      </p>
+                      <p class="gender-info-text">
+                        Status <br /><span class="breakdown green">Active</span>
+                      </p>
+                    <!-- </article>
+
+                    <article class="personal-information-text">
+                      <p class="gender-info-text-clone">Blood Group: O+</p>
+
+                      <p class="gender-info-text-clone">Bipolar</p>
+                      <p class="gender-info-text-clone">08111111111</p>
+                      <p class="gender-info-text-clone">Active</p>
+                    </article> -->
+                  </section>
+                  <section class="appointments">
+                    <!-- Appointment History -->
+                    <article class="personal-information-texts">
+                      <p>Medical Information</p>
+                    </article>
+
+                    <article class="personal-info-appointment">
+                      <article class="past-appointment-personal-info">
+                        <p class="upcoming-appointment-text-big">
+                          Upcoming Appointment
+                        </p>
+                        <article class="upcoming-data-box">
+                          <article class="flex-only-top-data">
+                            <p class="service-type">Service Type : check-up</p>
+                          </article>
+                          <p class="service-provider">
+                            Service Provider: Dr Peter Abel
+                          </p>
+                          <p class="date">Date:20,March 2024, 12:50pm</p>
+                        </article>
+                        <article class="upcoming-data-box">
+                          <article class="flex-only-top-data">
+                            <p class="service-type">
+                              Service Type : Neuro-brain Scan
+                            </p>
+                          </article>
+                          <p class="service-provider">
+                            Service Provider:Dr Isaac John
+                          </p>
+                          <p class="date">Date: 15th March 2024, 9:00am</p>
+                        </article>
+                      </article>
+                      <article class="past-appointment-personal-info">
+                        <p class="upcoming-appointment-text-big">
+                          Passed Appointment
+                        </p>
+
+                        <article class="past-data-box">
+                          <article class="flex-only-top-data">
+                            <p class="service-type">
+                              Service Type :Consultation
+                            </p>
+                            <p class="completd">completed</p>
+                          </article>
+                          <p class="service-provider">
+                            Service Provider:Dr Haruna
+                          </p>
+                          <p class="date">Date:10th May 2024, 10:00am</p>
+                        </article>
+                        <article class="past-data-box">
+                          <article class="flex-only-top-data">
+                            <p class="service-type">Service Type :</p>
+                            <p class="missed">Missed</p>
+                          </article>
+                          <p class="service-provider">
+                            Service Provider:Dr Haruna
+                          </p>
+                          <p class="date">Date:19th Oct 2024,3pm</p>
+                        </article>
+                      </article>
+                    </article>
+                  </section>
+                </article>
+              </section>
             </article>
           </article>
         </article>
@@ -146,8 +293,111 @@
       <section class="main-content">
         <!-- OVERVIEW PAGE -->
         <article id="dashboard-content" class="content-section">
-          <h2>Dashboard</h2>
-          <p>Welcome to your dashboard!</p>
+         <section class="general-overview">
+          <article class="welcome-section-calendar">
+            <article class="welcome-section">
+              <p class="welcome-text">Welcome Annabel</p>
+              <p class="how-can">How can we assist you today</p>
+
+              <div class="welcome-box-container">
+                <div class="welcome-box">
+                  <div class="welcome-box-content">
+                    <img src="Public/images/upcoming_appointment.png" alt="">
+                    <div class="welcome-box-content-text">
+                      <p class="deepertext">2 
+                        <br><span class="breakdowns">Upcoming Appointment</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="welcome-box">
+                  <div class="welcome-box-content">
+                    <img src="Public/images/unread_messages.svg" alt="">
+                    <div class="welcome-box-content-text">
+                      <p class="deepertext">1 
+                        <br><span class="breakdowns">Unread  Messages</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+            <!--             calendar will be here--> 
+
+            <article class="calendar-container">
+              <div class="calendar-header">
+                <button onclick="changeStaticMonth(-1)">&lt;</button>
+                <h2 id="staticMonthYear"></h2>
+                <button onclick="changeStaticMonth(1)">&gt;</button>
+              </div>
+              <div id="staticCalendar"></div>
+            </article>
+         </article>
+
+         <article class="lower-regions">
+          <section class="chart-main-container">
+
+            <p class=" margin-top">
+              <span class="available-span">
+              <span class="color-green"></span>completed appointments</span>      
+              <span class="available-span"> <span class="color-red"></span>missed Appointment
+              <span class="available-span"> <span class="color-blue"></span>Upcoming Appointment
+
+            </p>
+            <section class="chart-container">
+            
+              <article class="background-grid">
+                <div class="grid-line" value="120"></div>
+                <div class="grid-line" value="100"></div>
+                <div class="grid-line" value="80"></div>
+                <div class="grid-line" value="60"></div>
+                <div class="grid-line" value="40"></div>
+                <div class="grid-line" value="20"></div>
+                <div class="grid-line" value="0"></div>
+              </article>
+      
+              <article class="bar-chart-container">
+                <div class="bars height1 green"></div>
+                <div class="bars height2 green"></div>
+                <div class="bars height3 red"></div>
+                <div class="bars height4 blue"></div>
+                <div class="bars height5 green"></div>
+                <div class="bars height6 blue"></div>
+              </article>
+      
+              <article class="day-labels">
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+                <div></div>
+              </article>
+
+            </section>
+            
+          </section>
+          <article class="small-screen">
+            <p class="available-spans">
+            <span class="color-green"></span>completed appointments</p>      
+            <p class="available-spans"> <span class="color-red"></span>missed Appointment
+            <p class="available-spans"> <span class="color-blue"></span>Upcoming Appointment
+
+            </article>
+          
+
+          <section class="recent-health-records">
+            <p class="recent-health-records-main-text">Recent Health Records</p>
+            <p class="recent-health-records-text">Test Reports Blood test</p>
+            <p class="recent-health-records-text">Prescription Onoing medication</p>
+            <p class="recent-health-records-text">Doctors Name:</p>
+            <button class="view-medical-result-btn">View Full Medical History</button>
+          </section>
+        
+         </article>
+         </section>
         </article>
 
         <!--  FIND A DOCTOR  -->
@@ -559,15 +809,40 @@
                 </button>
               </section>
             </section>
-            <section class="confirm-btn-container hiddens">
+            <section class="confirm-btn-container">
               <button class="confirm-btn">Confirm Booking</button>
+
+
+              <section class="doctors-availabity-card-booked">
+                <p class="doctors-availability">Doctors Availability</p>
+          
+                <img src="Public/images/appointment_failed.svg" alt="" />
+          
+                <p class="doctors-booked-text">
+                  Doctors already Booked for that time, please select another time for
+                  your appointment with Dr, Rabiu John
+                </p>
+                <button class="ok-button">Ok</button>
+              </section>
+          
+              <section class="doctors-availabity-card-success  ">
+                <p class="doctors-availability">Doctors Availability</p>
+          
+                <img src="Public/images/appointment_success.svg" alt="" />
+          
+                <p class="doctors-booked-text">
+                  Your time has been selected for
+                  <span class="use-javascript-to-attach-time"></span>
+                </p>
+                <button class="ok-button">Ok</button>
+              </section>
             </section>
           </article>
         </article>
 
         <!-- APPOINTMENT PAGE -->
         <article id="appointments-content" class="content-section">
-          <article class="for-small-screen-appointment">
+          <article class="for-small-screen-appointment working">
             <article class="upcoming-appoint">
               <p class="upcoming-appoint-text">Upcoming Appointment</p>
             </article>
@@ -750,7 +1025,7 @@
               <td class="passed-information-data">29-June,13:30PM</td>
               <td class="passed-information-data btn-red">Cancelled</td>
               <td class="rounded-radius">
-                <button class="view-details cancelled" data-status="cancelled">
+                <button class="view-details sucess" data-status="cancelled">
                   View Details
                 </button>
               </td>
@@ -973,19 +1248,19 @@
                 <section class="setting-time">
                   <div class="timer-text">
                     <img src="Public/images/timer.svg" alt="" />
-                    <p class="timer-text-main">3:00pm</p>
+                    <p class="timer-text-main-2">3:00pm</p>
                   </div>
                   <div class="timer-text">
                     <img src="Public/images/timer.svg" alt="" />
-                    <p class="timer-text-main">2:00pm</p>
+                    <p class="timer-text-main-2">2:00pm</p>
                   </div>
                   <div class="timer-text">
                     <img src="Public/images/timer.svg" alt="" />
-                    <p class="timer-text-main">10:45am</p>
+                    <p class="timer-text-main-2">10:45am</p>
                   </div>
                   <div class="timer-text">
                     <img src="Public/images/timer.svg" alt="" />
-                    <p class="timer-text-main">5:00pm</p>
+                    <p class="timer-text-main-2">5:00pm</p>
                   </div>
 
                   <div class="timer-text">
@@ -1007,10 +1282,13 @@
                   >Provide a reason for the visit (optional)</label
                 >
                 <input type="text" class="as-text-area" />
+
+
               </article>
+             
 
               <!-- for overlay -->
-              <section class="success-overlay">
+              <section class="success-overlay-2">
                 <img src="Public/images/booking_sucessful.svg" alt="" />
                 <p class="booking-successful-text">
                   Your booking has been successful
@@ -1039,28 +1317,352 @@
                 </button>
               </section>
             </section>
-            <section class="confirm-btn-container hiddens">
-              <button class="confirm-btn">Confirm Booking</button>
+              <!-- for overlay -->
+            
+            <section class="confirm-btn-containers">
+              <button class="confirm-btn-2">Confirm Booking</button>
+
+              <section class="doctors-availabity-card-booked-2">
+                <p class="doctors-availability">Doctors Availability</p>
+          
+                <img src="Public/images/appointment_failed.svg" alt="" />
+          
+                <p class="doctors-booked-text">
+                  Doctors already Booked for that time, please select another time for
+                  your appointment with Dr, Rabiu John
+                </p>
+                <button class="ok-button">Ok</button>
+              </section>
+          
+              <section class="doctors-availabity-card-success-2  ">
+                <p class="doctors-availability">Doctors Availability</p>
+          
+                <img src="Public/images/appointment_success.svg" alt="" />
+          
+                <p class="doctors-booked-text">
+                  Your time has been selected for
+                  <span class="use-javascript-to-attach-time"></span>
+                </p>
+                <button class="ok-button-2">Ok</button>
+              </section>
+
+              
             </section>
+            
           </article>
         </article>
         <!--  MEDICAL RECORDS -->
         <article id="medical-records-content" class="content-section">
-          <h2>Medical Records</h2>
+          <section class="medical-record-container">
+            <article class="medical-record-boxes">
+              <div class="patient-data-conatiner">
+                <p class="patient-data-text">Patient Data</p>
+                <p class="personal-information-text">Personal Information</p>
+              </div>
 
-          <p>Your medical records will appear here...</p>
+              <p class="other-information-texts">Name:Abigail John</p>
+              <p class="other-information-texts">Patient ID: F1324B</p>
+              <p class="other-information-texts">Blood group :A+</p>
+              <p class="other-information-texts">Address: 20,Complete Man</p>
+              <p class="other-information-texts">Avenue</p>
+              <p class="other-information-texts">Phone:080000001</p>
+              <p class="other-information-texts">Email:Abigailjohn@gmail.com</p>
+              <p class="other-information-texts">Religion: Christian</p>
+            </article>
+            <article class="medical-record-boxes">
+              <div class="patient-data-conatiner">
+                <p class="patient-data-text medical-history">Medical History</p>
+              </div>
+              <div class="entry">
+                <span class="bigtexts">Type</span>
+                <span class="bigtexts">Date</span>
+              </div>
+              <div class="entry">
+                <span class="entry-text">x-rays</span>
+                <div class="green-lines"></div>
+                <span class="entry-text">22-02-2022</span>
+              </div>
+              <div class="entry">
+                <span class="entry-text">Allergies</span>
+                <div class="green-lines"></div>
 
-          <div class="welcome">wekelmcencecnekcece</div>
+                <span class="entry-text">12-01-2022</span>
+              </div>
+              <div class="entry">
+                <span class="entry-text">Appendix</span>
+                <div class="green-lines"></div>
+
+                <span class="entry-text">22-12-2024</span>
+              </div>
+              <div class="entry">
+                <span class="entry-text">Abdominal Pain </span>
+                <div class="green-lines"></div>
+                <span class="entry-text">22-12-2024</span>
+              </div>
+
+              <div class="view-all">
+                <p>View all</p>
+              </div>
+            </article>
+            <article class="medical-record-boxes">
+              <div class="patient-data-conatiner">
+                <p class="patient-data-text medical-history">
+                  Prescription Record
+                </p>
+              </div>
+              <div class="entry">
+                <span class="bigtexts">Medication</span>
+                <span class="bigtexts">Date Prescribed</span>
+              </div>
+              <div class="entry">
+                <span class="entry-text">Metformin</span>
+                <div class="black-lines"></div>
+                <span class="entry-text">10-03-2021</span>
+              </div>
+              <div class="entry">
+                <span class="entry-text">Loratadine</span>
+                <div class="black-lines"></div>
+
+                <span class="entry-text">05-04-2023</span>
+              </div>
+              <div class="entry">
+                <span class="entry-text">Imitrex</span>
+                <div class="black-lines"></div>
+
+                <span class="entry-text">01-06-2023</span>
+              </div>
+            </article>
+            <article class="medical-record-boxes">
+              <div class="patient-data-conatiner">
+                <p class="patient-data-text medical-history">Medical History</p>
+              </div>
+              <div class="entry">
+                <span class="entry-text">White Blood Cell (WBC)</span>
+                <div class="red-liners"></div>
+                <span class="entry-text">1400L</span>
+              </div>
+              <div class="entry">
+                <span class="entry-text">Red Blood Cell (RBC)</span>
+                <div class="red-lines"></div>
+                <span class="entry-text">2100L</span>
+              </div>
+              <div class="entry">
+                <span class="entry-text">Haemoglobin (HB)</span>
+                <div class="red-lines"></div>
+
+                <span class="entry-text">7.1g/d</span>
+              </div>
+              <div class="entry">
+                <span class="entry-text">Mean Cell Volume (MCV)</span>
+                <div class="red-liners"></div>
+
+                <span class="entry-text">82fl</span>
+              </div>
+              <div class="entry">
+                <span class="entry-text">Mean Cell Hemoglobin </span>
+                <div class="red-liners"></div>
+                <span class="entry-text">7.1g/d</span>
+              </div>
+            </article>
+          </section>
         </article>
 
         <!--  MESSAGES  -->
         <article class="content-section" id="messages-content">
-          <p class="jd">heklo</p>
+          <section class="messages-parent">
+            <article class="chat-names-and-texts">
+              <section class="messages-search-area">
+                <img src="Public/images/Search.svg" alt="">
+                <p class="messages-search-text">Search</p>
+              </section> 
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_philips.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Philips</p>
+                  <p class="doctors-messages-texts">The result for the blood test conducted...</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">2</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_daniel.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Daniel</p>
+                  <p class="doctors-messages-texts">No one should forget such</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">2</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_sanusi.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Sanusi </p>
+                  <p class="doctors-messages-texts">Hello <span class="usersname">Annabel</span></p>
+                </article>
+                </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">1</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Rita </p>
+                  <p class="doctors-messages-texts">Are you there</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">2</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_fabs.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Fabs</p>
+                  <p class="doctors-messages-texts">Hope you are much better</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">2</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_smith.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Smith </p>
+                  <p class="doctors-messages-texts">Hello Ann</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">2</p>
+                </article>
+              </section>
+              
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_henry.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Henry </p>
+                  <p class="doctors-messages-texts">Don't take that to heart </p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">3</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_holmes.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Holmes </p>
+                  <p class="doctors-messages-texts">Don't forget </p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">2</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_william.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr William </p>
+                  <p class="doctors-messages-texts">Everyday</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">2</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_ashanka.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Ashanka </p>
+                  <p class="doctors-messages-texts">I understand</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2:05PM</p>
+                  <p class="messages-count">1</p>
+                </article>
+              </section>
+              <section class="messages-chat-container">
+                <article class="doctors-display-picture">
+                  <img src="Public/images/Dr_peace.svg" alt="">
+                <article class="messages-doctors-name-text">
+                  <p class="doctors-name-texts">Dr Peace </p>
+                  <p class="doctors-messages-texts">Don't forget our section on tuesady</p>
+                </article>
+              </article>
+
+                <article class="message-time-and-counts">
+                  <p class="messages-time">2 days ago</p>
+                  <p class="messages-count"></p>
+                </article>
+              </section>
+
+            </article>
+            <article class="messages-area"> 
+              <section class="doctors-name-chat-area">
+                <img src="Public/images/Dr_philips.svg" alt="">
+                <p class="doctors-name-texts">Dr Philips <br>
+                  <span class="online">Online</span></p>
+                  
+              </section>
+              <section class="doctors-messages-area">
+                <p class="messages-here">How are you feeling today <span class="username">Annabel</span></p>
+              </section>
+              <section class="patients-messages-area">
+                <p class="messages-here">I am fine much better Doc , the prescription you gave me is really effective <span class="username">Annabel</span></p>
+              </section>
+              <section class="doctors-messages-area">
+                <p class="messages-here">The result fot the blood test result is out <span class="username">Annabel</span></p>
+              </section>
+              <section class="send-messages-area">
+                <p class="send-messages-here">Write your message <span class="username"><img src="Public/images/" alt=""></span></p>
+              </section>
+              <div class=" margin-to-top"></div>
+              
+            </article>
+
+            </section>
         </article>
       </section>
     </main>
     <script src="patient_dashboard1.js"></script>
     <script src="patient_dashboard2.js"></script>
-    <script src="for_appointment.js"></script>
+    <script src="for_appointment1.js"></script>
+    <script src="for_appointment2.js"></script>
+    <script src="for_appointment3.js"></script>
   </body>
 </html>

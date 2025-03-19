@@ -9,7 +9,18 @@ const hideDoctor = document.querySelectorAll(".hide-doctors"); // NodeList of el
 const closingOverlay = document.querySelector(".closing-overlay");
 const aboutDoctors = document.querySelector(".about-doctors");
 const doctorsContainer = document.querySelector(".for-doctors-cards-container");
+const messagesChatContainer = document.querySelectorAll(
+  ".messages-chat-container"
+);
+const messagesArea = document.querySelector(" .messages-area");
+const chatNames = document.querySelector(".chat-names-and-texts");
 
+messagesChatContainer.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    chatNames.style.display = "none";
+    messagesArea.style.display = "block";
+  });
+});
 function forOpening() {
   sideMenu.style.left = "0";
   closeSide.style.display = "block";
@@ -35,5 +46,25 @@ closingOverlay.addEventListener("click", function () {
 
   hideDoctor.forEach((element) => {
     element.style.display = "";
+  });
+});
+const dropDownPersonalInfo = document.querySelectorAll(
+  ".drop-down-personal-info"
+);
+const personalInfoDisplay = document.querySelectorAll(".parent");
+const closeModalProfilePhoto = document.querySelectorAll(".close-modal-image");
+
+dropDownPersonalInfo.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    personalInfoDisplay.forEach((image) => {
+      image.style.display = "grid";
+    });
+  });
+});
+closeModalProfilePhoto.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    personalInfoDisplay.forEach((image) => {
+      image.style.display = "none";
+    });
   });
 });

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "liveServer.settings.port": 5502,
   "cSpell.words": [
     "deepblue",
@@ -8,4 +9,7 @@
     "hospitialization",
     "scrrens"
   ]
+=======
+  "liveServer.settings.port": 5501
+>>>>>>> Patient-dashboard
 }

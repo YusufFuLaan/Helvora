@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ".for-doctors-cards-container"
   );
   const confirmBtn = document.querySelector(".confirm-btn-container");
+  const confirmBtns = document.querySelector(".confirm-btn-containers");
   const appointmentPage2 = document.querySelector(".appointment-screen2");
   const overlayBookNowBtn = document.querySelector(".book-now");
   const aboutDoctors = document.querySelector(".about-doctors");
@@ -22,9 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const appointmentSmallScreenDisplay = document.querySelector(
     ".for-small-screen-appointment"
   );
+  const working = document.querySelector("#working");
   const tableDisplays = document.querySelectorAll(".table");
   const bookNewAppointmentBtn = document.querySelector(".book-new-appointment");
   const disturbingMe = document.querySelector(".disturbing");
+
   bookNewAppointmentBtn.addEventListener("click", function () {
     tableDisplays.forEach((table) => {
       table.style.display = "none";
@@ -32,9 +35,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     console.log(`works`);
-    appointmentSmallScreenDisplay.classList.add("hidden");
+    appointmentSmallScreenDisplay.classList.remove("settingDisplay");
+    console.log(`i am here`);
+    appointmentSmallScreenDisplay.style.display = "none";
     disturbingMe.classList.remove("hidden");
     bookNewAppointmentBtn.style.display = "none";
+    appointmentSmallScreenDisplay.classList.remove("working");
+    confirmBtns.style.display = "flex";
+
+    working.style.display = "none";
   });
 
   viewDetailsBtn.forEach((btn) => {
@@ -102,6 +111,8 @@ document.addEventListener("DOMContentLoaded", () => {
       findDoctorsPage.classList.add("hiddens");
       appointmentPage2.classList.remove("hiddens");
       confirmBtn.classList.remove("hiddens");
+      confirmBtn.style.display = "flex";
+
       backToFindDoctorsBtn.style.display = "block";
     });
   });
@@ -110,6 +121,8 @@ document.addEventListener("DOMContentLoaded", () => {
     findDoctorsPage.classList.add("hiddens");
     appointmentPage2.classList.remove("hiddens");
     confirmBtn.classList.remove("hiddens");
+    confirmBtn.style.display = "flex";
+
     backToFindDoctorsBtn.style.display = "block";
     aboutDoctors.classList.remove("hidden");
 
