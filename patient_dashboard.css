@@ -1994,6 +1994,9 @@ th {
   .list li {
     font-size: var(--font-size-16) !important;
   }
+  .main-content {
+    min-width: 100vw;
+  }
   .center {
     text-align: center;
   }
