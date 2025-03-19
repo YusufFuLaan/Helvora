@@ -1872,7 +1872,7 @@ th {
 
 /*  media queries
  */
-@media (max-width: 40rem) {
+@media (max-width: 37.5rem) {
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
@@ -2236,6 +2236,12 @@ th {
 
   .calendar-header {
     padding: 0.5rem;
+  }
+
+  .side-bar li.active,
+  .small-screen-type li.active {
+    background-color: var(--light-green);
+    width: 90%;
   }
 
   .calendar-header button {
