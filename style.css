@@ -1292,7 +1292,7 @@ main .heroslide-nav-container .heroslide-nav-btn.active {
 /*-----------------------Footer-style------------------------ */
 footer {
   display: flex;
-  gap: 4rem;
+  gap: 9rem;
   padding: 4rem 6rem;
   background-color: #000000;
   color: white;
@@ -1346,13 +1346,13 @@ footer .footer-nav-container {
   flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 6rem;
-  gap: 5rem;
+  gap: 9rem;
 }
 
 .footer-nav-container nav {
   display: flex;
   justify-content: space-around;
-  gap: 5rem;
+  gap: 9rem;
 }
 
 /* .footer-nav-container ul {
